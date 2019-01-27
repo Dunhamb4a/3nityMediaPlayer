@@ -1,0 +1,180 @@
+object frmPlayList: TfrmPlayList
+  Left = 492
+  Top = 112
+  BorderIcons = [biSystemMenu]
+  Caption = 'frmPlayList'
+  ClientHeight = 258
+  ClientWidth = 354
+  Color = clBtnFace
+  Constraints.MinHeight = 215
+  Constraints.MinWidth = 310
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnKeyPress = FormKeyPress
+  OnMouseDown = FormMouseDown
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignSize = (
+    354
+    258)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PlaylistBox: TsListBox
+    Left = 5
+    Top = 14
+    Width = 250
+    Height = 238
+    Style = lbVirtualOwnerDraw
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Color = clBtnFace
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMenuText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ItemHeight = 16
+    MultiSelect = True
+    ParentFont = False
+    TabOrder = 0
+    OnDblClick = BPlayClick
+    OnDragOver = PlaylistBoxDragOver
+    OnDrawItem = PlaylistBoxDrawItem
+    OnKeyUp = PlaylistBoxKeyUp
+    OnMouseUp = PlaylistBoxMouseUp
+    OnStartDrag = PlaylistBoxStartDrag
+    BoundLabel.Indent = 0
+    BoundLabel.Font.Charset = DEFAULT_CHARSET
+    BoundLabel.Font.Color = clWindowText
+    BoundLabel.Font.Height = -11
+    BoundLabel.Font.Name = 'Tahoma'
+    BoundLabel.Font.Style = []
+    BoundLabel.Layout = sclLeft
+    BoundLabel.MaxWidth = 0
+    BoundLabel.UseSkinColor = True
+    SkinData.SkinSection = 'EDIT'
+    ExplicitWidth = 356
+  end
+  object BPlay: TBitBtn
+    Left = 261
+    Top = 30
+    Width = 89
+    Height = 25
+    Anchors = [akTop, akRight]
+    Caption = 'Play'
+    TabOrder = 1
+    OnClick = BPlayClick
+    ExplicitLeft = 367
+  end
+  object BAdd: TBitBtn
+    Left = 261
+    Top = 60
+    Width = 89
+    Height = 25
+    Anchors = [akTop, akRight]
+    Caption = 'Add'
+    TabOrder = 2
+    OnClick = BAddClick
+    ExplicitLeft = 367
+  end
+  object BMoveUp: TBitBtn
+    Tag = 1
+    Left = 261
+    Top = 90
+    Width = 89
+    Height = 25
+    Anchors = [akTop, akRight]
+    Caption = 'Move up'
+    TabOrder = 3
+    OnClick = BMoveClick
+    ExplicitLeft = 367
+  end
+  object BMoveDown: TBitBtn
+    Left = 261
+    Top = 120
+    Width = 89
+    Height = 25
+    Anchors = [akTop, akRight]
+    Caption = 'Move down'
+    TabOrder = 4
+    OnClick = BMoveClick
+    ExplicitLeft = 367
+  end
+  object BDelete: TBitBtn
+    Left = 261
+    Top = 150
+    Width = 89
+    Height = 25
+    Anchors = [akTop, akRight]
+    Caption = 'Delete'
+    TabOrder = 5
+    OnClick = BDeleteClick
+    ExplicitLeft = 367
+  end
+  object CShuffle: TCheckBox
+    Left = 261
+    Top = 217
+    Width = 87
+    Height = 17
+    Anchors = [akTop, akRight]
+    Caption = 'Shuffle'
+    TabOrder = 6
+    OnClick = CShuffleClick
+    ExplicitLeft = 367
+  end
+  object CLoop: TCheckBox
+    Left = 261
+    Top = 237
+    Width = 87
+    Height = 17
+    Anchors = [akTop, akRight]
+    Caption = 'Repeat'
+    TabOrder = 7
+    OnClick = CLoopClick
+    ExplicitLeft = 367
+  end
+  object BSave: TBitBtn
+    Left = 261
+    Top = 180
+    Width = 89
+    Height = 25
+    Anchors = [akTop, akRight]
+    Caption = 'Save'
+    TabOrder = 8
+    OnClick = BSaveClick
+    ExplicitLeft = 367
+  end
+  object btnClose: TBitBtn
+    Left = 325
+    Top = 2
+    Width = 25
+    Height = 15
+    Anchors = [akTop, akRight]
+    Caption = 'X'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+    OnClick = btnCloseClick
+    ExplicitLeft = 431
+  end
+  object SavePlaylistDialog: TSaveDialog
+    DefaultExt = 'm3u'
+    Filter = 'M3U Playlist (*.m3u)|*.m3u|All Files (*.*)|*.*'
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofPathMustExist, ofEnableSizing]
+    Title = 'Save Playlist ...'
+    Left = 368
+  end
+end

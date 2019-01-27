@@ -1,0 +1,107 @@
+seek                 Float [Integer]
+edl_mark            
+audio_delay          Float [Integer]
+speed_incr           Float
+speed_mult           Float
+speed_set            Float
+quit                 [Integer]
+stop                
+pause               
+frame_step          
+pt_step              Integer [Integer]
+pt_up_step           Integer [Integer]
+alt_src_step         Integer
+loop                 Integer [Integer]
+sub_delay            Float [Integer]
+sub_step             Integer [Integer]
+osd                  [Integer]
+osd_show_text        String [Integer] [Integer]
+osd_show_property_te String [Integer] [Integer]
+volume               Float [Integer]
+balance              Float [Integer]
+use_master          
+mute                 [Integer]
+contrast             Integer [Integer]
+gamma                Integer [Integer]
+brightness           Integer [Integer]
+hue                  Integer [Integer]
+saturation           Integer [Integer]
+frame_drop           [Integer]
+sub_pos              Integer [Integer]
+sub_alignment        [Integer]
+sub_visibility       [Integer]
+sub_load             String
+sub_remove           [Integer]
+vobsub_lang          [Integer]
+sub_select           [Integer]
+sub_source           [Integer]
+sub_vob              [Integer]
+sub_demux            [Integer]
+sub_file             [Integer]
+sub_log             
+sub_scale            Float [Integer]
+ass_use_margins      [Integer]
+get_percent_pos     
+get_time_pos        
+get_time_length     
+get_file_name       
+get_video_codec     
+get_video_bitrate   
+get_video_resolution
+get_audio_codec     
+get_audio_bitrate   
+get_audio_samples   
+get_meta_title      
+get_meta_artist     
+get_meta_album      
+get_meta_year       
+get_meta_comment    
+get_meta_track      
+get_meta_genre      
+switch_audio         [Integer]
+switch_angle         [Integer]
+switch_title         [Integer]
+tv_start_scan       
+tv_step_channel      Integer
+tv_step_norm        
+tv_step_chanlist    
+tv_set_channel       String
+tv_last_channel     
+tv_set_freq          Float
+tv_step_freq         Float
+tv_set_norm          String
+tv_set_brightness    Integer [Integer]
+tv_set_contrast      Integer [Integer]
+tv_set_hue           Integer [Integer]
+tv_set_saturation    Integer [Integer]
+forced_subs_only     [Integer]
+switch_ratio         [Float]
+vo_fullscreen        [Integer]
+vo_ontop             [Integer]
+file_filter          Integer
+vo_rootwin           [Integer]
+vo_border            [Integer]
+screenshot           [Integer]
+panscan              Float [Integer]
+switch_vsync         [Integer]
+loadfile             String [Integer]
+loadlist             String [Integer]
+run                  String
+change_rectangle     Integer Integer
+teletext_add_dec     String
+teletext_go_link     Integer
+af_eq_set_bands      String
+dvdnav               String
+menu                 String
+set_menu             String [String]
+help                
+exit                
+hide                 [Integer]
+get_vo_fullscreen   
+get_sub_visibility  
+key_down_event       Integer
+set_property         String String
+get_property         String
+step_property        String [Float] [Integer]
+seek_chapter         Integer [Integer]
+set_mouse_pos        Integer Integer

@@ -1,0 +1,72 @@
+    LOCstrFontEncodings[1] := 'Unicode';
+    LOCstrFontEncodings[2] := 'Occidental (ISO-8859-1)';
+    LOCstrFontEncodings[3] := 'Occidental con euro (ISO-8859-15)';
+    LOCstrFontEncodings[4] := 'Eslavo/Centroeuropeo (ISO-8859-2)';
+    LOCstrFontEncodings[5] := 'Esperanto, Gallego, Maltés, Turco (ISO-8859-3)';
+    LOCstrFontEncodings[6] := 'Báltico (ISO-8859-4)';
+    LOCstrFontEncodings[7] := 'Cirílico (ISO-8859-5)';
+    LOCstrFontEncodings[8] := 'Árabe (ISO-8859-6)';
+    LOCstrFontEncodings[9] := 'Griego moderno (ISO-8859-7)';
+    LOCstrFontEncodings[10] := 'Turco (ISO-8859-9)';
+    LOCstrFontEncodings[11] := 'Báltico (ISO-8859-13)';
+    LOCstrFontEncodings[12] := 'Céltico (ISO-8859-14)';
+    LOCstrFontEncodings[13] := 'Hebreo (ISO-8859-8)';
+    LOCstrFontEncodings[14] := 'Ruso (KOI8-R)';
+    LOCstrFontEncodings[15] := 'Bieloruso (KOI8-U/RU)';
+    LOCstrFontEncodings[16] := 'Chino simplificado (CP936)';
+    LOCstrFontEncodings[17] := 'Chino tradicional (BIG5)';
+    LOCstrFontEncodings[18] := 'Japonés(SHIFT-JIS)';
+    LOCstrFontEncodings[19] := 'Coreano (CP949)';
+    LOCstrFontEncodings[20] := 'Tailandés (CP874)';
+    LOCstrFontEncodings[21] := 'Cirílico (Windows) (CP1251)';
+    LOCstrFontEncodings[22] := 'Eslavo/Centroeuropeo (Windows) (CP1250)';
+    
+    
+    LOCstrFontEncodings[1] := 'Unicode';
+    LOCstrFontEncodings[2] := 'Western European Languages (ISO-8859-1)';
+    LOCstrFontEncodings[3] := 'Western European Languages with Euro (ISO-8859-15)';
+    LOCstrFontEncodings[4] := 'Slavic/Central European Languages (ISO-8859-2)';
+    LOCstrFontEncodings[5] := 'Esperanto, Galician, Maltese, Turkish (ISO-8859-3)';
+    LOCstrFontEncodings[6] := 'Old Baltic charset (ISO-8859-4)';
+    LOCstrFontEncodings[7] := 'Cyrillic (ISO-8859-5)';
+    LOCstrFontEncodings[8] := 'Arabic (ISO-8859-6)';
+    LOCstrFontEncodings[9] := 'Modern Greek (ISO-8859-7)';
+    LOCstrFontEncodings[10] := 'Turkish (ISO-8859-9)';
+    LOCstrFontEncodings[11] := 'Baltic (ISO-8859-13)';
+    LOCstrFontEncodings[12] := 'Celtic (ISO-8859-14)';
+    LOCstrFontEncodings[13] := 'Hebrew charsets (ISO-8859-8)';
+    LOCstrFontEncodings[14] := 'Russian (KOI8-R)';
+    LOCstrFontEncodings[15] := 'Ukrainian, Belarusian (KOI8-U/RU)';
+    LOCstrFontEncodings[16] := 'Simplified Chinese charset (CP936)';
+    LOCstrFontEncodings[17] := 'Traditional Chinese charset (BIG5)';
+    LOCstrFontEncodings[18] := 'Japanese charsets (SHIFT-JIS)';
+    LOCstrFontEncodings[19] := 'Korean charset (CP949)';
+    LOCstrFontEncodings[20] := 'Thai charset (CP874)';
+    LOCstrFontEncodings[21] := 'Cyrillic Windows (CP1251)';
+    LOCstrFontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
+    
+    
+    LOCstrFontEncodings[1] := 'Unicode';
+    LOCstrFontEncodings[2] := 'Langues Européennes Occidentales (ISO-8859-1)';
+    LOCstrFontEncodings[3] := 'Langues Européeenes Occidentales avec Euro (ISO-8859-15)';
+    LOCstrFontEncodings[4] := 'Langues Européeenes Slaves/Centrales (ISO-8859-2)';
+    LOCstrFontEncodings[5] := 'Esperanto, Galicien, Maltais, Turc (ISO-8859-3)';
+    LOCstrFontEncodings[6] := 'Caractères Old Baltic (ISO-8859-4)';
+    LOCstrFontEncodings[7] := 'Cyrillique (ISO-8859-5)';
+    LOCstrFontEncodings[8] := 'Arabe (ISO-8859-6)';
+    LOCstrFontEncodings[9] := 'Grec Moderne (ISO-8859-7)';
+    LOCstrFontEncodings[10] := 'Turc (ISO-8859-9)';
+    LOCstrFontEncodings[11] := 'Balte (ISO-8859-13)';
+    LOCstrFontEncodings[12] := 'Celte (ISO-8859-14)';
+    LOCstrFontEncodings[13] := 'Hebreu (ISO-8859-8)';
+    LOCstrFontEncodings[14] := 'Russe (KOI8-R)';
+    LOCstrFontEncodings[15] := 'Ukrainien, Biélorusse (KOI8-U/RU)';
+    LOCstrFontEncodings[16] := 'Chinois Simplifié (CP936)';
+    LOCstrFontEncodings[17] := 'Chinois Traditionnel (BIG5)';
+    LOCstrFontEncodings[18] := 'Japonais (SHIFT-JIS)';
+    LOCstrFontEncodings[19] := 'Coréen (CP949)';
+    LOCstrFontEncodings[20] := 'Thaïlandais (CP874)';
+    LOCstrFontEncodings[21] := 'Cyrillique Windows (CP1251)';
+    LOCstrFontEncodings[22] := 'Slave/Europe Centrale Windows (CP1250)';
+    
+    

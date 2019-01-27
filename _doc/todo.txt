@@ -1,0 +1,11 @@
+1.62 (ass) - 3.5 (normal)
+1.45
+-af-add equalizer=0:0:0:0:0:0:0:0:0:0
+af_eq_set_bands 0:0:0:0:0:0:0:0:0:0
+
+-subfont-autoscale 2 subfont-text-scale 1 -ass-font-scale 1
+
+-subpos 100  -subfont-outline 2 -subwidth 10
+
+
+remove real types

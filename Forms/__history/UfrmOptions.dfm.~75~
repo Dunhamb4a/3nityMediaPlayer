@@ -1,0 +1,1605 @@
+object frmOptions: TfrmOptions
+  Left = 288
+  Top = 259
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'frmOptions'
+  ClientHeight = 431
+  ClientWidth = 562
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  DesignSize = (
+    562
+    431)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LHelp: TLabel
+    Left = 451
+    Top = 354
+    Width = 99
+    Height = 13
+    Cursor = crHandPoint
+    Alignment = taRightJustify
+    Anchors = [akRight, akBottom]
+    AutoSize = False
+    Caption = 'Help'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    OnClick = LHelpClick
+    ExplicitLeft = 426
+    ExplicitTop = 357
+  end
+  object LParams: TLabel
+    Left = 12
+    Top = 354
+    Width = 325
+    Height = 13
+    Anchors = [akLeft, akBottom]
+    AutoSize = False
+    Caption = 'Lparams'
+    ExplicitTop = 357
+  end
+  object BOK: TButton
+    Left = 97
+    Top = 400
+    Width = 74
+    Height = 25
+    Anchors = [akLeft, akBottom]
+    Caption = 'OK'
+    TabOrder = 0
+    Visible = False
+    OnClick = BOKClick
+  end
+  object BApply: TButton
+    Left = 388
+    Top = 400
+    Width = 75
+    Height = 25
+    Anchors = [akLeft, akBottom]
+    Caption = 'Apply'
+    TabOrder = 1
+    OnClick = BApplyClick
+  end
+  object BSave: TButton
+    Left = 67
+    Top = 400
+    Width = 75
+    Height = 25
+    Anchors = [akLeft, akBottom]
+    Caption = 'Save'
+    TabOrder = 2
+    Visible = False
+    OnClick = BSaveClick
+  end
+  object BClose: TButton
+    Left = 475
+    Top = 400
+    Width = 75
+    Height = 25
+    Anchors = [akLeft, akBottom]
+    Cancel = True
+    Caption = 'Close'
+    TabOrder = 3
+    OnClick = BCloseClick
+  end
+  object EParams: TEdit
+    Left = 8
+    Top = 373
+    Width = 546
+    Height = 21
+    Anchors = [akLeft, akRight, akBottom]
+    TabOrder = 4
+    OnKeyPress = EParamsKeyPress
+  end
+  object Pc: TsPageControl
+    Left = 8
+    Top = 8
+    Width = 546
+    Height = 337
+    ActivePage = TabGeneral
+    Anchors = [akLeft, akTop, akRight]
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    Images = imgLOpt
+    ParentFont = False
+    TabOrder = 5
+    OnChange = PcChange
+    OnDrawTab = PcDrawTab
+    SkinData.SkinSection = 'PAGECONTROL'
+    object TabGeneral: TsTabSheet
+      Caption = 'General'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      SkinData.CustomColor = False
+      SkinData.CustomFont = False
+      object LLanguage: TLabel
+        Left = 10
+        Top = 14
+        Width = 47
+        Height = 13
+        Caption = 'Language'
+      end
+      object lblFullScreenMonitor: TLabel
+        Left = 10
+        Top = 110
+        Width = 88
+        Height = 13
+        Caption = 'FullScreen Monitor'
+      end
+      object Shape1: TShape
+        Left = 10
+        Top = 91
+        Width = 491
+        Height = 1
+      end
+      object Shape2: TShape
+        Left = 10
+        Top = 211
+        Width = 491
+        Height = 1
+      end
+      object lblAutosync: TLabel
+        Left = 10
+        Top = 230
+        Width = 77
+        Height = 13
+        Caption = 'Autosync factor'
+      end
+      object LblAVsyncperframe: TLabel
+        Left = 10
+        Top = 254
+        Width = 118
+        Height = 13
+        Caption = 'A-V sync per frame (us.)'
+      end
+      object Shape7: TShape
+        Left = 10
+        Top = 138
+        Width = 491
+        Height = 1
+      end
+      object Label1: TLabel
+        Left = 10
+        Top = 163
+        Width = 60
+        Height = 13
+        Caption = 'Skin selector'
+      end
+      object CLanguage: TComboBox
+        Left = 176
+        Top = 11
+        Width = 149
+        Height = 19
+        Style = csOwnerDrawVariable
+        ItemHeight = 13
+        TabOrder = 1
+        OnChange = SomethingChanged
+        OnDrawItem = CLanguageDrawItem
+      end
+      object CIndex: TCheckBox
+        Left = 10
+        Top = 38
+        Width = 313
+        Height = 17
+        Caption = 'Re-Index'
+        TabOrder = 2
+      end
+      object CPriorityBoost: TCheckBox
+        Left = 10
+        Top = 62
+        Width = 313
+        Height = 17
+        Caption = 'Priority boost'
+        TabOrder = 3
+      end
+      object skinComboBox: TsComboBoxEx
+        Left = 176
+        Top = 159
+        Width = 233
+        Height = 22
+        BoundLabel.Indent = 0
+        BoundLabel.Font.Charset = DEFAULT_CHARSET
+        BoundLabel.Font.Color = clWindowText
+        BoundLabel.Font.Height = -11
+        BoundLabel.Font.Name = 'Tahoma'
+        BoundLabel.Font.Style = []
+        BoundLabel.Layout = sclLeft
+        BoundLabel.MaxWidth = 0
+        BoundLabel.UseSkinColor = True
+        SkinData.SkinSection = 'COMBOBOX'
+        ItemsEx = <>
+        Color = clBlack
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clSilver
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ItemIndex = -1
+        ItemHeight = 16
+        ParentFont = False
+        TabOrder = 0
+        OnChange = skinComboBoxChange
+      end
+    end
+    object TabAudio: TsTabSheet
+      Caption = 'Audio'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 1
+      ParentFont = False
+      SkinData.CustomColor = False
+      SkinData.CustomFont = False
+      object LAudioOut: TLabel
+        Left = 10
+        Top = 14
+        Width = 62
+        Height = 13
+        Caption = 'Audio output'
+      end
+      object LAudioDev: TLabel
+        Left = 10
+        Top = 38
+        Width = 61
+        Height = 13
+        Caption = 'Audio device'
+      end
+      object Shape6: TShape
+        Left = 10
+        Top = 139
+        Width = 491
+        Height = 1
+      end
+      object lblAc3Comp: TLabel
+        Left = 10
+        Top = 182
+        Width = 80
+        Height = 13
+        Caption = 'Ac3 compression'
+      end
+      object lblAc3CompVal: TLabel
+        Left = 337
+        Top = 182
+        Width = 6
+        Height = 13
+        Caption = '0'
+      end
+      object lblAudioDecodeChannels: TLabel
+        Left = 10
+        Top = 158
+        Width = 120
+        Height = 13
+        Caption = 'Max. channels to decode'
+      end
+      object lblAudiofilterchannels: TLabel
+        Left = 10
+        Top = 230
+        Width = 114
+        Height = 13
+        Caption = 'Channel filter and route'
+      end
+      object Shape3: TShape
+        Left = 10
+        Top = 211
+        Width = 491
+        Height = 1
+      end
+      object CAudioOut: TComboBox
+        Left = 176
+        Top = 11
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 0
+        OnChange = CAudioOutChange
+      end
+      object CAudioDev: TComboBox
+        Left = 176
+        Top = 35
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 1
+      end
+      object CSoftVol: TCheckBox
+        Left = 10
+        Top = 62
+        Width = 313
+        Height = 17
+        Caption = 'Software volume control'
+        TabOrder = 2
+      end
+      object chkUseVolcmd: TCheckBox
+        Left = 10
+        Top = 86
+        Width = 313
+        Height = 17
+        Caption = 'Use volume command line option'
+        TabOrder = 3
+      end
+      object trkAc3Comp: TsTrackBar
+        Left = 168
+        Top = 178
+        Width = 162
+        Height = 22
+        Max = 100
+        PageSize = 10
+        ShowSelRange = False
+        TabOrder = 5
+        OnChange = trkAc3CompChange
+        SkinData.SkinSection = 'TRACKBAR'
+        BarOffsetV = 0
+        BarOffsetH = 0
+      end
+      object chkUseliba52: TCheckBox
+        Left = 10
+        Top = 110
+        Width = 313
+        Height = 17
+        Caption = 'Use Liba52'
+        TabOrder = 4
+      end
+    end
+    object TabVideo: TsTabSheet
+      Caption = 'Video'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 2
+      ParentFont = False
+      SkinData.CustomColor = False
+      SkinData.CustomFont = False
+      object LPostproc: TLabel
+        Left = 10
+        Top = 278
+        Width = 72
+        Height = 13
+        Caption = 'Postprocessing'
+      end
+      object LAspect: TLabel
+        Left = 10
+        Top = 230
+        Width = 58
+        Height = 13
+        Caption = 'Aspect ratio'
+      end
+      object LDeinterlaceAlg: TLabel
+        Left = 352
+        Top = 230
+        Width = 102
+        Height = 13
+        Caption = 'Deinterlace Algorithm'
+      end
+      object LDeinterlace: TLabel
+        Left = 10
+        Top = 254
+        Width = 54
+        Height = 13
+        Caption = 'Deinterlace'
+      end
+      object lblOverlay: TLabel
+        Left = 10
+        Top = 38
+        Width = 64
+        Height = 13
+        Caption = 'Overlay color'
+      end
+      object lblVideoOut: TLabel
+        Left = 10
+        Top = 14
+        Width = 61
+        Height = 13
+        Caption = 'Video output'
+      end
+      object lblVideoeq: TLabel
+        Left = 10
+        Top = 110
+        Width = 72
+        Height = 13
+        Caption = 'Video equalizer'
+      end
+      object Shape4: TShape
+        Left = 10
+        Top = 91
+        Width = 491
+        Height = 1
+      end
+      object Shape5: TShape
+        Left = 10
+        Top = 211
+        Width = 491
+        Height = 1
+      end
+      object lblVideoScaler: TLabel
+        Left = 10
+        Top = 134
+        Width = 104
+        Height = 13
+        Caption = 'Software video scaler'
+      end
+      object CPostproc: TComboBox
+        Left = 176
+        Top = 275
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 11
+        Items.Strings = (
+          'off'
+          'auto'
+          'max')
+      end
+      object CDeinterlaceAlg: TComboBox
+        Left = 352
+        Top = 251
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 10
+      end
+      object CDeinterlace: TComboBox
+        Left = 176
+        Top = 251
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 9
+      end
+      object CAspect: TComboBox
+        Left = 176
+        Top = 227
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 8
+      end
+      object CVideoOut: TComboBox
+        Left = 176
+        Top = 11
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 0
+        OnChange = CVideoOutChange
+      end
+      object CvideoEq: TComboBox
+        Left = 176
+        Top = 107
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 5
+      end
+      object chkDirectRender: TCheckBox
+        Left = 10
+        Top = 62
+        Width = 149
+        Height = 17
+        Caption = 'Direct Rendering'
+        TabOrder = 2
+      end
+      object chkDrawSlices: TCheckBox
+        Left = 352
+        Top = 62
+        Width = 149
+        Height = 17
+        Caption = 'Draw using slices'
+        TabOrder = 4
+      end
+      object chkDoubleBuffer: TCheckBox
+        Left = 176
+        Top = 62
+        Width = 149
+        Height = 17
+        Caption = 'Double buffering'
+        TabOrder = 3
+      end
+      object CvideoScaler: TComboBox
+        Left = 176
+        Top = 131
+        Width = 149
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 6
+      end
+      object chkTryScaler: TCheckBox
+        Left = 352
+        Top = 134
+        Width = 149
+        Height = 17
+        Caption = 'Try scaler on error'
+        TabOrder = 7
+      end
+      object chkForceEvenWidth: TCheckBox
+        Left = 352
+        Top = 38
+        Width = 149
+        Height = 17
+        Caption = 'Force even width'
+        TabOrder = 1
+      end
+      inline cpkOverlay: TVssColorPicker
+        Left = 176
+        Top = 35
+        Width = 149
+        Height = 21
+        TabOrder = 12
+        ExplicitLeft = 176
+        ExplicitTop = 35
+        ExplicitWidth = 149
+        ExplicitHeight = 21
+      end
+    end
+    object TabCaching: TsTabSheet
+      Caption = 'Caching'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 3
+      ParentFont = False
+      SkinData.CustomColor = False
+      SkinData.CustomFont = False
+    end
+    object TabOSDSub: TsTabSheet
+      Caption = 'OSD and Subs'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 4
+      ParentFont = False
+      SkinData.CustomColor = False
+      SkinData.CustomFont = False
+      object lblFontPath: TLabel
+        Left = 10
+        Top = 14
+        Width = 47
+        Height = 13
+        Caption = 'Font Path'
+      end
+      object lblFontEncoding: TLabel
+        Left = 10
+        Top = 38
+        Width = 68
+        Height = 13
+        Caption = 'Font Encoding'
+      end
+      object lblSubAssBorderColor: TLabel
+        Left = 10
+        Top = 110
+        Width = 60
+        Height = 13
+        Caption = 'Border Color'
+      end
+      object lblSubAssColor: TLabel
+        Left = 10
+        Top = 134
+        Width = 25
+        Height = 13
+        Caption = 'Color'
+      end
+      object lblSubBgColor: TLabel
+        Left = 10
+        Top = 158
+        Width = 84
+        Height = 13
+        Caption = 'Background Color'
+      end
+      object cFontEncoding: TComboBox
+        Left = 176
+        Top = 35
+        Width = 325
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 0
+      end
+      object chkAssSubs: TCheckBox
+        Left = 10
+        Top = 62
+        Width = 149
+        Height = 17
+        Caption = 'Ass subtitles'
+        TabOrder = 1
+      end
+      object chkFontConfig: TCheckBox
+        Left = 176
+        Top = 62
+        Width = 149
+        Height = 17
+        Caption = 'Use fontconfig'
+        TabOrder = 2
+      end
+      object chkAutoLoadSubs: TCheckBox
+        Left = 352
+        Top = 62
+        Width = 149
+        Height = 17
+        Caption = 'Autoload Subtitle files'
+        TabOrder = 3
+      end
+      inline cpkSubAssColor: TVssColorPicker
+        Left = 176
+        Top = 131
+        Width = 21
+        Height = 21
+        TabOrder = 4
+        ExplicitLeft = 176
+        ExplicitTop = 131
+        ExplicitWidth = 21
+        ExplicitHeight = 21
+      end
+      inline cpkSubAssBorderColor: TVssColorPicker
+        Left = 176
+        Top = 107
+        Width = 21
+        Height = 21
+        TabOrder = 5
+        ExplicitLeft = 176
+        ExplicitTop = 107
+        ExplicitWidth = 21
+        ExplicitHeight = 21
+      end
+      inline cpkSubBgColor: TVssColorPicker
+        Left = 176
+        Top = 155
+        Width = 21
+        Height = 21
+        TabOrder = 6
+        ExplicitLeft = 176
+        ExplicitTop = 155
+        ExplicitWidth = 21
+        ExplicitHeight = 21
+      end
+      object txtFontPath: TsFontComboBox
+        Left = 176
+        Top = 7
+        Width = 325
+        Height = 22
+        Alignment = taLeftJustify
+        BoundLabel.Indent = 0
+        BoundLabel.Font.Charset = DEFAULT_CHARSET
+        BoundLabel.Font.Color = clWindowText
+        BoundLabel.Font.Height = -11
+        BoundLabel.Font.Name = 'Tahoma'
+        BoundLabel.Font.Style = []
+        BoundLabel.Layout = sclLeft
+        BoundLabel.MaxWidth = 0
+        BoundLabel.UseSkinColor = True
+        SkinData.SkinSection = 'COMBOBOX'
+        ItemHeight = 16
+        TabOrder = 7
+        OnChange = txtFontPathChange
+      end
+    end
+    object TabDvd: TsTabSheet
+      Caption = 'DVD'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 5
+      ParentFont = False
+      SkinData.CustomColor = False
+      SkinData.CustomFont = False
+      object chkUseDvdNav: TCheckBox
+        Left = 10
+        Top = 14
+        Width = 223
+        Height = 17
+        Caption = 'Enable Dvd Menus (experimental)'
+        TabOrder = 0
+      end
+      object chkDeinterlaceDVD: TCheckBox
+        Left = 10
+        Top = 38
+        Width = 223
+        Height = 17
+        Caption = 'Always deinterlace'
+        TabOrder = 1
+      end
+    end
+    object TabFileAssoxp7: TsTabSheet
+      Caption = 'Files Asso'
+      OnShow = TabFileAssoxp7Show
+      SkinData.CustomColor = False
+      SkinData.CustomFont = False
+      object Label2: TLabel
+        Left = 10
+        Top = 98
+        Width = 340
+        Height = 19
+        Caption = 'Configure File Associations for Windows 8'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Visible = False
+      end
+      object sBitBtnRegAss: TsBitBtn
+        Left = 376
+        Top = 169
+        Width = 129
+        Height = 41
+        Caption = 'Associate'
+        TabOrder = 0
+        OnClick = sBitBtnRegAssClick
+        SkinData.SkinSection = 'BUTTON'
+      end
+      object TFass: TsCheckListBox
+        Left = 24
+        Top = 16
+        Width = 297
+        Height = 281
+        BorderStyle = bsSingle
+        ItemHeight = 16
+        Items.Strings = (
+          '264'
+          '26l'
+          '3g2'
+          '3ga'
+          '3gp'
+          '3gp2'
+          '3gpp'
+          '3gpp2'
+          'aac'
+          'ac3'
+          'aif'
+          'aifc'
+          'aiff'
+          'amr'
+          'ape'
+          'asf'
+          'au'
+          'avi'
+          'awb'
+          'bdm'
+          'bdmv'
+          'bik'
+          'bin'
+          'cdg'
+          'clpi'
+          'cpi'
+          'cpk'
+          'dat'
+          'divx'
+          'dv'
+          'f4a'
+          'f4b'
+          'f4v'
+          'flac'
+          'flc'
+          'fli'
+          'flv'
+          'jsv'
+          'm1v'
+          'm2t'
+          'm2ts'
+          'm2v'
+          'm3u'
+          'm4a'
+          'm4b'
+          'm4v'
+          'mjpg'
+          'mka'
+          'mkv'
+          'moov'
+          'mov'
+          'mp1'
+          'mp2'
+          'mp2'
+          'mp3'
+          'mp4'
+          'mpa'
+          'mpc'
+          'mpe'
+          'mpeg'
+          'mpg'
+          'mpga'
+          'mpl'
+          'mpls'
+          'mpp'
+          'mpv'
+          'mts'
+          'mxf'
+          'nsa'
+          'nsv'
+          'nuv'
+          'oga'
+          'ogg'
+          'ogg'
+          'ogm'
+          'ogv'
+          'ogx'
+          'pcm'
+          'pls'
+          'pva'
+          'qcp'
+          'qt'
+          'qtvr'
+          'ra'
+          'ram'
+          'rec'
+          'rm'
+          'rmvb'
+          'roq'
+          'rv'
+          'smk'
+          'snd'
+          'spl'
+          'spx'
+          'str'
+          'swf'
+          'tak'
+          'trp'
+          'ts'
+          'ty'
+          'vdr'
+          'viv'
+          'vivo'
+          'vob'
+          'voc'
+          'vqf'
+          'w64'
+          'wav'
+          'webm'
+          'wma'
+          'wmv'
+          'wv'
+          'wvp'
+          'y4m')
+        TabOrder = 1
+        BoundLabel.Indent = 0
+        BoundLabel.Font.Charset = DEFAULT_CHARSET
+        BoundLabel.Font.Color = clWindowText
+        BoundLabel.Font.Height = -11
+        BoundLabel.Font.Name = 'Tahoma'
+        BoundLabel.Font.Style = []
+        BoundLabel.Layout = sclLeft
+        BoundLabel.MaxWidth = 0
+        BoundLabel.UseSkinColor = True
+        SkinData.SkinSection = 'EDIT'
+      end
+      object sBitBtnSelAll: TsBitBtn
+        Left = 376
+        Top = 35
+        Width = 129
+        Height = 41
+        Caption = 'Select All'
+        TabOrder = 2
+        OnClick = sBitBtnSelAllClick
+        SkinData.SkinSection = 'BUTTON'
+      end
+      object sBitBtnSelNone: TsBitBtn
+        Left = 376
+        Top = 98
+        Width = 129
+        Height = 42
+        Caption = 'Select None'
+        TabOrder = 3
+        OnClick = sBitBtnSelNoneClick
+        SkinData.SkinSection = 'BUTTON'
+      end
+    end
+  end
+  object imgLOpt: TImageList
+    Top = 400
+    Bitmap = {
+      494C010106000C00B40010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000002000000001002000000000000020
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000FEFEFE00E8E8E800EBEBEB00FCFCFC0000000000F8F8
+      F800E5E5E500F7F7F70000000000000000000000000000000000000000000000
+      0000FEFEFE00F1F1F100E8E9E900E6E6E700E6E7E700E9E9E900F2F2F300FEFE
+      FE00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000A0A0CC00282880005E5E8800C8C8C800F6F6F6005B5B
+      A8003D3D79009D9DA500E5E5E500FCFCFC00000000000000000000000000F1F1
+      F100DFE0E000E9E9E900F5F5F500FAFAFA00F8F8F800ECEDED00DDDEDE00DBDC
+      DC00F4F4F4000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000005959CD001D1DB5003030880051519F00CCCCCE005656
+      CF001A1A90004F4F8F007B7BA300F0F0F0000000000000000000EAEAEA00DEDE
+      DF00EAEAEA00EFEFEF00F4F4F400F7F7F700F4F4F400EAEAEA00E0E0E000D5D5
+      D500CECFCF00EDEEEE0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000007575D7003D3DCD005E5E9100DCDCE6006262B2006464
+      C2003131B300A1A1AB00E9E9EB00FEFEFE0000000000EEEEEE00D1D2D200E2E2
+      E200E9E9E900EEEEEE00F2F2F200F4F4F400F0F0F000E8E7E800DFDFDF00D4D4
+      D400C8C8C800C8C9C900F4F4F400000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000989898009494C5006161E90033338F00E3E3E300CEC8D1008761
+      6000533A77006A6A9000F4F4F40000000000FCFCFC00CCCAC700C0BCB600D6D3
+      CF00E6E5E300EBEBEB00EFEFEF00F1F1F100ECEBEC00E5E3E500DDDDDD00D4D4
+      D400C8C8C800BDBDBD00D2D3D300FEFEFE000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000FCFCFC00B1B1B5005A5BD2002021AA00B9B9BA00FCFCFC00F8C3
+      70006C558B0038388B00E3E3E30000000000ECECED00B1B2B400B5B7B900C0C1
+      C100D2D3CF00E7E3DF00E5E3E200D9D9D900CDCCCD00D9D7D900DBDADB00D2D2
+      D200C8C8C800BCBCBC00BABABB00F2F2F2000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000C3CED2006391A4005B8B
+      9E007896A200ADB3B500B5A48E00885E4B00774C4D007D634E00D6D3D000E5C6
+      79007E669B001F1F9000C9C9C900FEFEFE00DAD8DA00B5AEB600C0B8C000C9C1
+      CA00CEC7D200C9C9CE00C6C7C600CFD1D200C1C3C500B4B3B500D3D2D300D8D7
+      D800D3D3D300CDCDCD00BFBFBF00E4E4E4000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000F5F5F6004499BD0041A3CD00C8CF
+      D1003487A9003D89A90090A5AE00F4B86600EAA04C003D337B006D6DA600DDBD
+      7000503889000808A800A5A5AF00FCFCFC00D3D1D300BEBABE00C4C1C400CCC7
+      CC00D1CBD100B8B5B800CDD0D200F9F9FA00F7F7F700C3C7C800C6C5C600E2E0
+      E200DEDDDE00D9D8D900D4D4D400E1E1E1000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000F8F8F8006BB6D60054A3C400E3E4
+      E500358BB000378BAF00A2B4BC00F1BD6C00ECAB5B00937B60009F9FCA00DDB3
+      6E00A58F8700AE9E9C00C6C4CE0000000000D6D5D600C8C7C800CFCDCF00D3D1
+      D300D5D2D500B8B7B800D4D7D80000000000FDFDFD00CED1D300C5C3C500E4E1
+      E400E0DEE000DCDBDC00D8D7D800E2E2E2000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000CDD7DB0065A8C4004C8C
+      A6003990B2002B83A600D6DADB00F2C57100F1BA6700B3906900CAAE8D00E8BE
+      8C00CEB08C00D8B28600F6F6F60000000000DFDFDF00CBCBCB00D2D2D200D8D7
+      D800DAD9DA00C7C6C700BBBDBE00DBDEDE00DFE1E200CACCCC00D3D2D500E4E0
+      E500E2DFE200DFDCDF00DDDADD00E9E8E9000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FCFCFC005999B40082A9B8004C90
+      AB005EBDE8007CAABD00FDFDFD00F2C87300F6C36D00CCC6C100000000000000
+      000000000000000000000000000000000000EEEEEE00D0D0D000D5D5D500DADA
+      DA00DFDEDF00DFDFDF00C8C6C800BBBBBB00CECECE00DAD8D600E8E8E500E5E6
+      E600E0E0E200DEDDE100DDDCDF00F2F2F2000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000EAEEF00096C6D9008AC3
+      D800A4C7D600FBFBFB00FEFEFE00F2C57000F7C46D00CBC5BF00000000000000
+      000000000000000000000000000000000000FAFAFA00DADADA00D7D7D700D8D4
+      D000D5CBC200DDD8D300E6E5E700C9B6A600DEDDDB00D8CFC700DCD3CA00EDEA
+      E800ECEAE800E4E2E000E4E3E100FCFCFC000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FEFE
+      FE00DFD9D300FEFEFE00FEFEFE00F1BE6900F6BE6800CBC5BF0000000000EDEA
+      E600E8E6E50000000000000000000000000000000000EFEFEF00DBDBDC00C7B3
+      A000A7724100B7916D00C3A68A00A46C3700BB977500A8744300BB9A7B00AF80
+      5400E8E2DC00EDEDED00F3F3F300000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000B7916400E3E3E300FBFBFB00EFB46000F5B35F00C9C4BE00FCFCFC00CBA7
+      7D00D2CECB0000000000000000000000000000000000FDFDFD00EBEBEB00DBD5
+      D000AF825700B993700099591C00B9916B00C6A58600A8723E00BD9B7B00A774
+      4300D6CABF00F1F1F10000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000D79C5000C2823A00B5854C00E3963900E99B4000AF7D4200BC823E00D785
+      2C00DAD8D6000000000000000000000000000000000000000000FEFEFE00F0F0
+      F000DDD6CF00DDD4CC00DED6CE00E9E6E200F3F2F100E9E1D900E9E0D800EAE6
+      E200F3F3F300FEFEFE0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000F7F7F700F5F5F500F4F4F400F5F5F500F5F5F500F5F5F500F5F5F500F5F5
+      F500FEFEFE000000000000000000000000000000000000000000000000000000
+      0000FAFAFA00F2F2F200EDEDED00EDEDED00F0F0F000F2F2F200F5F5F500FBFB
+      FB00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000FDFDFD00EFEEEE00E4E3E300E2E1E100EAE9E900F9F9F9000000
+      00000000000000000000000000000000000000000000FDFCFC00EBDBD700ECD7
+      C500EAD5C400EDDFDD00FDFDFD00000000000000000000000000FCF9F900FBF7
+      F400FBF7F400FCF9F9000000000000000000FFFFFF00FFFFFF00E6E6E600E6E6
+      E600C0C0C000C0C0C000A4A0A000A4A0A0008080800080808000626262006262
+      62003E3E3E003E3E3E0026262600262626000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FEFE
+      FE00E4E4E400C6C7CB009EADCE00809BD6007B97D70090A4D100B7BDCA00D7D6
+      D600F8F8F80000000000000000000000000000000000F7ECE500DC955900EDAE
+      6C00EAAE7000D7A18200FAF7F7000000000000000000FAF8F800DCB6A300E6BD
+      9400E1B79000D6B4AC00FBF9F90000000000FFFFFF00FFFFFF00E6E6E600E6E6
+      E600C0C0C000C0C0C000A4A0A000A4A0A0008080800080808000626262006262
+      62003E3E3E003E3E3E0026262600262626009A9A9A007A7A7A007A7A7A007A7A
+      7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A
+      7A007A7A7A007A7A7A007D7D7D00919191000000000000000000FDFDFD00D7D7
+      D70097AED6003777E6001962EA00195FE9001A5DE9001A5BE8002762E6007090
+      DB00C1C4CC00F4F4F400000000000000000000000000EDC49C00BB590300E084
+      2800DD812500CC6C1A00F6DEC9000000000000000000F4DDC800D2762000E897
+      4300EA9D4D00D98B4900F8EDE50000000000FFFFFF00FFFFFF00E6E6E600E6E6
+      E600C0C0C000C0C0C000A4A0A000A4A0A0008080800080808000626262006262
+      62003E3E3E003E3E3E0026262600262626007F7F7F00C7C7C700C7C7C700C7C7
+      C700C7C7C700C8C8C800CCCCCC00D1D1D100D6D6D600DCDCDC00E3E3E300E9E9
+      E900EFEFEF00F4F4F400F2F2F200737373000000000000000000DEDDDD007CA3
+      DC001B6CEC001767EC001766EC001863EB001961EA00195FE9001A5CE8001B59
+      E8005380E000C4C7CF00F8F8F8000000000000000000F5E2D000B74F1200E59C
+      5E00E4995800B2470500ECC6A7000000000000000000EDCBAD00B34B0100DF86
+      3200DC822B00B44B0500EDC4A10000000000FFFFFF00FFFFFF00E6E6E600E6E6
+      E600C0C0C000C0C0C000A4A0A000A4A0A0008080800080808000626262006262
+      62003E3E3E003E3E3E0026262600262626007F7F7F00C7C7C700C9D3C900C5D9
+      C500CCD5CC00CFCFCF00D5D5D500DADADA00E0E0E00046464600EDEDED004646
+      4600F8F8F80046464600F7F7F7007373730000000000F1F1F100AABED9001E74
+      EE00156DEE00166CEE008AADE100387DEC001866EC001863EB001960EA001A5D
+      E9001B5AE8006B8EDD00DEDDDD00000000000000000000000000EFDAD300E0AC
+      8700E4AE8600D08E6300E9C5A6000000000000000000FCF9F600CC876600DC93
+      5B00E7A47000BB571A00E6BA9A0000000000FFFFFF00FFFFFF00E6E6E600E6E6
+      E600C0C0C000C0C0C000A4A0A000A4A0A0008080800080808000626262006262
+      62003E3E3E003E3E3E0026262600262626007F7F7F00C7C9C700B6D5B600029A
+      0200C8DDC800D8D8D800DEDEDE00E5E5E500EBEBEB0046464600F6F6F6004646
+      4600FEFEFE0046464600F7F7F7007373730000000000E0E0E0004E94EA001473
+      F0001472EF001571EF00DAE1EA00F1F3F6008CB2EC002570EC001864EB001961
+      EA001A5DE900245FE700B9C1D300FAFAFA000000000000000000000000000000
+      000000000000E9CBAF00EAC7A700000000000000000000000000FEFEFE00F7EC
+      E500F4E2D700EECFB800E5BD9D0000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF252500000000000000000081818100F2F2F200E7F1E700C4E6
+      C400E9F3E900F8F8F800F9F9F900FBFBFB00FCFCFC00FDFDFD00FEFEFE00FFFF
+      FF00FFFFFF00FFFFFF00F7F7F70073737300FEFEFE00CCD4DE001E80F1001378
+      F1001377F1001475F100DAE1EA0000000000FEFEFE00DFE7F200689AEA001B66
+      EB001960EA001A5BE8008AA3D900F1F1F1000000000000000000000000000000
+      000000000000E9CAAF00EBC7A800000000000000000000000000000000000000
+      000000000000F2D7C100E7C0A00000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF00006BFF6B00FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF2525000000000000000000ACACAC007A7A7A007A7A7A007F81
+      7F007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A
+      7A007A7A7A007A7A7A007D7D7D00AAAAAA00FDFDFD00BACDE100127EF300127D
+      F300127CF300137AF200DAE2EA00000000000000000000000000FCFCFC00C4D5
+      EF004480E9001A5EE9006E93DF00EDEDED000000000000000000000000000000
+      000000000000E9C9B000EAC5A800000000000000000000000000000000000000
+      000000000000F1D6C000E7C0A20000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF25250000000000000000004C4C4C00C1C1C100DFDFDF00D3D3
+      D300D5D5D500D6D6D600D8D8D800DADADA00DCDCDC00DEDEDE00E0E0E000E2E2
+      E200E4E4E400F5F5F500E6E6E60056565600FDFDFD00BFD2E2001184F5001082
+      F5001180F400117EF400DAE2EA00000000000000000000000000FCFCFC00B6CC
+      E900387AE5001960EA007197E000F0EFEF000000000000000000000000000000
+      000000000000E8C7AF00E8C1A800000000000000000000000000000000000000
+      000000000000F1D5C000E6BEA40000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF252500000000000000000031313100A5A5A500D2D2D200CECE
+      CE00D0D0D000D2D2D200D4D4D400D6D6D600D8D8D800DADADA00DCDCDC00DEDE
+      DE00E2E2E200F5F5F500CBCBCB003C3C3C0000000000D8E0E6002091F5000F86
+      F6001085F6001083F500DAE2EA0000000000FEFEFE00D6E2EF005695E500176D
+      EE001768EC001863EA0096B1DE00F7F7F7000000000000000000000000000000
+      000000000000E7C7B000E7BEA800000000000000000000000000000000000000
+      000000000000F0D4C000E4B9A40000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF2525000000000000000000161616008F8F8F00C3C3C300B5B5
+      B500C9C9C900CECECE00D0D0D000D2D2D200D4D4D400D6D6D600D8D8D800DADA
+      DA00E4E4E400F4F4F400A7A7A7002222220000000000F0F0F0005CAFF1000E8B
+      F8000E89F7000F87F600DAE2EA00EDF1F4007AAFE7001A7AEE001473F000166F
+      EF00176AED002972EB00CED6E100000000000000000000000000000000000000
+      000000000000E8C7B000E8BEA800000000000000000000000000000000000000
+      000000000000F0D3C000E3B7A40000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF25250000000000000000000101010073737300C4C4C400ADAD
+      AD00AEAEAE00BEBEBE00CACACA00CECECE00D0D0D000D2D2D200D4D4D400D6D6
+      D600E7E7E700F0F0F000838383000A0A0A0000000000FCFCFC00C8DBE9001E98
+      F8000D8DF9000E8BF80080B1DD00278AED00117EF400127AF2001475F0001570
+      EF00166CEE0083ACE400F2F2F100000000000000000000000000000000000000
+      000000000000E8C6B000E8BFA900000000000000000000000000000000000000
+      000000000000F0D3C000E3B6A40000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF25250000000000000000000000000059595900BABABA00B2B2
+      B200AAAAAA00ABABAB00ACACAC00B5B5B500BFBFBF00C8C8C800CACACA00CFCF
+      CF00EBEBEB00DEDEDE0069696900000000000000000000000000F6F6F600A3CE
+      EC001C98F8000E8CF8000F88F7001083F500117EF400127AF2001475F0001472
+      F0006FA6E900E9EAEB0000000000000000000000000000000000000000000000
+      000000000000E8C7B100E8BCA500000000000000000000000000000000000000
+      000000000000F0D3C000E4B9A40000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF2525000000000000000000000000003C3C3C00ABABAB00B9B9
+      B900A9A9A900AAAAAA00AAAAAA00ABABAB00ACACAC00ADADAD00AEAEAE00B0B0
+      B000C3C3C300B2B2B2005050500000000000000000000000000000000000F7F7
+      F700C3DBEC0050ADF4001891F7000F86F6001081F5001380F3003691F10098C0
+      E900EEEEEE00FEFEFE0000000000000000000000000000000000000000000000
+      000000000000ECCEB400D27E3600DD9B5F00EAB27E00F0C29800F2CBA900F3D0
+      B300F3D3B900E7B48A00E4BBA40000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF2525000000000000000000000000001D1D1D0094949400BEBE
+      BE00A9A9A900A9A9A900AAAAAA00AAAAAA00ABABAB00ACACAC00ADADAD00B3B3
+      B300C2C2C2009A9A9A0032323200000000000000000000000000000000000000
+      0000FCFCFC00F3F3F200D6E4EC00B4D5EC00ACD1EC00C6DCEC00EAECEE00F9F9
+      F900000000000000000000000000000000000000000000000000000000000000
+      000000000000EBCBB800BA521500AE440200C1600700DA781D00E2842C00DE80
+      2700CD6F1500BB5B0800E3BAA30000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF25250000000000000000000000000000000000494949007676
+      76007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A7A007A7A
+      7A00797979005050500003030300000000000000000000000000000000000000
+      0000000000000000000000000000FDFDFD00FDFDFD0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000F9F1ED00EDCCB900E5B9A000E1B08E00E1AA7E00E0A16D00D790
+      5500C8733800BD5F2500EDD2C50000000000FFFFFF00FFFFFF0000FFFF0000FF
+      FF00FFFF0000FFFF000000FF000000FF0000FF8EFF00FF8EFF000000FF000000
+      FF00FF252500FF25250000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000200000000100010000000000000100000000000000000000
+      000000000000000000000000FFFFFF00FC23F00F00000000FC00E00700000000
+      FC00C00300000000FC00800100000000F801000000000000F801000000000000
+      8000000000000000000000000000000000010100000000008001000000000000
+      003F000000000000803F000000000000E027800100000000F007800300000000
+      F007C00300000000F007F00F00000000F81F81C30000FFFFE007818100000000
+      C003818100000000C0018181000000008001C181000000008000F9C100000000
+      0100F9F90000000001C0F9F90000000001C0F9F9000000008100F9F900000000
+      8001F9F9000000008001F9F900008001C003F9F900008001E003F80100008001
+      F00FF8010000C001FE7FF8010000FFFF00000000000000000000000000000000
+      000000000000}
+  end
+  object imgListDrive: TImageList
+    Left = 32
+    Top = 400
+    Bitmap = {
+      494C010108000A00B40010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000003000000001002000000000000030
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000665050005B45
+      44005D4A4A005D4A4A005D4A4A005D4A4A005D4A4A005D4A4B005D4949005D49
+      48005D4948005B45440060555500000000000000000000000000000000007B77
+      770087807F00877776004674B80042B9F3003D88CF0078717F008F8480006C66
+      66006F6F6F000000000000000000000000000000000000000000000000000000
+      000000000000878B860051605200415941003D553E00505B5000959595000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00001A1A1A003C3F3D004C514D004D534F00484D4B003E4340002C2E2D000000
+      00000000000000000000000000000000000000000000953B3100DE885400DA78
+      4A00C7939000CAABAE00CAA5A600CA9F9F00CAA0A000C9A3A600C6969400D97C
+      4D00DE783C00E47D3C00A6452800645A5A00000000000000000000000000ADAB
+      AB00D5CFCE00D1C4C30071B1EA0079E4FF0063B6F100B6B5C400E0D5D300A9A5
+      A50096969600000000000000000000000000000000000000000000000000888C
+      88003F654000489E4A004FBB50005ACA5E005AC75E0073BD79004F8858002441
+      2700A0A0A000000000000000000000000000000000000000000007070700484B
+      4900646C6700AAB9B000C2D3C800CCDED300CBDDD200BDCEC4009FADA4004849
+      48002828280000000000000000000000000000000000C0573E00FFC96F00F999
+      4F00D8BFBD00D7C0BD00D9C4C100DCD4D500DCD2D200DBD6DA00D8C8C500FA99
+      5000FF963300FFA03300E0783B005A4748000000000000000000000000000000
+      000000000000000000008190A100A6C2DF003F516500A7A7A700000000000000
+      0000000000000000000000000000000000000000000000000000667261007BAA
+      7F00DBF8DF00C9FBC900C9F7C900D1F8D100DBFBDA00F6FFF700F3FFF700A9DC
+      B400265C2D00858585000000000000000000000000000707070060636100A4B2
+      A900D7EADE00D2E5D900CCDED300C8DACE00C7D9CD00C6D8CD00D4DFD800EFEF
+      EF009E9E9E0033323100000000000000000000000000B7543B00FFBC6A00EA8F
+      4E00D2C4C300D75C4200DD857000DDE1E300DFD4D400DFDADD00DAC8C500F07B
+      3D00FF872F00FF983500D77038005E4C4C00938D8D006E666600696161006C64
+      64006D6565006B65650085787500CDB9B50082726F00625B5A006A6364006A64
+      64006D65660073686B005B5354009392920000000000787F750072B47300D4FF
+      D900C4F2C300B3ECB200ACEAAC00AAE9AA00AEEAAE00B6EBB500C8F2C700F1FF
+      F100C3F2CE00255E2C00A2A2A200000000000000000056565600C1C1C100E3F0
+      E800D2E5D900CFE1D600CCDED300C9DACF00C6D8CD00C5D7CC00D9DDDA00DFDF
+      DF00ECE8E1009D9487002D2B29000000000000000000B7523900FFBE6F00E694
+      5300DCD4D300C8624C00D88E7B00EBF3F600E9E5E500E9ECEF00E4D7D500EF6F
+      3400FE852F00FF9D3C00D77037005E4C4B00BFB2B200F2F0F000E2E0E000DDDB
+      DB00DCD9D900CECCCC00D3D2D200E7E6E600EEECEC00F2F1F100F2EFEF00F4F1
+      F100E4E9E200C7E6CA00D0CBCA00605A5B00000000004883400085DF82009FEB
+      9F0087E087007CDE7C0078DD780077DD76007BE07C0086E7880094E79500A0E2
+      9E00D7FBD70096E1A30028452C00000000003030300030303000303030003030
+      300030303000303030003030300030303000303030003030300030303000DFDB
+      D600DED2BF00EFE1CD0049443F000000000000000000B7513800FFC17200E395
+      5800E0DFE100E0DBDB00E4E3E400EFF9FF00EDF6FD00EDFFFF00E7E6E900EC59
+      2700FB7F2E00FFA24200D77036005E4B4B00D0C7C700EEF0F000D2D3D300D5D6
+      D600D5D6D600C3C4C400CFD0D000F4F5F400F1F2F200F1F2F200F1F2F200F3F3
+      F300E9EEEA00DCEEE000E2E0DF0067616200697761004BA03D0052A7420070DF
+      720060D9600056D4560052D4520052D853004EC4490047A1360065D1630077DB
+      770070BB640062AC5200378540009596950030303000D4D4D400DADADA00C4C4
+      C40030303000A2A2A20030303000E4E4E400DADADA00A2A2A20030303000DDD0
+      BE00DDD1BE00E8DBC700B6AB9C00302E2C0000000000B74F3600FFC47900ED9E
+      5A00DCA88300E6BC9A00E4B69400E4AF8A00E9B08A00EDB28D00F0A67D00F462
+      2000FD842F00FFA24300D76F38005E4B4B00CBC2C200E5E6E600DBDCDC00DFDF
+      DF00DFDFDF00E0E0E000E1E0E000E0E0E000DFDFDF00E0E0E000E0E0E000E0E0
+      E000E1E0E100EFECEF00E1DDDD0068636300507940003D8525002E660C003C93
+      280043CF43003BCF3C0037CD370038D33A00349723002D5F09003A90260061E0
+      63004EA840004D9235005CB763005162550030303000DADADA0030303000A2A2
+      A200A2A2A200DADADA00DADADA00DADADA0030303000DADADA0030303000E1D4
+      C100E2D5C200E4D7C400D8CCB90046423C0000000000B74E3200FFC68300FEC1
+      8C00FAB77F00F9B37900F8B17600F9AF7200F9AD6F00FAAB6B00FAAA6A00FAB1
+      7400F9B07300FFAD5C00D76F34005E4B4A00C3B8B800F7F8F800F1F1F100F0F0
+      F000EEEFEF00EEEEEE00ECEDED00EAEBEB00E9E9E900E8E8E800E7E7E700E5E5
+      E500E3E3E300EBECEC00CFCACA006C676700477E3600376B1600315408003153
+      090033A4250034D3370037D53A0037D93B00347E1A0033570C00315A0B003FA4
+      30004FC94B006CBF60006FD67900435C470030303000DADADA0030303000A2A2
+      A200C4C4C400C4C4C400DADADA00DADADA0030303000DADADA0030303000DFD5
+      C600DCD4C900DCD4C900E6E1D800504D4B0000000000B84B2C00FFCA8E00F6F1
+      EB00F9FBFC00F9F9F900F9F9F900F7F8F800F6F5F600F5F3F300F4F0EF00F4ED
+      EB00ECE9ED00FBC08500D96B29005E4B4900B6A8A800FFFFFF00FFFFFF00F9FA
+      FA00F6F7F700F3F3F300EEEFEF00EAEBEB00E7E7E700E2E3E300DEDEDE00D9DB
+      DB00D6D6D600DDDEDE00A8A2A200828080004682360035530E00324002003477
+      180039C535003FD641003DBB360038A229002D5507002C450100304704003359
+      0D003B9427004A9C360051AE4F004462480030303000D4D4D400DADADA00C4C4
+      C400A2A2A20030303000A2A2A200E4E4E400DADADA00A2A2A20030303000E2E2
+      E200DFDFDF00E0E0E000E8E8E8005454540000000000B84A2B00FFCA8D00F7F2
+      EB00FFFFFF00FFFFFF00FFFFFF00FFFCFC00FFFAF700FFF6F200FFF3EC00FFF1
+      EA00F4EEED00F9BD8200D96B2B005E4A4800AD9F9F00DFD5D500E3D9D900DCD3
+      D300DBD1D100DAD0D000D7CECE00D5CCCC00D4CBCB00D3CACA00D1C9C900CFC8
+      C800D0C9C900D7D0D000877D7D00ADACAC00477F360039811F0031A0220036CE
+      37004ADD4F005BC054004E5F27004F5325004D562500444C1B00343E08002A42
+      00002F490300394A0D003B852F00526D57003030300030303000303030003030
+      300030303000303030003030300030303000303030003030300030303000F7F7
+      F700F3F3F300EFEFEF00DEDEDE004F4F4F0000000000B84A2A00FFCA8E00F6EE
+      E800FEFFFF00FFFEFD00FFFAF800FFF6F300FFF3EE00FFF0E900FFEDE500FFF1
+      EB00F3EEED00F8BD8200D96B2B005E4A4800B2A6A600B7A1A100C6B0B000C1AC
+      AC00C2ADAD00C3AEAE00C4B0B000C6B3B300C8B6B600CBB9B900CEBDBD00D1C1
+      C100D9CBCB00D6C3C3006D5F5F00000000005979440034A02B0035C732006EE3
+      7000A6ECA700B7D9B000A5A59000A4A69000A7AB9300A4A98F0093987B006771
+      4800303509002E3E09003290340089948B0071717100E3E3E300E3E3E300D9D9
+      D900D8D8D800F1F1F100F3F3F300E7E7E700F1F1F100F1F8F900D4F1F500E2F6
+      FA00EDF8F900F9FBFB00C3C3C3003D3D3D0000000000B8492A00FFCA8E00F5ED
+      E600FEFFFF00FFFAF700FFF7F300FFF3EE00FFEFEA00FFEDE600FFEFE900FFF4
+      F000F2EEEE00F8BC8200DA6C2D005E4A4800C4BCBC00AB979700CAB5B500C6B2
+      B200C6B3B300C8B4B400CAB7B700CBB9B900CDBCBC00D1C0C000D3C4C400D7CA
+      CA00DFD2D200C9B5B5005B51510000000000989D8600328F2D007CBA7600D2F6
+      D100D9F7D900E3FDE300DDF2DD00BDCFB700BDD2B800BED7BA00BBD2B600BCCC
+      B60094A48800358E3000267332000000000000000000BEBEBE00F4F4F400DCDC
+      DC00F3F3F300FFFFFF00E5E5E500D8D8D800F4F4F400FBFCFC00D8F1F500D7F4
+      F900D9F6FB00D9F6FA00677071000000000000000000B94B2B00FFCE9300F4ED
+      E700FEFFFF00FFFAF800FFF7F200FFF4EE00FFF1EB00FFF4EF00FFF7F400FFFB
+      FA00F3F4F600EDB27900D36423005D484500000000009C888800C6B1B100C7B3
+      B300C7B3B300C9B6B600CBB9B900CDBCBC00D0BFBF00D2C3C300D5C8C800DBD0
+      D000DDD1D100B09C9C005F58580000000000000000004B773A0085D38C00D2E6
+      D100D5ECD400E6F7E600F6FEF600D5E8D500BDD8BE00BFD8BE00C1DAC100CFDB
+      CC00A4DAA6002C9F390086918700000000000000000074747400DDDDDD00FAFA
+      FA00FFFFFF00FBFBFB00DDDDDD00DCDCDC00F0F0F000FEFEFE00E6F6F900D6F4
+      F800DBF8FD00A0B6BA00465153000000000000000000B6432500FFD59400FAF6
+      E800FFFFFE00FFFFF800FFFDF200FFFBEF00FFFDF300FFFFF700FFFFF900FFFF
+      FC00F8FBF600F3BD7E00D3602100685252000000000092808000C3ADAD00CFBB
+      BB00D0BEBE00D1BFBF00D4C3C300D7C7C700DBCBCB00DED0D000E1D6D600E9DE
+      DE00DDCBCB00988484007A77770000000000000000000000000047873D00A6E9
+      AF00E5F3E700E6EEE600EEF4ED00E4F0E300D8E6D700DEE8DD00EBF1EA00C4F6
+      C70043B650005C7C6000000000000000000000000000000000008F8F8F00DDDD
+      DD00FEFEFE00F7F7F700E2E2E200E1E1E100ECECEC00FCFCFC00F6FCFE00D9F6
+      FB00A6BCC0005B696A00000000000000000000000000B4585300B7452800B954
+      4200B7544600B7524400B7524300B7524300B7524300B6524400B5514400B551
+      4400B3524300C249280096301E000000000000000000A89D9D0099858500A795
+      9500A9999900A99A9A00AC9C9C00AD9E9E00B0A2A200B2A5A500B4A8A800B8AB
+      AB00AB9797007A6C6C0000000000000000000000000000000000000000005081
+      46008FCE9400E1FCE800FCFFFF00FFFFFF00FBFFFE00EAFFEF00AAEAB2003E9D
+      48006B8D6E000000000000000000000000000000000000000000000000007474
+      7400BCBCBC00E2E2E200EEEEEE00F2F2F200F5F5F500F1F1F100D6D7D7008393
+      9500546062000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00008CA58400588A52006DA46C007DB5800071AF740051955300558458000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000006F6F6F0097979700A7A7A700A5A5A50091919100616161000000
+      000000000000000000000000000000000000A2A2A20055555500515151005252
+      5200525252005252520052525200525252005252520052525200525252005252
+      5200525252005050500049494900AAAAAA000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000D8DA
+      D70057625400ADADAD0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000814B4B00814B4B00814B4B00814B4B00814B4B00000000000000
+      00000000000000000000000000000000000081818100E2E2E200DDDDDD00DADA
+      DA00DADADA00D8D8D800D8D8D800D7D7D700D7D7D700D5D5D500D5D5D500D4D4
+      D400D3D3D300E0E0E000999999004B4B4B009B969300746F6C00575352004D49
+      4800514F4E005E5C5C005C5C5C00575959005C5E5E004C4E4E004B4D4D00575A
+      580052555300565A5500686965009FA09C000000000000000000DFE0DE002C56
+      1F001C80410017402C00BCBCBC00000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000A48A
+      8A00814B4B00BC7C7B00DAA09D00E2B5AD00DEADA500CB918A008F545100522F
+      3100A2A2A200000000000000000000000000ADADAD00FFFFFF00F4F4F400F3F3
+      F300F3F3F300F1F1F100F0F0F000EEEEEE00EDEDED00EBEBEB00EAEAEA00E8E8
+      E800E5E5E500F5F5F500C6C6C6004F4F4F00A3A4A200BEBFBD00C6C6C600C4C4
+      C400C5C7C700BDBFC000B9BDBE00C9CDCE00C5CACB00BDC2C300C9CECF00D0D6
+      D500C4CAC900AFB5B4009DA3A2006168650000000000E7E7E60028541F00305A
+      02003080600004A6A800173C2A00B9B9B9000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000087666700BB80
+      8000FBE4E400FFE9E600FFD9CF00FFE9D900FFE8D600FFE7D500FFDACA00DC9A
+      91006B313100818080000000000000000000AAAAAA00FBFBFB00EAEAEA00EBEB
+      EB00EAEAEA00E8E8E800E7E7E700E6E6E600E4E4E400E3E3E300E2E2E200E0E0
+      E000DEDEDE00ECECEC00BDBDBD0050505000ABADAE00ECEEEF00F0F2F300DBDD
+      DE00D0D4D500BDC1C200CCCFD300F5FAFD00FAFFFF00F5FCFF00F8FFFF00F4FC
+      FC00EFF7F700E7EFEF00D3DBDB0048504F00E5E5E4002F522600325F1200475C
+      1B0039470000227A6300059EA700173A2900B9B9B90000000000000000000000
+      0000000000000000000000000000000000000000000094777800D3979900FFFF
+      FF00FFFEFC00FFE9E700FFCDC300FFD8C900FFDAC900FFD7C600FFDAC700FFE5
+      D100F4B5A70069302F00A3A3A30000000000ACACAC00FCFCFC00EDEDED00EDED
+      ED00ECECEC00EAEAEA00E9E9E900E8E8E800E6E6E600E5E5E500E4E4E400E2E2
+      E200E0E0E000EEEEEE00C0C0C00051515100BFC0C400F8F9FD00DDDEE200C7C8
+      CC00D7D8DC00CDD0D400D3D6DA00E4E9EC00DFE4E700D0D5D800D9DEE100DEE3
+      E600DCE3E600D5DCDF00D3DADD0061696900325222001F4D0300485319004B5A
+      1F00495D3700647037002F8569000A9BAC0016392C00B9B9B900000000000000
+      00000000000000000000000000000000000000000000B5696900FFF0EF00FFFB
+      F900FFF0EF00FFEFEE00FFD9D100FFDCCC00FFE0CE00FFD8C700FFD3C100FFD4
+      C100FFE3CC00DC948700512E2E0000000000ADADAD00FDFDFD00EEEEEE00EEEE
+      EE00EDEDED00EBEBEB00EAEAEA00E9E9E900E7E7E700E6E6E600E5E5E500E3E3
+      E300E1E1E100EFEFEF00C1C1C10051515100A5A0A200EBE8EA00E2DDDF00E4DF
+      E100FFFDFF00F7F2F400ECE9EB00DEDCDC00E6E5E700E8E7E900EBEAEC00E3E5
+      E600EBEDEE00F0F4F500C8CCCD00585C5D003C672400324F0D0043480F00494F
+      320054545D006674740060713300227C64000894AA00163A2D00B7B7B7000000
+      0000000000000000000000000000000000009A6B6C00F1BBB900FFDCD700FFDB
+      D800FFEEED00FFF7F500FFD4D100FFB9B200FFC6BB00FFD8C700FFD6C400FFD2
+      BE00FFD6C100FFD0BA00904C470097949400AEAEAE00FDFDFD00F0F0F000EFEF
+      EF00EEEEEE00ECECEC00EBEBEB00EAEAEA00E9E9E900E7E7E700E6E6E600E4E4
+      E400E3E3E300F0F0F000C3C3C30052525200B7A9AB00FFFDFF00FFFBFC00FFF2
+      F300FFF6F400F5E8E600FFF4F200F5E9E500F3E7E500FAEEEC00E4DBD800CDC4
+      C100DDD5D500FAF5F400B9B3B400706A6B00ECEFE900406529003B5C18007470
+      60005E5B5E0058585D006371720059702E0031866F00078C9F0017371B00BCBC
+      BC0000000000000000000000000000000000B9727200FFEFE900FFE4DC00FFD2
+      CB00FFD9D200FFCBCA00FDAAAF00FEC0C300FDAEB400FEAFAB00FFD6C300FFD3
+      BF00FFD0BC00FFDAC300CC86790067555600B0B0B000FEFEFE00F1F1F100F1F1
+      F100F0F0F000EEEEEE00EDEDED00ECECEC00EAEAEA00E9E9E900E8E8E800E6E6
+      E600E4E4E400F2F2F200C5C5C50052525200A8909000FFEFED00FFF5F300FFF2
+      EE00FFEEEA00F9DFD900FFF0E900F3DCD400F0D9D100F0DBD300EDD7D100F2DE
+      D900F1DED900DFCECB008F807D009C8D8B0000000000EEF0EB0042642C004369
+      2400767761006E6A6E006B69730066716C00426A0A0025803500089B75001640
+      3000B7B7B700000000000000000000000000CB878500FFF7EE00FFEBE200FFE9
+      DE00FFD8CD00FFA9AA00E2B6BA00A87F7F00CDAAAB00FDAEB300FFC1B500FFD6
+      C200FFCFBB00FFD9C200DF9E8E0064484800B1B1B100FFFFFF00F3F3F300F2F2
+      F200F2F2F200F0F0F000EFEFEF00EDEDED00ECECEC00EAEAEA00E9E9E900E7E7
+      E700E6E6E600F3F3F300C6C6C60052525200AD8A8600E5C2BE00EFCBC500E8C4
+      BC00EAC6BC00EEC8BC00EDC8BA00E9C4B600F5D0C200DDBAAC00E4C2B500E5C5
+      BA00E8CBC200DEC2BB0092787200CEB4AE000000000000000000F3F4F1003D66
+      29003F6C1D007B7C65007875770042652600447124006387330033A4700006A7
+      AB00163E2A00BABABA000000000000000000CD8C8900FFF5ED00FFE8DF00FFEA
+      DF00FFD8CE00FFB3B600D2B2B30064191800A87F7F00FDC0C500FFB8AE00FFD7
+      C100FFCFBB00FFD8C200E2A29200664B4A00B2B2B200FFFFFF00F4F4F400F4F4
+      F400F3F3F300F1F1F100F0F0F000EFEFEF00EDEDED00ECECEC00EBEBEB00E9E9
+      E900E7E7E700F3F3F300C8C8C80052525200BD938E00CAA09900E4BBB200E5BB
+      AF00E9BDB000EBBEB000F6C8B700F6C8B600E3B5A300EBBFAE00FCD1C200FBD4
+      C600F4CEC200E4C1B70077564D0000000000000000000000000000000000EEEF
+      EB0040662800437221004D702700426D27006A6C6C00708081005E8932001F98
+      5F00059EA900153C2F00BCBCBC0000000000C7807F00FFF4ED00FFEAE100FFE7
+      DC00FFE3DB00FFB0B200EEB2B600D2B2B300E2B7B900FDA8AD00FFCBC400FFD4
+      C300FFCFBA00FFDBC400DB978A006F565600B5B5B500FFFFFF00F6F6F600F5F5
+      F500F5F5F500F3F3F300F2F2F200F0F0F000EFEFEF00EDEDED00ECECEC00EBEB
+      EB00E9E9E900F6F6F600C9C9C9005252520000000000BE928B00F2C4BC00F5C8
+      BB00F4C5B700EABAA800F5C3AF00F1BFAB00FFD6C200FFD6C100F5C7B500EFC4
+      B500ECC5B700E2BBB2006D484000000000000000000000000000000000000000
+      0000F3F4F1003E6827002D7408007A8863007A717B005F5D6400617370005588
+      2D00239966000495AB0014402F00AAABAA00C1717100F8E4DE00FFF0E600FFE3
+      DC00FFE5E100FFD7D500FFAFB200FFB2B700FFADB100FFCACC00FFE5E400FFD8
+      D300FFCABC00FFD1BC00BD756B00938A8A00B5B5B500FFFFFF00F7F7F700F6F6
+      F600F6F6F600F4F4F400F3F3F300F1F1F100F0F0F000EEEEEE00EDEDED00EBEB
+      EB00EAEAEA00F7F7F700CBCBCB005353530000000000966E6900DCB2AB00EEC4
+      B800FBCEC000F3C5B300FFD1BC00F9CAB500F0C1AC00F2C5B000EDC3B000F9D2
+      C300F5CFC300C6A29A0075534D00000000000000000000000000000000000000
+      000000000000F3F4F1003F6E2B00468828007B87650064606300524F5A005A66
+      66004185110027A052001995400056665600CE919200DDACA600FFF9F200FFE5
+      E200FFE3E000FFE6E200FFE3DF00FFD4D200FFDBD900FFEBEA00FFE8E700FFE6
+      E600FFE3DF00FDB7AB0080423F0000000000B7B7B700FFFFFF00F9F9F900F8F8
+      F800F8F8F800F6F6F600F4F4F400F3F3F300F2F2F200F0F0F000EFEFEF00EDED
+      ED00EBEBEB00F9F9F900CDCDCD0054545400000000009B7E7A00D2B2AD00E0BF
+      B600F2CFC200EDC9B900FCD4C200F2CAB700FBD3C000FFDBC900FFE2D200FFE8
+      DA00DFC2B9008D736D009A847F00000000000000000000000000000000000000
+      00000000000000000000EBEEE80038742900438C2400707C5900574E59005369
+      46005CA53500309F05002B6C2500D5D7D50000000000BB656300F3DDD700FFFD
+      FA00FFEBE800FFE9E500FFEBE600FFECE700FFE6E300FFEAE900FFEEED00FFF7
+      F600FFFEFD00C07875009B89890000000000B9B9B900FFFFFF00FBFBFB00F9F9
+      F900F8F8F800F6F6F600F4F4F400F3F3F300F2F2F200F1F1F100EFEFEF00EDED
+      ED00EBEBEB00F7F7F700CFCFCF005454540000000000A08B8D00AE999700AD95
+      8F00B79E9400B4998B00BDA09100B89A8900B89C8B00AF958500AD958900B7A3
+      9800AA98910080716E00D3C7C700000000000000000000000000000000000000
+      0000000000000000000000000000F6F7F5003A762B00408D2300598036006DAD
+      4B004CB0350025632600E2E3E2000000000000000000E6C9C900BF6D6B00F3E2
+      DF00FFFFFF00FFF9F700FFF4EF00FFF2ED00FFEDE900FFF4F200FFFFFF00FFF8
+      F800D2969500866868000000000000000000BABABA00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FDFDFD00FCFCFC00FAFA
+      FA00F9F9F900FFFFFF00D3D3D300555555000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000EDF0EB00397B2F00329C14003096
+      21002A612A00E0E1E00000000000000000000000000000000000E6C7C800BC64
+      6500DDAFAE00F7E9E800FFFDF800FFFFFB00FFF8F300FFF0ED00ECCACA00B573
+      73009879790000000000000000000000000095959500C2C2C200C2C2C200C1C1
+      C100C1C1C100C1C1C100C1C1C100C1C1C100C2C2C200C2C2C200C2C2C200C2C2
+      C200C4C4C400CACACA008F8F8F00A0A0A0000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000EEF2ED0036822D002C66
+      2800E9EAE9000000000000000000000000000000000000000000000000000000
+      0000CD908F00C0716F00C8807E00CD8A8700CB817F00B96D6C00A36C6C000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000300000000100010000000000800100000000000000000000
+      000000000000000000000000FFFFFF0000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000C001E007F81FF01F8000E007E007C007
+      8000FC3FC0038003800000008001800180000000800100018000000000000000
+      8000000000000000800000000000000080000000000000008000000000000000
+      80000001000000008000000100018001800080018001800180008001C003C003
+      80018003E007E007FFFFFFFFF01FF81F0000FFFFE3FFF83F00000000C1FFE007
+      0000000080FFC00300000000007F800100000000003F800100000000001F0000
+      00000000000F0000000000008007000000000000C003000000000001E0010000
+      00008001F000000000008001F800000100008001FC00800100008001FE018003
+      0000FFFFFF03C0070000FFFFFF87F01F00000000000000000000000000000000
+      000000000000}
+  end
+end

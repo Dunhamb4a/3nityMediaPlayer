@@ -1,0 +1,16 @@
+Specification
+
+The format is essentially that of an INI file structured as follows:
+
+Header
+[playlist] : This tag indicates that it is a Playlist File
+
+Track Entry
+Assuming track entry #X
+FileX : Variable defining location of stream.
+TitleX : Defines track title.
+LengthX : Length in seconds of track. Value of -1 indicates indefinite.
+
+Footer
+NumberOfEntries : This variable indicates the number of tracks
+Version : Playlist version. Currently only a value of 2 is valid.
