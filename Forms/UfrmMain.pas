@@ -46,7 +46,7 @@ uses
   OtlTask,
   OtlTaskControl,
   OtlEventMonitor,
-  ZLibExGZ, sBitBtn, dxGDIPlusClasses ;
+  ZLibExGZ, sBitBtn, dxGDIPlusClasses ; // you can remove dxGDIPlusClasses ;
 
 function SetThreadExecutionState(esFlags:Cardinal):Cardinal; stdcall; external 'kernel32.dll';
 function TAGCoverMP3(value: widestring): Boolean; stdcall;external 'aart.dll';
