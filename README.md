@@ -63,9 +63,11 @@ And adds this ones:
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 }
-{Special Note for Developers:
 
+{Special Note for Developers:
+ =========================== 
     This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( i'm using XE7 )
     You will need to install Alphaskin and OmniThreadLibrary components.
     For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
 }
+
