@@ -329,11 +329,12 @@ type
     procedure MUpdateClick(Sender: TObject);
     procedure MRestoreWindowsClick(Sender: TObject);
     procedure MRadiosClick(Sender: TObject);
-    procedure OTLMonitorTaskMessage(const task: IOmniTaskControl);
     procedure OTLMonitorTaskTerminated(const task: IOmniTaskControl);
     procedure LoadRadios;
     procedure Timer1Timer(Sender: TObject);
     procedure BAudioEquClick(Sender: TObject);
+    procedure OTLMonitorTaskMessage(const task: IOmniTaskControl;
+      const msg: TOmniMessage);
 
   private
     { Private declarations }
@@ -3894,7 +3895,7 @@ var
   RetryAttempt: integer;
   DecompStream:tstream;
 begin
-
+  result:=true;
   RetryAttempt:=1;
   HTTPSender:=THTTPSend.Create;
   HTTPSender.Headers.Add('Accept-Encoding: gzip,deflate');
@@ -3971,13 +3972,11 @@ begin
      task.Comm.Send(MSG_RESULT_THREAD, 'ko');
   end;
 end;
-procedure TfrmMain.OTLMonitorTaskMessage(const task:
-  IOmniTaskControl);
-var
-  msg        : TOmniMessage;
+procedure TfrmMain.OTLMonitorTaskMessage(const task: IOmniTaskControl;
+  const msg: TOmniMessage);
 begin
-  task.Comm.Receive(msg);
-  task.Comm.Receive(msg);
+  //task.Comm.Receive(msg);
+  //task.Comm.Receive(msg);
   if msg.MsgID = MSG_RESULT_THREAD then
   begin
      if msg.MsgData.AsString='ok' then
