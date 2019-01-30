@@ -267,7 +267,11 @@ begin
   mpo := frmMain.mpo;
 //  vis := frmMain.VisEffects;
   with INI do begin
+    try
     opt.DefaultLocale:=ReadInteger(SECTIONNAME,'Locale',AutoLocale);
+    except
+    opt.DefaultLocale:=AutoLocale;
+    end;
     mpo.AudioOut := Unmap(AudioOutMap,mpo.AudioOut,ReadString(SECTIONNAME,'AudioOut',''));
     mpo.AudioDev:=ReadInteger(SECTIONNAME,'AudioDev',mpo.AudioDev);
     mpo.AudioFilterChannels := ReadString  (SECTIONNAME,'AudioFilterChannels',mpo.AudioFilterChannels);

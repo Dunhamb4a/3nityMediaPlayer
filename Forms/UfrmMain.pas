@@ -601,7 +601,7 @@ begin
   mpo := Tmplayer.create;
   VisEffects := TVisEffects.Create(VIS_WIDTH, VIS_HEIGHT);
   VisEffects.bmExt :=   imgvis.Picture.Bitmap;
-  Config.Load(mpo.mplayerPath+'autorun.inf');
+  //Config.Load(mpo.mplayerPath+'autorun.inf'); //only for usb.. correct later
 
   //sSkinManager1.SkinDirectory:=ExtractFilePath(Application.ExeName) + 'skins';
 
