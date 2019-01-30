@@ -109,9 +109,7 @@ uses
   ZLibExGZ in 'zlibex\ZLibExGZ.pas',
   ZLibEx in 'zlibex\ZLibEx.pas',
   ZLibExApi in 'zlibex\ZLibExApi.pas',
-  mo_cn in 'Locale\mo_cn.pas',
-  mo_ru in 'Locale\mo_ru.pas',
-  mo_ukrainian in 'Locale\mo_ukrainian.pas';
+  mo_cn in 'Locale\mo_cn.pas';
 
 {$R *.res}
 

@@ -501,7 +501,7 @@ type
     procedure sendAE2(value: string);  //ici      audio equ
 
     function CheckIFContain(const Value, A:string): boolean;
-
+    
     constructor Create();
     destructor Destroy(); override;
 
@@ -1079,7 +1079,8 @@ begin
     end;
   if LastEOL<>0 then Delete(Data,1,LastEOL);
 end;
-{procedure Tmplayer.TProcessor.Execute;
+{
+procedure Tmplayer.TProcessor.Execute;
 const BufSize=1024;
 var Buffer:array[0..BufSize]of char;
     BytesRead:cardinal;AnsiBuf: AnsiString;
@@ -1089,14 +1090,12 @@ begin
   repeat
     BytesRead:=0;
     AnsiBuf := String(Buffer) + #13#10;
-    //if not ReadFile(hPipe,Buffer[0],BufSize,BytesRead,nil) then break;
     if not ReadFile(hPipe,AnsiBuf[1],Length(AnsiBuf),BytesRead,nil) then break;
-    //Buffer[BytesRead]:=#0;
-    //Data:=Data+Buffer;
     Data:=Data+AnsiBuf;
     Synchronize(Process);
   until BytesRead=0;
-end;}
+end;
+}
 procedure Tmplayer.TProcessor.Execute;
 const BufSize=1024;
 var Buffer:array[0..BufSize]of ansichar;
@@ -1117,20 +1116,10 @@ var Dummy:cardinal; AnsiBuf: AnsiString;
 begin
   if (pr.ClientProcess=0) OR (pr.WritePipe=0) then exit;
   //DoOnlog('Exec cmd : ' + command);
-  Command:=Command+#10;
-  AnsiBuf := String(Command) + #13#10;
-  //WriteFile(pr.WritePipe,Command[1],length(Command),Dummy,nil);
-  WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
-end;}
-{procedure Tmplayer.SendCommand(Command: string);
-var Dummy:cardinal; AnsiBuf: AnsiString;
-begin
-  if (pr.ClientProcess=0) OR (pr.WritePipe=0) then exit;
-  //DoOnlog('Exec cmd : ' + command);
-  Command:=Command+#10;
-  AnsiBuf := String(Command) + #13#10;
-  //WriteFile(pr.WritePipe,Command[1],length(Command),Dummy,nil);
-  WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
+  //Command:=Command+#10;
+  AnsiBuf := ansistring(Command) + #10;
+  WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil); //error
+  //WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
 end;
 }
 procedure Tmplayer.SendCommand(Command: string);
@@ -1138,10 +1127,10 @@ var Dummy:cardinal; AnsiBuf: AnsiString;
 begin
   if (pr.ClientProcess=0) OR (pr.WritePipe=0) then exit;
   //DoOnlog('Exec cmd : ' + command);
-  //Command:=Command+#10;
-  AnsiBuf := ansistring(Command) + #10;
+  Command:=Command+#10;
+  AnsiBuf := String(Command) + #13#10;
+  //WriteFile(pr.WritePipe,Command[1],length(Command),Dummy,nil); //error
   WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
-  //WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
 end;
 { Tmplayer }
 constructor Tmplayer.Create;
@@ -1677,11 +1666,11 @@ procedure Tmplayer.ResetDefaultOptions;
 begin
   FPriorityBoost := false;
   FAutosync := 10;
-  FAVsyncPerFrame := 100;
+  FAVsyncPerFrame := 10000;
   FReIndex := false;
   FParams := '';
   Foverlaycolor := $122131;
-  Fvideoout := 'direct3d';
+  Fvideoout := 'gl2';
   Fvideoeq := 'eq2,hue';
   FDirectRender := true;
   FDoubleBuffer := true;
@@ -2198,7 +2187,7 @@ begin
     pr.Processor:=TProcessor.Create(true);
     pr.Processor.FreeOnTerminate := true;
     pr.Processor.OnNewdata := HandleInputLine;
-
+    
 
     pr.ClientProcess:=pi.hProcess;
     pr.ClientWaitThread.hProcess:=pr.ClientProcess;
@@ -3341,7 +3330,7 @@ var r,i,j,p:integer; c:char;
         Result := checkEqPropertys(ansname,0,true);
         if result then exit;
         Result := CheckLength(ansname, false,true);
-      end;
+      end;  
     end;
   end;
   function checkanswers : boolean;

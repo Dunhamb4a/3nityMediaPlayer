@@ -1089,11 +1089,12 @@ begin
   repeat
     BytesRead:=0;
     AnsiBuf := String(Buffer) + #13#10;
-    //if not ReadFile(hPipe,Buffer[0],BufSize,BytesRead,nil) then break;
+    //if not ReadFile(hPipe,Buffer[0],BufSize,BytesRead,nil) then break;//error
     if not ReadFile(hPipe,AnsiBuf[1],Length(AnsiBuf),BytesRead,nil) then break;
     //Buffer[BytesRead]:=#0;
     //Data:=Data+Buffer;
     Data:=Data+AnsiBuf;
+    //showmessage(data);
     Synchronize(Process);
   until BytesRead=0;
 end;}
@@ -1119,7 +1120,7 @@ begin
   //DoOnlog('Exec cmd : ' + command);
   Command:=Command+#10;
   AnsiBuf := String(Command) + #13#10;
-  //WriteFile(pr.WritePipe,Command[1],length(Command),Dummy,nil);
+  //WriteFile(pr.WritePipe,Command[1],length(Command),Dummy,nil); //error
   WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
 end;}
 {procedure Tmplayer.SendCommand(Command: string);
@@ -1129,7 +1130,7 @@ begin
   //DoOnlog('Exec cmd : ' + command);
   Command:=Command+#10;
   AnsiBuf := String(Command) + #13#10;
-  //WriteFile(pr.WritePipe,Command[1],length(Command),Dummy,nil);
+  //WriteFile(pr.WritePipe,Command[1],length(Command),Dummy,nil); //error
   WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
 end;
 }
@@ -1140,7 +1141,7 @@ begin
   //DoOnlog('Exec cmd : ' + command);
   //Command:=Command+#10;
   AnsiBuf := ansistring(Command) + #10;
-  WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
+  WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil); //error
   //WriteFile(pr.WritePipe,AnsiBuf[1],length(AnsiBuf),Dummy,nil);
 end;
 { Tmplayer }

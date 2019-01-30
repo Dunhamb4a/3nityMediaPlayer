@@ -130,10 +130,6 @@ object frmOptions: TfrmOptions
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object LLanguage: TLabel
         Left = 10
         Top = 14
@@ -246,10 +242,6 @@ object frmOptions: TfrmOptions
       Font.Style = []
       ImageIndex = 1
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object LAudioOut: TLabel
         Left = 10
         Top = 14
@@ -357,7 +349,9 @@ object frmOptions: TfrmOptions
         Width = 313
         Height = 17
         Caption = 'Use Liba52'
+        Enabled = False
         TabOrder = 4
+        Visible = False
       end
     end
     object TabVideo: TsTabSheet
@@ -369,10 +363,6 @@ object frmOptions: TfrmOptions
       Font.Style = []
       ImageIndex = 2
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object LPostproc: TLabel
         Left = 10
         Top = 278
@@ -563,10 +553,6 @@ object frmOptions: TfrmOptions
       Font.Style = []
       ImageIndex = 3
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
     end
     object TabOSDSub: TsTabSheet
       Caption = 'OSD and Subs'
@@ -699,10 +685,6 @@ object frmOptions: TfrmOptions
       Font.Style = []
       ImageIndex = 5
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object chkUseDvdNav: TCheckBox
         Left = 10
         Top = 14
@@ -723,10 +705,6 @@ object frmOptions: TfrmOptions
     object TabFileAssoxp7: TsTabSheet
       Caption = 'Files Asso'
       OnShow = TabFileAssoxp7Show
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Label2: TLabel
         Left = 5
         Top = 98
@@ -901,7 +879,7 @@ object frmOptions: TfrmOptions
   object imgLOpt: TImageList
     Top = 400
     Bitmap = {
-      494C010106000C00D40010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010106000C00D80010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000002000000001002000000000000020
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000FEFEFE00E8E8E800EBEBEB00FCFCFC0000000000F8F8
@@ -1176,7 +1154,7 @@ object frmOptions: TfrmOptions
     Left = 32
     Top = 400
     Bitmap = {
-      494C010108000A00D40010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010108000A00D80010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

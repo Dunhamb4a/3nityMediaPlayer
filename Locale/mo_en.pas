@@ -123,9 +123,9 @@ begin
       KeyHelp:='Keyboard help ...';
       About := 'About ...';
 
-  
-  HelpFormCaption:='Keyboard help';
-  HelpFormHelpText:=
+
+    HelpFormCaption:='Keyboard help';
+    HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
 'Right'^I'Forward 10 seconds'^M^J+
@@ -185,20 +185,20 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-  HelpFormClose:='Close';
+    HelpFormClose:='Close';
 
-  //log form
-  LogFormCaption:='MPlayer output';
-  LogFormClose:='Close';
+    //log form
+    LogFormCaption:='MPlayer output';
+    LogFormClose:='Close';
 
-  //about form
-  AboutFormCaption := 'About 3nity Media Player';
-  AboutFormClose := 'Close';
-  AboutVersionMPUI := '3nity Media Player version:';
-  AboutVersionMplayer := 'MPlayer version:';
+    //about form
+    AboutFormCaption := 'About 3nity Media Player';
+    AboutFormClose := 'Close';
+    AboutVersionMPUI := '3nity Media Player version:';
+    AboutVersionMplayer := 'MPlayer version:';
 
-  //settings form
-  SettingsformCaption := 'Settings';
+    //settings form
+    SettingsformCaption := 'Settings';
     Brightness := 'Brightness';
     Contrast := 'Contrast';
     Hue := 'Hue';
@@ -208,15 +208,15 @@ begin
     ResetSetting := 'Reset';
     MResetSetting := 'Master reset';
 
-  //options form
+    //options form
     FullScreenMonitor := 'Fullscreen monitor';
     AutoLocale:='(Auto-select)';
-    
+
     OptionsFormCaption:='Options';
     OptionsFormOK:='OK';
     OptionsFormApply:='Apply';
-    //
-        OptionsFormAssociate:='Associate';
+
+    OptionsFormAssociate:='Associate';
     OptionsFormSelectAll:='Select All';
     OptionsFormSelectNone:='None';
     OptionsFormSave:='Save';
@@ -228,11 +228,11 @@ begin
     OptionsFormPriorityBoost:='Run with higher priority';
 
     Autosync := 'Autosync factor';
-    AVsyncperframe := 'A-V sync per frame (us.)';    
+    AVsyncperframe := 'A-V sync per frame (us.)';
 
     OptionsFormAudioOut:='Sound output driver';
-      AudioOutNoDecode:='(don''t decode sound)';
-      AudioOutNoOut:='(don''t play sound)';
+    AudioOutNoDecode:='(don''t decode sound)';
+    AudioOutNoOut:='(don''t play sound)';
     OptionsFormAudioDev:='DirectSound output device';
     OptionsFormAudioFilterChannels := 'Channel filtering and routing';
     OptionsFormSoftVol:='Software volume control / Volume boost';
@@ -242,7 +242,7 @@ begin
     OptionsFormUseliba52 := 'Use liba52 library';
 
     OptionsFormVideoOut := 'Video output driver';
-      VideoOutUser := 'Other:';
+    VideoOutUser := 'Other:';
     OptionsFormOverlay:= 'Overlay color';
     ForceEvenWidth := 'Force even width';
     DirectRender := 'Direct rendering';
@@ -250,14 +250,14 @@ begin
     DrawSlices := 'Draw using slices';
 
     OptionsFormVideoeq  := 'Software video equalizer';
-      VideoeqOff  := 'Off';
+    VideoeqOff  := 'Off';
     VideoScaler := 'Software video scaler';
     TryScaler := 'Try scaler on error';
 
     OptionsFormPostproc:='Postprocessing';
-      PostprocOff:='Off';
-      PostprocAuto:='Automatic';
-      PostprocMax:='Maximum quality';
+    PostprocOff:='Off';
+    PostprocAuto:='Automatic';
+    PostprocMax:='Maximum quality';
 
     OptionsFormGeneral := 'General';
     OptionsFormAudio := 'Audio';
@@ -311,41 +311,41 @@ begin
     UseDvdNav := 'Enable DVD menus (experimental)';
     DeinterlaceDVD := 'Always deinterlace';
 
-  //playlist form
-  PlaylistFormCaption:='Playlist';
-  PlaylistFormPlay:='Play';
-  PlaylistFormAdd:='Add ...';
-  PlaylistFormMoveUp:='Move up';
-  PlaylistFormMoveDown:='Move down';
-  PlaylistFormDelete:='Remove';
-  PlaylistFormShuffle:='Shuffle';
-  PlaylistFormLoop:='Repeat';
-  PlaylistFormSave:='Save ...';
-  PlaylistFormClose:='Close';
+    //playlist form
+    PlaylistFormCaption:='Playlist';
+    PlaylistFormPlay:='Play';
+    PlaylistFormAdd:='Add ...';
+    PlaylistFormMoveUp:='Move up';
+    PlaylistFormMoveDown:='Move down';
+    PlaylistFormDelete:='Remove';
+    PlaylistFormShuffle:='Shuffle';
+    PlaylistFormLoop:='Repeat';
+    PlaylistFormSave:='Save ...';
+    PlaylistFormClose:='Close';
 
-  InfoFormCaption:='File information';
-  InfoFormClose:='Close';
-  InfoFormCopy := 'Copy';
-  NoInfo:='No file information is available at the moment.';
-  InfoFileFormat:='Format';
-  InfoPlaybackTime:='Duration';
-  InfoTags:='Clip metadata';
-  InfoVideo:='Video track';
-  InfoAudio:='Audio track';
-  InfoDecoder:='Decoder';
-  InfoCodec:='Codec';
-  InfoBitrate:='Bitrate';
-  InfoVideoSize:='Dimensions';
-  InfoVideoFPS:='Frame rate';
-  InfoVideoAspect:='Aspect ratio';
-  InfoAudioRate:='Sample rate';
-  InfoAudioChannels:='Channels';
-  InfoInterlace:='Frame';
-  InfoVideoInt := 'Interlaced';
-  InfoVideoPro := 'Progressive';
-  InfoTrack := 'Track';
-  InfoFilesize := 'Filesize';
-  InfoSub := 'Subtitles';
+    InfoFormCaption:='File information';
+    InfoFormClose:='Close';
+    InfoFormCopy := 'Copy';
+    NoInfo:='No file information is available at the moment.';
+    InfoFileFormat:='Format';
+    InfoPlaybackTime:='Duration';
+    InfoTags:='Clip metadata';
+    InfoVideo:='Video track';
+    InfoAudio:='Audio track';
+    InfoDecoder:='Decoder';
+    InfoCodec:='Codec';
+    InfoBitrate:='Bitrate';
+    InfoVideoSize:='Dimensions';
+    InfoVideoFPS:='Frame rate';
+    InfoVideoAspect:='Aspect ratio';
+    InfoAudioRate:='Sample rate';
+    InfoAudioChannels:='Channels';
+    InfoInterlace:='Frame';
+    InfoVideoInt := 'Interlaced';
+    InfoVideoPro := 'Progressive';
+    InfoTrack := 'Track';
+    InfoFilesize := 'Filesize';
+    InfoSub := 'Subtitles';
   end
 end;
 

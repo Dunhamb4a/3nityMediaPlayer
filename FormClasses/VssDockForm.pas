@@ -618,7 +618,12 @@ begin
     if vsl.Count >= 2 then begin
       f := IndexOf(vsl[0]);
       if f >= 0 then begin
+        try
         Items[f].SetWindowPositionString(vsl[1]);
+        except
+
+        end;
+        //Items[f].SetWindowPositionString(vsl[1]);
       end;
     end;
   end;

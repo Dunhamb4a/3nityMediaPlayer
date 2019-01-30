@@ -14343,9 +14343,14 @@ object frmMain: TfrmMain
         Visible = False
         OnClick = MskinClick
       end
+      object N15: TMenuItem
+        Caption = '-'
+      end
       object MOpenTv: TMenuItem
         Caption = 'Open TV'
+        Enabled = False
         ImageIndex = 52
+        Visible = False
         OnClick = MOpenTvClick
       end
       object MClose: TMenuItem
@@ -14693,7 +14698,7 @@ object frmMain: TfrmMain
   object Imagery: TImageList
     Top = 160
     Bitmap = {
-      494C010144000801980110001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010144000801C00110001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000002001000001002000000000000020
       0100000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

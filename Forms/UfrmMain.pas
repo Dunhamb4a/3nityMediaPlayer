@@ -202,6 +202,7 @@ type
     Timer1: TTimer;
     BAudioEqu: TSpeedButton;
     Image1: TImage;
+    N15: TMenuItem;
 
 
     procedure DoIdle(Sender: TObject; var Done: Boolean);
@@ -697,7 +698,8 @@ begin
   {Set form1's window proc back to it's original procedure}
     DockList.GetAllWindowsPos(opt.windowPos);
 
-    Config.Save('',true);
+    Config.Save('',false);
+    //Config.Save('',true);
     ClosingApp := true;
     Updatetimer.Enabled := false;
     mpo.StopAndWaitForDone;
@@ -1121,6 +1123,7 @@ begin
     if lSpeed.Visible then
       lspeed.Left := speedbar.Left + speedbar.Width +5;
     end;
+    self.sStatusBar1.Repaint;self.sStatusBar1.Refresh;
 end;
 
 procedure TfrmMain.UpdateZoomLabel;
@@ -1173,8 +1176,9 @@ begin
 
     sAspect := sAspect + sZoom;
 
-    lzoom.Caption := sAspect;
+    lzoom.Caption := sAspect;//application.processMessages;
     UpdateLZoomPosition;
+    //self.Refresh;application.processMessages;
   end;
 end;
 procedure TfrmMain.FixSize;
@@ -2343,14 +2347,20 @@ begin
     if mpo.Running  then begin
       WasPlaying := true;
       lastseekbarpos := Seekbar.Position;
-      mpo.StopAndWaitForDone;
+      //mpo.StopAndWaitForDone;
+      if mpo.Status=sPlaying then begin
+          mpo.Pause:=True;
+          BPause.Down:=True;
+      end else begin
+
+      end;
       sleep(100); // allow some extra time
     end else begin
       WasPlaying := false
     end;
   end else if msg.WParam = PBT_APMRESUMESUSPEND then begin
     if WasPlaying then begin
-      BPlayClick(nil);
+      //BPlayClick(nil);
       WasPlaying := false
     end;
     ; // todo, better resume code
@@ -3763,9 +3773,14 @@ procedure TfrmMain.mpoProgress(Sender : TObject;name: string; value : string);
 begin
   if mpo.Status = sOpening then
     if length(value)>0 then
-      lzoom.Caption := name + ': ' + value
+    begin
+      lzoom.Caption := name + ': ' + value;UpdateLZoomPosition;
+      //UpdateZoomLabel(name + ': ' + value);
+      //application.processMessages;
+    end
     else
-  UpdateLZoomPosition;
+     UpdateLZoomPosition;
+  //self.Refresh;application.processMessages;
   lastaspect := -1;
 
 end;

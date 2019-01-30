@@ -350,5 +350,5 @@ begin
 end;
 
 begin
-  RegisterLocale('Español',Activate,LANG_SPANISH,DEFAULT_CHARSET);
+  RegisterLocale('Spanish - Español',Activate,LANG_SPANISH,DEFAULT_CHARSET);
 end.

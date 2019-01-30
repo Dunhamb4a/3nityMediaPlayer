@@ -350,5 +350,5 @@ begin
 end;
 
 begin
-  RegisterLocale('Français',Activate,LANG_FRENCH,DEFAULT_CHARSET);
+  RegisterLocale('French - Français',Activate,LANG_FRENCH,DEFAULT_CHARSET);
 end.

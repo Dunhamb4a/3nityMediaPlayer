@@ -258,11 +258,7 @@ begin
   if FileName ='' then
     FileName := GetDefaultOptionsFile;
 
-  if not FileExists(FileName) then
-  begin
-    Save('',false);
-    //exit;
-  end;
+  if not FileExists(FileName) then exit;
   INI:=TVssMemIniFile.Create(FileName);
   mpo := frmMain.mpo;
 //  vis := frmMain.VisEffects;
@@ -367,129 +363,114 @@ var INI:TVssMemIniFile;
     i : integer;
     mpo : Tmplayer;
     sl : TStringList;
-    drap:boolean;
 begin
-  drap:=true;
+
   if FileName ='' then
     FileName := GetDefaultOptionsFile;
-  if fileexists(FileName) then
-  begin
-    if not deletefile(FileName) then
-    begin
-      drap:=false;
-    end;
-  end;
+  try INI:=TVssMemIniFile.Create(FileName); except exit; end;
 
-  if drap then
-  begin
-    try INI:=TVssMemIniFile.Create(FileName); except exit; end;
-
-    mpo := frmMain.mpo;
-    with INI do begin
-      try
-        if onlysettings = false  then begin
-         WriteInteger(SECTIONNAME,'Locale',opt.DefaultLocale);
-         if trim(AudioOutMap[mpo.AudioOut])<>'' then WriteString(SECTIONNAME,'AudioOut',AudioOutMap[mpo.AudioOut]);
-         WriteInteger(SECTIONNAME,'AudioDev',mpo.AudioDev);
-         if trim(mpo.AudioFilterChannels)<>'' then WriteString  (SECTIONNAME,'AudioFilterChannels',mpo.AudioFilterChannels);
-         WriteBool  (SECTIONNAME,'UseVolCmd',mpo.UseVolCmd);
+  mpo := frmMain.mpo;
+  with INI do begin
+    try
+      if onlysettings = false  then begin
+       WriteInteger(SECTIONNAME,'Locale',opt.DefaultLocale);
+       if trim(mpo.AudioOut)<>'' then WriteString(SECTIONNAME,'AudioOut',AudioOutMap[mpo.AudioOut]);
+       WriteInteger(SECTIONNAME,'AudioDev',mpo.AudioDev);
+       if trim(mpo.AudioFilterChannels)<>'' then WriteString  (SECTIONNAME,'AudioFilterChannels',mpo.AudioFilterChannels);
+       WriteBool  (SECTIONNAME,'UseVolCmd',mpo.UseVolCmd);
 
 
-         if trim(PostprocMap[mpo.Postproc])<>'' then WriteString(SECTIONNAME,'Postproc',PostprocMap[mpo.Postproc]);
-         if trim(DeinterlaceAlgMap[mpo.DeinterlaceAlg])<>'' then WriteString(SECTIONNAME,'DeinterlaceAlg',DeinterlaceAlgMap[mpo.DeinterlaceAlg]);
-         if trim(DeinterlaceMap[mpo.Deinterlace])<>'' then WriteString(SECTIONNAME,'Deinterlace',DeinterlaceMap[mpo.Deinterlace]);
-         if trim(AspectMap[mpo.Aspect])<>'' then WriteString(SECTIONNAME,'Aspect',AspectMap[mpo.Aspect]);
-         WriteBool  (SECTIONNAME,'ReIndex',mpo.ReIndex);
+       if trim(PostprocMap[mpo.Postproc])<>'' then WriteString(SECTIONNAME,'Postproc',PostprocMap[mpo.Postproc]);
+       if trim(DeinterlaceAlgMap[mpo.DeinterlaceAlg])<>'' then WriteString(SECTIONNAME,'DeinterlaceAlg',DeinterlaceAlgMap[mpo.DeinterlaceAlg]);
+       if trim(DeinterlaceMap[mpo.Deinterlace])<>'' then WriteString(SECTIONNAME,'Deinterlace',DeinterlaceMap[mpo.Deinterlace]);
+       if trim(AspectMap[mpo.Aspect])<>'' then WriteString(SECTIONNAME,'Aspect',AspectMap[mpo.Aspect]);
+       WriteBool  (SECTIONNAME,'ReIndex',mpo.ReIndex);
 
-         WriteInteger(SECTIONNAME,'Autosync',mpo.Autosync);
-         WriteInteger(SECTIONNAME,'AVsyncPerFrame',mpo.AVsyncPerFrame);
+       WriteInteger(SECTIONNAME,'Autosync',mpo.Autosync);
+       WriteInteger(SECTIONNAME,'AVsyncPerFrame',mpo.AVsyncPerFrame);
 
-         WriteBool  (SECTIONNAME,'SoftVol',mpo.SoftVol);
-         WriteBool  (SECTIONNAME,'PriorityBoost',mpo.PriorityBoost);
-         if trim(mpo.Params)<>'' then WriteString(SECTIONNAME,'Params',mpo.Params);
+       WriteBool  (SECTIONNAME,'SoftVol',mpo.SoftVol);
+       WriteBool  (SECTIONNAME,'PriorityBoost',mpo.PriorityBoost);
+       if trim(mpo.Params)<>'' then WriteString(SECTIONNAME,'Params',mpo.Params);
 
-         for i := 0 to MAX_CACHE_ENTRYS do begin
-          WriteInteger(SECTIONNAME,'Cache_' + cacheEntrys[i], mpo.Cachesize[i])
-         end;
+       for i := 0 to MAX_CACHE_ENTRYS do begin
+        WriteInteger(SECTIONNAME,'Cache_' + cacheEntrys[i], mpo.Cachesize[i])
+       end;
 
-         if trim(mpo.FontEncoding)<>'' then WriteString(SECTIONNAME, 'FontEncoding', mpo.FontEncoding);
-         if trim(mpo.FontPath)<>'' then WriteString(SECTIONNAME, 'FontPath', mpo.FontPath);
+       if trim(mpo.FontEncoding)<>'' then WriteString(SECTIONNAME, 'FontEncoding', mpo.FontEncoding);
+       if trim(mpo.FontPath)<>'' then WriteString(SECTIONNAME, 'FontPath', mpo.FontPath);
 
-         WriteBool  (SECTIONNAME,'FontConfig',mpo.FontConfig);
-         WriteBool  (SECTIONNAME,'SubAss',mpo.SubAss);
-         WriteBool  (SECTIONNAME,'SubAutoLoad',mpo.SubAutoLoad);
+       WriteBool  (SECTIONNAME,'FontConfig',mpo.FontConfig);
+       WriteBool  (SECTIONNAME,'SubAss',mpo.SubAss);
+       WriteBool  (SECTIONNAME,'SubAutoLoad',mpo.SubAutoLoad);
 
-         WriteRGBAColor(SECTIONNAME,'SubAssColor',mpo.SubAssColor);
-         WriteRGBAColor(SECTIONNAME,'SubAssBorderColor',mpo.SubAssBorderColor);
-         WriteRGBAColor(SECTIONNAME,'SubBgColor',mpo.SubBgColor);
+       WriteRGBAColor(SECTIONNAME,'SubAssColor',mpo.SubAssColor);
+       WriteRGBAColor(SECTIONNAME,'SubAssBorderColor',mpo.SubAssBorderColor);
+       WriteRGBAColor(SECTIONNAME,'SubBgColor',mpo.SubBgColor);
 
-         WriteBool  (SECTIONNAME,'UseDvdNav',mpo.UseDvdNav);
-         WriteBool  (SECTIONNAME,'DeinterlaceDvd',mpo.DeinterlaceDvd);
-
-
-         WriteInteger(SECTIONNAME,'FullScreenMonitor',opt.FullScreenMonitor);
-
-         WriteRGBColor(SECTIONNAME,'OverlayColor',mpo.overlaycolor);
-
-         if trim(mpo.videoout)<>'' then WriteString(SECTIONNAME,'VideoOut',mpo.videoout);
-         if trim(mpo.videoeq)<>'' then WriteString(SECTIONNAME,'VideoEq',mpo.videoeq);
-
-         WriteBool(SECTIONNAME,'ForceEvenWidth', opt.ForceEvenWidth);
-
-         WriteBool(SECTIONNAME,'DirectRender', mpo.DirectRender);
-         WriteBool(SECTIONNAME,'DoubleBuffer', mpo.DoubleBuffer);
-         WriteBool(SECTIONNAME,'DrawSlices', mpo.DrawSlices);
-
-         WriteBool(SECTIONNAME,'TryScaler', mpo.TryScaler);
-         if trim(VideoScalerMap[mpo.VideoScaler])<>'' then WriteString(SECTIONNAME,'VideoScaler',VideoScalerMap[mpo.VideoScaler]);
-
-         WriteInteger(SECTIONNAME, 'AudioDecodeChannels', mpo.AudioDecodeChannels);
-         WriteInteger(SECTIONNAME,'Ac3Compression',mpo.Ac3Comp);
-         WriteBool(SECTIONNAME, 'Useliba52', mpo.Useliba52);
-        end;
-
-        WriteBool(SECTIONNAME, 'shuffle', Playlist.Shuffle );
-        WriteBool(SECTIONNAME, 'loop', Playlist.loop);
-        if (fass<>'') then WriteString(SECTIONNAME, 'fileAss', fass);//fileAss
+       WriteBool  (SECTIONNAME,'UseDvdNav',mpo.UseDvdNav);
+       WriteBool  (SECTIONNAME,'DeinterlaceDvd',mpo.DeinterlaceDvd);
 
 
+       WriteInteger(SECTIONNAME,'FullScreenMonitor',opt.FullScreenMonitor);
 
+       WriteRGBColor(SECTIONNAME,'OverlayColor',mpo.overlaycolor);
 
+       if trim(mpo.videoout)<>'' then WriteString(SECTIONNAME,'VideoOut',mpo.videoout);
+       if trim(mpo.videoeq)<>'' then WriteString(SECTIONNAME,'VideoEq',mpo.videoeq);
 
-        WriteInteger(SECTIONNAME,'Volume', mpo.Volume);
+       WriteBool(SECTIONNAME,'ForceEvenWidth', opt.ForceEvenWidth);
 
-        for i := 0 to high(propertyEntrys)  do begin
-          WriteInteger(SECTIONNAME, propertyEntrys[i].name,
-                                    mpo.propertyValues[i].value);
-        end;
-        WriteBool(SECTIONNAME, 'VideoInside' ,opt.VideoInside);
-        WriteBool(SECTIONNAME, 'AlwaysOnTop', opt.AlwaysOnTop);
+       WriteBool(SECTIONNAME,'DirectRender', mpo.DirectRender);
+       WriteBool(SECTIONNAME,'DoubleBuffer', mpo.DoubleBuffer);
+       WriteBool(SECTIONNAME,'DrawSlices', mpo.DrawSlices);
 
-        sl := TStringList.Create;
-        sl.Delimiter := '=';
-        try
-          for i := 0 to opt.windowPos.Count - 1 do begin
-            sl.Clear;
-            sl.DelimitedText := opt.windowPos[i];
-            if sl.Count >= 2 then
-              WriteString(SECTIONNAMEWINDOWPOS, sl[0], sl[1]);
-          end;
-        finally
-          FreeAndNil(sl);
-        end;
-      except
+       WriteBool(SECTIONNAME,'TryScaler', mpo.TryScaler);
+       if trim(VideoScalerMap[mpo.VideoScaler])<>'' then WriteString(SECTIONNAME,'VideoScaler',VideoScalerMap[mpo.VideoScaler]);
+
+       WriteInteger(SECTIONNAME, 'AudioDecodeChannels', mpo.AudioDecodeChannels);
+       WriteInteger(SECTIONNAME,'Ac3Compression',mpo.Ac3Comp);
+       WriteBool(SECTIONNAME, 'Useliba52', mpo.Useliba52);
       end;
 
-      try
-        UpdateFile;
-      except
+      WriteBool(SECTIONNAME, 'shuffle', Playlist.Shuffle );
+      WriteBool(SECTIONNAME, 'loop', Playlist.loop);
+      if (fass<>'') then WriteString(SECTIONNAME, 'fileAss', fass);//fileAss
+      
+
+
+
+
+      WriteInteger(SECTIONNAME,'Volume', mpo.Volume);
+
+      for i := 0 to high(propertyEntrys)  do begin
+        WriteInteger(SECTIONNAME, propertyEntrys[i].name,
+                                  mpo.propertyValues[i].value);
       end;
-     Free;
+      WriteBool(SECTIONNAME, 'VideoInside' ,opt.VideoInside);
+      WriteBool(SECTIONNAME, 'AlwaysOnTop', opt.AlwaysOnTop);
+
+      sl := TStringList.Create;
+      sl.Delimiter := '=';
+      try
+        for i := 0 to opt.windowPos.Count - 1 do begin
+          sl.Clear;
+          sl.DelimitedText := opt.windowPos[i];
+          if sl.Count >= 2 then
+            WriteString(SECTIONNAMEWINDOWPOS, sl[0], sl[1]);
+        end;
+      finally
+        FreeAndNil(sl);
+      end;
+    except
     end;
 
+    try
+      UpdateFile;
+    except
+    end;
+   Free;
   end;
-
-
 end;
 
 procedure ResetOpt();

@@ -1,6 +1,6 @@
-# 3nityMediaPlayer version 5:
+# 3nityMediaPlayer version 5.0.2:
 
-3nity Media Player version 5, an MPlayer frontend for Windows
+3nity Media Player version 5.0.2, an MPlayer frontend for Windows
 
 Copyright (C) 2010-2019 Nicolas DEOUX  < nicolas.deoux@gmail.com > < http://www.3nitysoftwares.com >
                   
@@ -66,8 +66,11 @@ And adds this ones:
 
 {Special Note for Developers:
  =========================== 
-    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( i'm using XE7 )
+    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( here using XE7 )
     You will need to install Alphaskin and OmniThreadLibrary components.
     For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
 }
+
+
+
 

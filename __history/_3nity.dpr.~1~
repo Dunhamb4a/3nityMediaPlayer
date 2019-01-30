@@ -108,10 +108,7 @@ uses
   tlntsend in 'synapse\tlntsend.pas',
   ZLibExGZ in 'zlibex\ZLibExGZ.pas',
   ZLibEx in 'zlibex\ZLibEx.pas',
-  ZLibExApi in 'zlibex\ZLibExApi.pas',
-  mo_cn in 'Locale\mo_cn.pas',
-  mo_ru in 'Locale\mo_ru.pas',
-  mo_ukrainian in 'Locale\mo_ukrainian.pas';
+  ZLibExApi in 'zlibex\ZLibExApi.pas';
 
 {$R *.res}
 
@@ -214,8 +211,9 @@ begin
         Application.MainFormOnTaskBar := True;
 
         Application.CreateForm(TfrmMain, frmMain);
-  Application.CreateForm(TfrmLog, frmLog);
-  Application.Run;
+        Application.CreateForm(TfrmLog, frmLog);
+
+        Application.Run;
 
         if Mutex <> 0 then
             CloseHandle(Mutex);
