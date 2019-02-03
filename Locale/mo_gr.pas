@@ -1,4 +1,4 @@
-﻿unit mo_cn;
+﻿unit mo_gr;
 
 interface
 implementation
@@ -8,29 +8,29 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='Ανοιγμα ...';
+      Status_Closing:='Κλείσιμο ...';
+      Status_Playing:='Παιχνίδι';
+      Status_Paused:='Παύση';
+      Status_Stopped:='Σταμάτησε';
+      Status_Error:='Δεν είναι δυνατή η αναπαραγωγή μέσων (κάντε κλικ για περισσότερες πληροφορίες)';
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
-      InternetRadios:='Internet radios';
+    FullscreenControls:='Εμφάνιση ελέγχων πλήρους οθόνης';
+    OSD:='Λειτουργία OSD';
+      NoOSD:='Δεν υπάρχει OSD';
+      DefaultOSD:='Προεπιλεγμένη OSD';
+      TimeOSD:='Εμφάνιση ώρας';
+      FullOSD:='Εμφάνιση συνολικού χρόνου';
+    Escape:='Πατήστε Escape για έξοδο από τη λειτουργία πλήρους οθόνης.';
+    Filemenu:='&Αρχείο';
+      OpenFile:='Αναπαραγωγή αρχείου ...';
+      OpenURL:='Αναπαραγωγή διευθύνσεων URL ...';
+        OpenURL_Caption:='Αναπαραγωγή διευθύνσεων URL';
+        OpenURL_Prompt:='Ποια διεύθυνση URL θέλετε να παίξετε;?';
+      OpenDrive:='Αναπαραγωγή CD / DVD';
+      InternetRadios:='Ραδιόφωνα στο Διαδίκτυο';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
+      Close:='κοντά';
       Quit:='Quit';
     View:='&View';
       SizeAny:='Custom size';
@@ -155,15 +155,15 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='κοντά';
 
     //log form
     LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormClose:='κοντά';
 
     //about form
     AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
+    AboutFormClose := 'κοντά';
     AboutVersionMPUI := '3nity Media Player version:';
     AboutVersionMplayer := 'MPlayer version:';
 
@@ -190,7 +190,7 @@ begin
     OptionsFormSelectAll:='Select All';
     OptionsFormSelectNone:='None';
     OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
+    OptionsFormClose:='κοντά';
     OptionsFormHelp:='Help';
     OptionsFormParams:='Additional MPlayer parameters:';
 
@@ -291,10 +291,10 @@ begin
     PlaylistFormShuffle:='Shuffle';
     PlaylistFormLoop:='Repeat';
     PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormClose:='κοντά';
 
     InfoFormCaption:='File information';
-    InfoFormClose:='Close';
+    InfoFormClose:='κοντά';
     InfoFormCopy := 'Copy';
     NoInfo:='No file information is available at the moment.';
     InfoFileFormat:='Format';
@@ -321,5 +321,5 @@ begin
 end;
 
 begin
-  //RegisterLocale('Chinese - 中文',Activate,LANG_CHINESE,GB2312_CHARSET);
+   RegisterLocale('Greek - Ελληνικά',Activate,LANG_GREEK,GREEK_CHARSET);
 end.

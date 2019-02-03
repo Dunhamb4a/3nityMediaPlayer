@@ -22,9 +22,9 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 }
-{Special Note for Developers:
+{   to compile:
 
-    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( i'm using XE7 )
+    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( here using XE7  )
     You will need to install Alphaskin and OmniThreadLibrary components.
     For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
 }
@@ -58,6 +58,7 @@ begin
         OpenURL_Caption:='Play URL';
         OpenURL_Prompt:='Which URL do you want to play?';
       OpenDrive:='Play CD/DVD';
+      InternetRadios:='Internet radios';
       OpenTV := 'Open TV/capture card';
       Close:='Close';
       Quit:='Quit';
@@ -78,6 +79,7 @@ begin
     Seek:='&Play';
       Play:='Play';
       Pause:='Pause';
+      Stop:='Stop';
       Prev:='Previous title'^I'Ctrl Left';
       Next:='Next title'^I'Ctrl Right';
       ShowPlaylist:='Playlist ...';
@@ -94,7 +96,7 @@ begin
       Chapters:= 'Chapters';
     Extra:='&Options';
       Audio:='Audio track';
-      Subtitle:='Subtitle track';
+      Subtitle:='Subtitles track';
         NoSubtitle := 'No subtitles';
       AddSubtitle := 'Load subtitles...';
 
@@ -106,7 +108,7 @@ begin
       DeinterlaceAlg:='Deinterlace algorithm';
         DeinterlaceBlend := 'Blend';
         DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptative';
+        DeinterlaceAdaptative := 'Adaptive';
         DeinterlaceDoubleRate := 'Double rate';
       Deinterlace:='Deinterlace';
 
@@ -114,8 +116,8 @@ begin
       On:='On';
       Auto:='Auto';
 
-      Settings := 'Settings ...';
-      Options:='Options ...';
+      Settings := 'Video adjustments ...';
+      Options:='Settings ...';
       Language:='Language';
       StreamInfo:='Show file information ...';
       ShowOutput:='Show MPlayer output ...';
@@ -179,8 +181,6 @@ begin
 'Alt+3'^I^I'Double size'^M^J+
 'Alt+F4'^I^I'Close Program'^M^J+
 'Alt+Return'^I'Fullscreen'^M^J+
-'CTRL+LEFT'^I'Play previous track'^M^J+
-'CTRL+RIGHT'^I'Play next track'^M^J+
 'MEDIA_STOP'^I^I'Stop Playing'^M^J+
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
@@ -198,13 +198,13 @@ begin
     AboutVersionMplayer := 'MPlayer version:';
 
     //settings form
-    SettingsformCaption := 'Settings';
+    SettingsformCaption := 'Video adjustments';
     Brightness := 'Brightness';
     Contrast := 'Contrast';
     Hue := 'Hue';
     Saturation := 'Saturation';
     Gamma := 'Gamma';
-    SubScale := 'Sub. size';
+    SubScale := 'Subtitles size';
     ResetSetting := 'Reset';
     MResetSetting := 'Master reset';
 
@@ -212,7 +212,7 @@ begin
     FullScreenMonitor := 'Fullscreen monitor';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Options';
+    OptionsFormCaption:='Settings';
     OptionsFormOK:='OK';
     OptionsFormApply:='Apply';
 
@@ -308,7 +308,7 @@ begin
     SubAssColor := 'Text color';
     SubBgColor := 'Text background color';
 
-    UseDvdNav := 'Enable DVD menus (experimental)';
+    UseDvdNav := 'Enable DVD menus ';
     DeinterlaceDVD := 'Always deinterlace';
 
     //playlist form
@@ -346,6 +346,7 @@ begin
     InfoTrack := 'Track';
     InfoFilesize := 'Filesize';
     InfoSub := 'Subtitles';
+    InfoFormCopyAll := 'Copy All';
   end
 end;
 

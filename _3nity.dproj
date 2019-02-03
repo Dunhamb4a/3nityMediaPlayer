@@ -84,14 +84,14 @@
         <DCC_Optimize>false</DCC_Optimize>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <VerInfo_Build>33</VerInfo_Build>
-        <VerInfo_Release>4</VerInfo_Release>
+        <VerInfo_Build>61</VerInfo_Build>
+        <VerInfo_Release>5</VerInfo_Release>
         <VerInfo_AutoGenVersion>false</VerInfo_AutoGenVersion>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
         <DCC_ExeOutput>Binaries\</DCC_ExeOutput>
         <Icon_MainIcon>_3nity_Icon1.ico</Icon_MainIcon>
         <VerInfo_MajorVer>5</VerInfo_MajorVer>
-        <VerInfo_Keys>CompanyName=3nity Media Player;FileDescription=;FileVersion=5.0.4.33;InternalName=;LegalCopyright=3nity Softwares ( www.3nitysoftwares.com );LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=5.0.4.33;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=3nity Media Player;FileDescription=;FileVersion=5.0.5.61;InternalName=;LegalCopyright=3nity Softwares ( www.3nitysoftwares.com );LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=5.0.4.33;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -195,6 +195,26 @@
         <DCCReference Include="Locale\mo_cn.pas"/>
         <DCCReference Include="Locale\mo_ru.pas"/>
         <DCCReference Include="Locale\mo_ukrainian.pas"/>
+        <DCCReference Include="Locale\mo_ar.pas"/>
+        <DCCReference Include="Locale\mo_bu.pas"/>
+        <DCCReference Include="Locale\mo_bela.pas"/>
+        <DCCReference Include="Locale\mo_cz.pas"/>
+        <DCCReference Include="Locale\mo_de.pas"/>
+        <DCCReference Include="Locale\mo_dk.pas"/>
+        <DCCReference Include="Locale\mo_hu.pas"/>
+        <DCCReference Include="Locale\mo_it.pas"/>
+        <DCCReference Include="Locale\mo_jp.pas"/>
+        <DCCReference Include="Locale\mo_kr.pas"/>
+        <DCCReference Include="Locale\mo_nl.pas"/>
+        <DCCReference Include="Locale\mo_pl.pas"/>
+        <DCCReference Include="Locale\mo_pt.pas"/>
+        <DCCReference Include="Locale\mo_ro.pas"/>
+        <DCCReference Include="Locale\mo_sk.pas"/>
+        <DCCReference Include="Locale\mo_gr.pas"/>
+        <DCCReference Include="Locale\mo_he.pas"/>
+        <DCCReference Include="Locale\mo_tu.pas"/>
+        <DCCReference Include="Locale\mo_vi.pas"/>
+        <None Include="README.md"/>
         <BuildConfiguration Include="Debug">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -235,6 +255,12 @@
                 <DeployFile LocalName="C:\3MP\_3nity.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>_3nity.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="README.md" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

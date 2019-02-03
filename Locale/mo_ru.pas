@@ -30,6 +30,7 @@ begin
         OpenURL_Prompt:='Введите желаемый URL';
       OpenDrive:='Проиграть (V)CD/DVD/BlueRay';
       OpenTV := 'Open TV/capture card';
+      InternetRadios:='интернет-радио';
       Close:='Закрыть';
       Quit:='Выход';
     View:='&Вид';
@@ -49,6 +50,7 @@ begin
     Seek:='&Играть';
       Play:='Играть';
       Pause:='Приостановить';
+      Stop:='прекращать';
       Prev:='Предыдущий трек'^I'Ctrl Left';
       Next:='Следующий трек'^I'Ctrl Right';
       ShowPlaylist:='Плейлист ...';
@@ -317,10 +319,10 @@ begin
     InfoTrack := 'трек';
     InfoFilesize := 'Размер файла';
     InfoSub := 'Субтитры';
+    InfoFormCopyAll := 'Копировать все';
   end
 end;
 
 begin
-  //RegisterLocale('Russian - ',Activate,LANG_ENGLISH,ANSI_CHARSET);
-  RegisterLocale('Русский - Russian', Activate, LANG_RUSSIAN, RUSSIAN_CHARSET);
+  RegisterLocale('Russian - русский', Activate, LANG_RUSSIAN, RUSSIAN_CHARSET);
 end.

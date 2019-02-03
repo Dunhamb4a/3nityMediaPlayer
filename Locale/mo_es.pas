@@ -22,9 +22,9 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 }
-{Special Note for Developers:
+{   to compile:
 
-    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( i'm using XE7 )
+    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( here using XE7  )
     You will need to install Alphaskin and OmniThreadLibrary components.
     For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
 }
@@ -59,6 +59,7 @@ begin
         OpenURL_Prompt:='¿Cuál es la URL a reproducir?';
       OpenDrive:='Reproducir CD/DVD';
       OpenTV := 'Abrir TV/tarjeta capturadora';
+      InternetRadios:='Radios de internet';
       Close:='Cerrar';
       Quit:='Salir';
     View:='&Ver';
@@ -78,6 +79,7 @@ begin
     Seek:='&Reproducción';
       Play:='Reproducir';
       Pause:='Pausar';
+      Stop:='Dejar';
       Prev:='Título anterior'^I'Ctrl Izquierda';
       Next:='Título siguiente'^I'Ctrl Derecha';
       ShowPlaylist:='Lista de reproducción ...';
@@ -308,7 +310,7 @@ begin
     SubAssColor := 'Color del texto';
     SubBgColor := 'Color del fondo del texto';
 
-    UseDvdNav := 'Activar soporte Menús DVD (experimental)';
+    UseDvdNav := 'Activar soporte Menús DVD ';
     DeinterlaceDVD := 'Desentrelazar siempre';
 
   //playlist form
@@ -346,6 +348,7 @@ begin
   InfoTrack := 'Pista';
   InfoFilesize := 'Tamaño';
   InfoSub := 'Subtítulos';
+  InfoFormCopyAll := 'Cópialo todo';
   end;
 end;
 

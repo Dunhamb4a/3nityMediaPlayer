@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
-  StdCtrls, Buttons, VssDockForm, mplayer;
+  StdCtrls, Buttons, VssDockForm, mplayer, sScrollBar;
 
 type
 
@@ -21,6 +21,9 @@ type
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure btnCloseClick(Sender: TObject);
+    procedure FormMouseWheel(Sender: TObject; Shift: TShiftState;
+      WheelDelta: Integer; MousePos: TPoint; var Handled: Boolean);
+
   private
     type
     TsettingsEntry = record
@@ -32,6 +35,7 @@ type
     { Private declarations }
   private
     settingsCtl : array[0..MAX_PROP_ENTRYS] of TsettingsEntry;
+
   protected
     procedure CreateParams(var Params: TCreateParams); override;
     procedure FormWmNcHittest(var msg: TWMNCHitMessage); message WM_NCHITTEST;
@@ -50,7 +54,17 @@ implementation
 uses locale, UfrmMain;
 {$R *.dfm}
 
-
+function IsCoordinateOverControl(screenCoordinate: TPoint; control: TControl): Boolean;
+var
+  p: TPoint;
+  r: TRect;
+begin
+  Result := False;
+  p := control.ScreenToClient(screenCoordinate);
+  r := Rect(0, 0, control.Width, control.Height);
+  if PtInRect(r, p) then
+    Result := True;
+end;
 
 procedure TfrmSettings.EnableSetting(setting: integer; value: boolean);
 begin
@@ -74,7 +88,7 @@ begin
 
         scr := Tscrollbar.Create(self);
         scr.Parent := self;
-        scr.SetBounds(80,i* 22+5 + btnClose.Top + btnClose.Height,200,20 );
+        scr.SetBounds(100,i* 22+5 + btnClose.Top + btnClose.Height,200,20 );
         scr.Min := propertyEntrys[i].min;
         scr.Max := propertyEntrys[i].max;
         scr.Position := 0;
@@ -82,9 +96,15 @@ begin
         lblcaption.SetBounds(6,scr.Top + (scr.Height - lblcaption.Height) div 2,
                              scr.Left , lblcaption.Height );
 
+        lblcaption.Font.Color:=clblack;
+
+        lblCaption.Enabled:=true;lblcaption.Visible:=true;
+        lblCaption.BringToFront;
 
         lblValue := Tlabel.Create(self);
         lblValue.Parent := self;
+        lblValue.Font.Color:=clblack;
+        lblValue.Font.Style := lblValue.Font.Style +[fsBOld];
         lblValue.SetBounds(scr.Left + scr.Width, lblcaption.Top,30, scr.Height );
         lblvalue.Alignment := tarightjustify;
 
@@ -104,6 +124,7 @@ begin
 
         scr.Position := frmMain.mpo.propertyvalues[i].Value;
         scr.OnChange := ScrollBarChange;
+
         btnreset.OnClick := ResetbuttonClick;
         lblValue.Caption := inttostr(scr.Position );
 
@@ -145,6 +166,41 @@ begin
   SendMessage(Handle, WM_SYSCOMMAND, SC_MOVE+2, 0);
 end;
 
+procedure TfrmSettings.FormMouseWheel(Sender: TObject; Shift: TShiftState;
+  WheelDelta: Integer; MousePos: TPoint; var Handled: Boolean);
+var
+  Msg: Cardinal;
+  Code: Cardinal;
+  I, ScrollLines,k: Integer;
+begin
+  for k := 0 to high(settingsCtl) do begin
+    if IsCoordinateOverControl(MousePos, settingsCtl[k].scr) then
+    begin
+      Handled := True;
+      If ssShift In Shift Then
+        Msg := WM_HSCROLL
+      Else
+        Msg := WM_VSCROLL;
+
+      If WheelDelta < 0 Then
+      begin
+        //Code := SB_LINEDOWN
+        if settingsCtl[k].scr.Position>=settingsCtl[k].scr.Min  then
+          settingsCtl[k].scr.Position :=  settingsCtl[k].scr.Position -1;
+      end
+      else
+        //Code := SB_LINEUP;
+        if settingsCtl[k].scr.Position<=settingsCtl[k].scr.Max  then
+          settingsCtl[k].scr.Position :=  settingsCtl[k].scr.Position + 1;
+
+      //ScrollLines := Mouse.WheelScrollLines * 3;
+      //for I := 1 to ScrollLines do
+      //  settingsCtl[0].scr.Perform(Msg, Code, 0);
+      //settingsCtl[0].scr.Perform(Msg, SB_ENDSCROLL, 0);
+    end;
+  end;
+end;
+
 procedure TfrmSettings.FormShow(Sender: TObject);
 begin
   frmMain.MSettings.Checked:=true;
@@ -171,7 +227,7 @@ end;
 procedure TfrmSettings.DoLocalize;
 var i : integer;
 begin
-  inherited;
+
   for i := 0 to high(settingsCtl) do begin
 
     case i of
@@ -188,6 +244,7 @@ begin
   end;
   btnMReset.Caption := LOCstr.MResetSetting;
   Caption := LOCstr.SettingsformCaption;
+  inherited;
 end;
 
 procedure TfrmSettings.ResetbuttonClick(Sender: TObject);

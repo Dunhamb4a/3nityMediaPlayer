@@ -22,9 +22,9 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 }
-{Special Note for Developers:
+{   to compile:
 
-    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( i'm using XE7 )
+    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( here using XE7  )
     You will need to install Alphaskin and OmniThreadLibrary components.
     For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
 }
@@ -56,6 +56,7 @@ type
   private
     { Private declarations }
     TabOffset:integer;
+    _Copy:string;_CopyAll:string;
     procedure CopyToClipboard(All : Boolean);
 
   public
@@ -117,6 +118,9 @@ begin
   inherited;
   Font.Charset:=CurrentLocaleCharset;
   Caption:=LOCstr.InfoFormCaption;
+  _Copy:=LOCSTR.InfoFormCopy;
+  _CopyAll:=LOCSTR.InfoFormCopyAll;
+  mpeCopy.Caption:=_Copy;mpeCopyAll.Caption:=_CopyAll;
   //BClose.Caption:=LOCstr.InfoFormClose;
   //BCopy.Caption :=LOCstr.InfoFormCopy;
   self.UpdateInfo;
@@ -421,8 +425,8 @@ end;
 procedure TfrmInfo.pmListPopup(Sender: TObject);
 begin
   mpeCopy.Enabled := InfoBox.ItemIndex >= 0;
-  mpeCopyAll.Enabled := InfoBox.Items.Count> 0;
-
+  //mpeCopyAll.Enabled := InfoBox.Items.Count> 0;
+  mpeCopyAll.Enabled:= InfoBox.ItemIndex >= 0;
 end;
 
 end.

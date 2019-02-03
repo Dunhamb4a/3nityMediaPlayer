@@ -1,4 +1,4 @@
-﻿unit mo_cn;
+﻿unit mo_ro;
 
 interface
 implementation
@@ -321,5 +321,6 @@ begin
 end;
 
 begin
-  //RegisterLocale('Chinese - 中文',Activate,LANG_CHINESE,GB2312_CHARSET);
+    //RegisterLocale('Romanian - Română', Activate, LANG_ENGLISH, EASTEUROPE_CHARSET);
+
 end.

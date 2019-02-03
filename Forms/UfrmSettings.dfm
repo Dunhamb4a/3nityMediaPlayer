@@ -15,6 +15,7 @@ object frmSettings: TfrmSettings
   OnCreate = FormCreate
   OnHide = FormHide
   OnMouseDown = FormMouseDown
+  OnMouseWheel = FormMouseWheel
   OnShow = FormShow
   DesignSize = (
     283

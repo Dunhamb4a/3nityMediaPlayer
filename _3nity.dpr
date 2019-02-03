@@ -22,9 +22,9 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 }
-{Special Note for Developers:
+{   to compile:
 
-    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( i'm using XE7 )
+    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( here using XE7 )
     You will need to install Alphaskin and OmniThreadLibrary components.
     For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
 }
@@ -111,7 +111,26 @@ uses
   ZLibExApi in 'zlibex\ZLibExApi.pas',
   mo_cn in 'Locale\mo_cn.pas',
   mo_ru in 'Locale\mo_ru.pas',
-  mo_ukrainian in 'Locale\mo_ukrainian.pas';
+  mo_ukrainian in 'Locale\mo_ukrainian.pas',
+  mo_ar in 'Locale\mo_ar.pas',
+  mo_bu in 'Locale\mo_bu.pas',
+  mo_bela in 'Locale\mo_bela.pas',
+  mo_cz in 'Locale\mo_cz.pas',
+  mo_de in 'Locale\mo_de.pas',
+  mo_dk in 'Locale\mo_dk.pas',
+  mo_hu in 'Locale\mo_hu.pas',
+  mo_it in 'Locale\mo_it.pas',
+  mo_jp in 'Locale\mo_jp.pas',
+  mo_kr in 'Locale\mo_kr.pas',
+  mo_nl in 'Locale\mo_nl.pas',
+  mo_pl in 'Locale\mo_pl.pas',
+  mo_pt in 'Locale\mo_pt.pas',
+  mo_ro in 'Locale\mo_ro.pas',
+  mo_sk in 'Locale\mo_sk.pas',
+  mo_gr in 'Locale\mo_gr.pas',
+  mo_he in 'Locale\mo_he.pas',
+  mo_tu in 'Locale\mo_tu.pas',
+  mo_vi in 'Locale\mo_vi.pas';
 
 {$R *.res}
 
@@ -160,11 +179,11 @@ begin
         exit;
     end;
 
-    Mutex := CreateMutex(nil, True, '3nity434');
+    Mutex := CreateMutex(nil, True, '3nityMutex');
     if (Mutex = 0) or (GetLastError = ERROR_ALREADY_EXISTS) then
     begin
-    if (Win32Platform = VER_PLATFORM_WIN32_NT) then Mf := FindWindow('3nity434', nil)
-    else Mf := FindWindow('3nity434', nil);
+    if (Win32Platform = VER_PLATFORM_WIN32_NT) then Mf := FindWindow('3nityMutex', nil)
+    else Mf := FindWindow('3nityMutex', nil);
     if Mf <> 0 then begin
 
 

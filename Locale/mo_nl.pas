@@ -1,4 +1,4 @@
-﻿unit mo_cn;
+unit mo_nl;
 
 interface
 implementation
@@ -321,5 +321,5 @@ begin
 end;
 
 begin
-  //RegisterLocale('Chinese - 中文',Activate,LANG_CHINESE,GB2312_CHARSET);
+    //RegisterLocale('Netherlands - Nederlands ' ,Activate, LANG_DUTCH, ANSI_CHARSET);
 end.

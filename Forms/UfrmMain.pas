@@ -22,9 +22,9 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 }
-{Special Note for Developers:
+{   to compile:
 
-    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( i'm using XE7 )
+    This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( here using XE7 )
     You will need to install Alphaskin and OmniThreadLibrary components.
     For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
 }
@@ -677,8 +677,8 @@ begin
   SystemParametersInfo(SPI_SETSCREENSAVEACTIVE, 1, nil, 0);
   SystemParametersInfo(SPI_SETBEEP, 1, nil, SPIF_SENDWININICHANGE);
   //FsmallIcon := SendMessage(Handle, WM_SETICON, ICON_SMALL, 0);
-  if FsmallIcon > 0 then
-    DestroyIcon(FsmallIcon);
+  //if FsmallIcon > 0 then
+  //  DestroyIcon(FsmallIcon);
 
   Application.OnMessage :=  nil;
   FreeAndNil(DockList);
@@ -770,7 +770,7 @@ begin
 end;
 procedure TfrmMain.UpdateVisElements;
 begin //
-  timerVis.Enabled :=false; //rajoutté par nico
+  timerVis.Enabled :=false;
   if not(mpo.streaminfo.HaveVideo) then begin
   outerpanel.color:=clblack;
   outerpanel.Repaint ;
@@ -2410,10 +2410,13 @@ begin
 end;
 
 procedure TfrmMain.MLanguageClick(Sender: TObject);
+var op:integer;
 begin
   if not (Sender as TMenuItem).Checked  then  begin
     (Sender as TMenuItem).Checked := true;
+    op:=(Sender as TMenuItem).Tag;
     ActivateLocale((Sender as TMenuItem).Tag);
+    opt.DefaultLocale:=op;
     application.OnIdle := DoIdle;
   end;
 end;
@@ -3315,6 +3318,7 @@ begin
     MOpenURL.Caption:=LOCstr.OpenURL;
     MOpenDrive.Caption:=LOCstr.OpenDrive;
     MOpenTv.Caption := LOCstr.OpenTV;
+    MRadios.Caption:=LOCstr.InternetRadios;;
     MClose.Caption:=LOCstr.Close;
     MQuit.Caption:=LOCstr.Quit + #9'Q';
   OMView.Caption:=LOCstr.View;
@@ -3333,6 +3337,7 @@ begin
   OMSeek.Caption:=LOCstr.Seek;
     MPlay.Caption:=LOCstr.Play;
     MPause.Caption:=LOCstr.Pause;
+    MStop.Caption:=LOCstr.Stop;
     MPrev.Caption:=LOCstr.Prev;
     MNext.Caption:=LOCstr.Next;
     MShowPlaylist.Caption:=LOCstr.ShowPlaylist;
@@ -3829,7 +3834,7 @@ end;
 procedure TfrmMain.CreateParams(var Params: TCreateParams);
 begin
   inherited CreateParams(Params);
-  Params.WinClassName := '3nity434';
+  Params.WinClassName := '3nityMutex';
 end;
 procedure TfrmMain.PassMsg(var msg: Tmessage);
 var
