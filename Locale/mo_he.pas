@@ -8,95 +8,95 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='פתיחה ...';
+      Status_Closing:='סוגר ...';
+      Status_Playing:='משחק';
+      Status_Paused:='מושהה';
+      Status_Stopped:='עצר';
+      Status_Error:='לא ניתן להפעיל מדיה (לחץ לקבלת מידע נוסף)';
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
-      InternetRadios:='Internet radios';
+    FullscreenControls:='הצג פקדים במסך מלא';
+    OSD:='מצב OSD';
+      NoOSD:='אין OSD';
+      DefaultOSD:='ברירת המחדל של המסך';
+      TimeOSD:='הצג את השעה';
+      FullOSD:='הצג את השעה הכוללת';
+    Escape:='לחץ על Escape כדי לצאת ממצב מסך מלא.';
+    Filemenu:='&קובץ';
+      OpenFile:='הפעל קובץ ...';
+      OpenURL:='הפעל כתובת אתר ...';
+        OpenURL_Caption:='הפעל כתובת אתר';
+        OpenURL_Prompt:='איזו כתובת אתר ברצונך להפעיל?';
+      OpenDrive:='נגן תקליטור / DVD';
+      InternetRadios:='רדיו אינטרנט';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
-      Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
-      AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
-      Pause:='Pause';
-      Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
-      Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+      Close:='סגור';
+      Quit:='צא';
+    View:='&נוף';
+      SizeAny:='גודל מותאם אישית';
+      Size50:='חצי מידה';
+      Size100:='גודל מקורי';
+      Size200:='חדר זוגי';
+      VideoInside:='אין לחתוך וידאו';
+      Fullscreen:='מסך מלא';
+      AudioEqu:='אקולייזר';
+      Compact:='מצב קומפקטי';
+      TogOSD:='החלפת OSD';
+      OnTop:='תמיד על העליונה';
+      Vis:='ויזואליזציה';
+      VisEnable:='הצג פריטים חזותיים';
+      VisDirectRender:='עיבוד ישיר';
+    Seek:='&שחק';
+      Play:='שחק';
+      Pause:='השהה';
+      Stop:='תפסיק';
+      Prev:='כותרת קודמת'^I'Ctrl Left';
+      Next:='הכותרת הבאה'^I'Ctrl Right';
+      ShowPlaylist:='פלייליסט ...';
+      Mute:='השתקה';
+      SeekF10:='העבר 10 שניות'^I'Right';
+      SeekR10:='חזור על 10 שניות'^I'Left';
+      SeekF60:='קדימה 1 דקה'^I'Up';
+      SeekR60:='חזור לאחור 1 דקות'^I'Down';
+      SeekF600:='העבר 10 דקות'^I'PgUp';
+      SeekR600:='חזור לאחור 10 דקות'^I'PgDn';
+    Navigation:='&ניווט';
+      Menu := 'תפריט';
+      Titles := 'כותרות';
+      Chapters:= 'פרקים';
+    Extra:='&אפשרויות';
+      Audio:='אודיו במסלול';
+      Subtitle:='רצועת כתוביות';
+        NoSubtitle := 'אין כתוביות';
+      AddSubtitle := 'טען כתוביות...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
+      Aspect:='יחס הממדים';
+        AspectAuto:='זיהוי אוטומטי';
+        Aspect43:='כוח 4: 3';
+        Aspect169:='כוח 16: 9';
+        Aspect235:='כוח 2.35: 1';
+      DeinterlaceAlg:='אלגוריתם Deinterlace';
+        DeinterlaceBlend := 'תערובת';
+        DeinterlaceSimple := 'פשוט';
+        DeinterlaceAdaptative := 'מסתגלת';
+        DeinterlaceDoubleRate := 'תעריף כפול';
       Deinterlace:='Deinterlace';
 
       Off := 'Off';
       On:='On';
-      Auto:='Auto';
+      Auto:='אוטומטי';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
-    Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      Settings := 'התאמות וידאו ...';
+      Options:='הגדרות ...';
+      Language:='שפה';
+      StreamInfo:='הצג פרטי קובץ ...';
+      ShowOutput:='הצג פלט MPlayer ...';
+    Help:='&עזרה';
+      KeyHelp:='עזרה בלוח המקשים ...';
+      About := 'על אודות ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='עזרה בלוח המקשים';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -155,94 +155,94 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='סגור';
 
     //log form
     LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormClose:='סגור';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
-    AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutFormCaption := 'על אודות';
+    AboutFormClose := 'סגור';
+    AboutVersionMPUI := '3nity Media Player גרסה:';
+    AboutVersionMplayer := 'MPlayer גרסה:';
 
     //settings form
-    SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
-    Contrast := 'Contrast';
-    Hue := 'Hue';
-    Saturation := 'Saturation';
-    Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
-    ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    SettingsformCaption := 'התאמות וידאו';
+    Brightness := 'בהירות';
+    Contrast := 'בניגוד';
+    Hue := 'גוון';
+    Saturation := 'רוויה';
+    Gamma := 'גמא';
+    SubScale := 'גודל הגודל';
+    ResetSetting := 'אפס';
+    MResetSetting := 'אפס';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := 'מסך מלא';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='הגדרות';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='להגיש מועמדות';
 
-    OptionsFormAssociate:='Associate';
+    OptionsFormAssociate:='להציל';
     OptionsFormSelectAll:='Select All';
     OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
-    OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormSave:='להציל';
+    OptionsFormClose:='סגור';
+    OptionsFormHelp:='עזרה';
+    OptionsFormParams:='פרמטרים נוספים של MPlayer:';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='לבנות מחדש את קובץ הקובץ במידת הצורך';
+    OptionsFormPriorityBoost:='הפעל עם עדיפות גבוהה יותר';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='הנהג פלט סאונד';
+    AudioOutNoDecode:='(לא לפענח קול)';
+    AudioOutNoOut:='(אל תשמע צליל)';
+    OptionsFormAudioDev:='התקן פלט DirectSound';
+    OptionsFormAudioFilterChannels := 'ערוץ סינון וניתוב';
+    OptionsFormSoftVol:='בקרת נפח תוכנה / להגביר את עוצמת הקול';
+    OptionsFormUseVolcmd := 'השתמש באפשרות ''אפשרויות שורת פקודה''';
+    OptionsFormAudioDecodeChannels := 'מקסימלי מס ''. של ערוצים לפענח';
+    OptionsFormAc3Comp := 'AC3 רמת דחיסה';
+    OptionsFormUseliba52 := 'השתמש בספריית liba52';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := 'מנהל התקן פלט וידאו';
+    VideoOutUser := 'אחר:';
+    OptionsFormOverlay:= 'צבע שכבת על';
+    ForceEvenWidth := 'כוח אפילו רוחב';
+    DirectRender := 'עיבוד ישיר';
+    DoubleBuffer := 'חציצה כפולה';
+    DrawSlices := 'צייר באמצעות פרוסות';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := 'וידאו אקולייזר תוכנה';
     VideoeqOff  := 'Off';
-    VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    VideoScaler := 'תוכנות וידאו Scaler';
+    TryScaler := 'נסה scaler על שגיאה';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='לאחר עיבוד';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='אוטומטי';
+    PostprocMax:='איכות מקסימלית';
 
-    OptionsFormGeneral := 'General';
-    OptionsFormAudio := 'Audio';
-    OptionsFormVideo := 'Video';
-    OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormGeneral := 'כללי';
+    OptionsFormAudio := 'אודיו';
+    OptionsFormVideo := 'וידאו';
+    OptionsFormCaching := 'מטמון';
+    OptionsFormOSDSub := 'OSD וכתוביות';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
-    MediaRamdisk := 'RAM disk';
+    MediaDefault := 'ברירת מחדל';
+    MediaFixed := 'דיסק קבוע';
+    MediaRamdisk := 'דיסק RAM';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
-    MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaRemovable := 'התקן נשלף';
+    mediaNetwork := 'רשת מקומית';
+    MediaInternet := 'אינטרנט';
+    MediaDvd := 'השמעת DVD';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,56 +270,56 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := 'סריקה גופן';
+    SubAss := 'השתמש ב- SSA / ASS';
+    SubAutoLoad := 'טען קבצי כתוביות חיצוניים';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := 'צבע גבול טקסט';
+    SubAssColor := 'צבע טקסט';
+    SubBgColor := 'צבע רקע לטקסט';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'הפעל תפריטי DVD ';
+    DeinterlaceDVD := 'תמיד מחלץ';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
-    PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormCaption:='פלייליסט';
+    PlaylistFormPlay:='שחק';
+    PlaylistFormAdd:='הוסף ...';
+    PlaylistFormMoveUp:='זוז למעלה';
+    PlaylistFormMoveDown:='לרדת';
+    PlaylistFormDelete:='הסר';
+    PlaylistFormShuffle:='דשדוש';
+    PlaylistFormLoop:='חזור';
+    PlaylistFormSave:='להציל ...';
+    PlaylistFormClose:='סגור';
 
-    InfoFormCaption:='File information';
-    InfoFormClose:='Close';
-    InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
-    InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
-    InfoDecoder:='Decoder';
+    InfoFormCaption:='פרטי קובץ';
+    InfoFormClose:='סגור';
+    InfoFormCopy := 'עותק';
+    NoInfo:='אין מידע על הקובץ זמין כרגע.';
+    InfoFileFormat:='פורמט';
+    InfoPlaybackTime:='משך';
+    InfoTags:='מטא נתונים של קליפ';
+    InfoVideo:='רצועת וידאו';
+    InfoAudio:='אודיו במסלול';
+    InfoDecoder:='מפענח';
     InfoCodec:='Codec';
-    InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
-    InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
-    InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
-    InfoInterlace:='Frame';
-    InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
-    InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
-    InfoFormCopyAll := 'Copy All';
+    InfoBitrate:='קצב סיביות';
+    InfoVideoSize:='ממדים';
+    InfoVideoFPS:='קצב פריימים';
+    InfoVideoAspect:='יחס הממדים';
+    InfoAudioRate:='קצב דגימה';
+    InfoAudioChannels:='ערוצים';
+    InfoInterlace:='מסגרת';
+    InfoVideoInt := 'משולבת';
+    InfoVideoPro := 'פרוגרסיבי';
+    InfoTrack := 'עקוב אחר';
+    InfoFilesize := 'גודל הקובץ';
+    InfoSub := 'כתוביות';
+    InfoFormCopyAll := 'העתק הכל';
   end
 end;
 
 begin
-    //RegisterLocale('Hebrew - עברית',Activate,LANG_HEBREW,HEBREW_CHARSET);
+    RegisterLocale('Hebrew - עברית',Activate,LANG_HEBREW,HEBREW_CHARSET);
 end.

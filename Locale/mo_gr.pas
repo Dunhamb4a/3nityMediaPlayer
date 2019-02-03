@@ -31,72 +31,72 @@ begin
       InternetRadios:='Ραδιόφωνα στο Διαδίκτυο';
       OpenTV := 'Open TV/capture card';
       Close:='κοντά';
-      Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
-      AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
-      Pause:='Pause';
-      Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
-      Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+      Quit:='Εγκαταλείπω';
+    View:='&Θέα';
+      SizeAny:='Προσαρμοσμένο μέγεθος';
+      Size50:='Μισό μέγεθος';
+      Size100:='Αυθεντικό μέγεθος';
+      Size200:='Αυθεντικό μέγεθος';
+      VideoInside:='Μην περικόψετε βίντεο';
+      Fullscreen:='ΠΛΗΡΗΣ ΟΘΟΝΗ';
+      AudioEqu:='Εξισωτής';
+      Compact:='Συμπαγής λειτουργία';
+      TogOSD:='Εναλλαγή OSD';
+      OnTop:='Πάντα σε πρώτο πλάνο';
+      Vis:='Οραματισμός';
+      VisEnable:='Εμφάνιση οπτικοποίησης';
+      VisDirectRender:='Άμεση απόδοση';
+    Seek:='&Παίζω';
+      Play:='Παίζω';
+      Pause:='Παύση';
+      Stop:='Να σταματήσει';
+      Prev:='Προηγούμενος τίτλος'^I'Ctrl Left';
+      Next:='Επόμενος τίτλος'^I'Ctrl Right';
+      ShowPlaylist:='Λίστα αναπαραγωγής ...';
+      Mute:='Βουβός';
+      SeekF10:='Προωθήστε 10 δευτερόλεπτα'^I'Right';
+      SeekR10:='Αναδίπλωση 10 δευτερόλεπτα'^I'Left';
+      SeekF60:='Προωθήστε 1 λεπτό'^I'Up';
+      SeekR60:='Αναδίπλωση 1 λεπτό'^I'Down';
+      SeekF600:='Προωθήστε 10 λεπτά'^I'PgUp';
+      SeekR600:='Αναδίπλωση 10 λεπτά'^I'PgDn';
+    Navigation:='&Πλοήγηση';
+      Menu := 'Μενού';
+      Titles := 'Τίτλοι';
+      Chapters:= 'Κεφάλαια';
+    Extra:='&Επιλογές';
+      Audio:='Ηχογράφηση';
+      Subtitle:='Οι υπότιτλοι παρακολουθούν';
+        NoSubtitle := 'Δεν υπάρχουν υπότιτλοι';
+      AddSubtitle := 'Τοποθετήστε τους υπότιτλους...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
-      Deinterlace:='Deinterlace';
+      Aspect:='Αναλογία απεικόνισης';
+        AspectAuto:='Αυτόματη αναγνώριση';
+        Aspect43:='Δύναμη 4: 3';
+        Aspect169:='Δύναμη 16:9';
+        Aspect235:='Δύναμη 2.35:1';
+      DeinterlaceAlg:='Αλγόριθμος απαλλαγής';
+        DeinterlaceBlend := 'Μείγμα';
+        DeinterlaceSimple := 'Απλός';
+        DeinterlaceAdaptative := 'Προσαρμοστικός';
+        DeinterlaceDoubleRate := 'Διπλό συντελεστή';
+      Deinterlace:='Αποστράγγιση';
 
       Off := 'Off';
       On:='On';
-      Auto:='Auto';
+      Auto:='Αυτο';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
-    Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      Settings := 'Ρυθμίσεις βίντεο ...';
+      Options:='Ρυθμίσεις ...';
+      Language:='Γλώσσα';
+      StreamInfo:='Εμφάνιση πληροφοριών αρχείου ...';
+      ShowOutput:='Εμφάνιση της εξόδου MPlayer ...';
+    Help:='&Βοήθεια';
+      KeyHelp:='Βοήθεια πληκτρολογίου ...';
+      About := 'Σχετικά με ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='Βοήθεια πληκτρολογίου';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -158,91 +158,91 @@ begin
     HelpFormClose:='κοντά';
 
     //log form
-    LogFormCaption:='MPlayer output';
+    LogFormCaption:='Έξοδο MPlayer';
     LogFormClose:='κοντά';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
+    AboutFormCaption := 'Σχετικά με ';
     AboutFormClose := 'κοντά';
-    AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutVersionMPUI := '3nity Media Player εκδοχή:';
+    AboutVersionMplayer := 'MPlayer εκδοχή:';
 
     //settings form
-    SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
-    Contrast := 'Contrast';
-    Hue := 'Hue';
-    Saturation := 'Saturation';
+    SettingsformCaption := 'Ρυθμίσεις βίντεο';
+    Brightness := 'Λάμψη';
+    Contrast := 'Αντίθεση';
+    Hue := 'Απόχρωση';
+    Saturation := 'Κορεσμός';
     Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
-    ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    SubScale := 'Μεγέθους υποτίτλων';
+    ResetSetting := 'Επαναφορά';
+    MResetSetting := 'Επαναφορά';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := 'Οθόνη πλήρους οθόνης';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='Ρυθμίσεις';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='Ισχύουν';
 
-    OptionsFormAssociate:='Associate';
+    OptionsFormAssociate:='αποθηκεύσετε';
     OptionsFormSelectAll:='Select All';
     OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
+    OptionsFormSave:='αποθηκεύσετε';
     OptionsFormClose:='κοντά';
-    OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormHelp:='Βοήθεια';
+    OptionsFormParams:='Επιπλέον παραμέτρους MPlayer:';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='Αναδημιουργήστε το ευρετήριο αρχείων, αν είναι απαραίτητο';
+    OptionsFormPriorityBoost:='Εκτελέστε με μεγαλύτερη προτεραιότητα';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='Έλεγχος εξόδου ήχου';
+    AudioOutNoDecode:='(μην αποκωδικοποιείτε τον ήχο)';
+    AudioOutNoOut:='(μην αναπαράγετε ήχο)';
+    OptionsFormAudioDev:='Συσκευή εξόδου DirectSound';
+    OptionsFormAudioFilterChannels := 'Φιλτράρισμα και δρομολόγηση καναλιών';
+    OptionsFormSoftVol:='Έλεγχος έντασης λογισμικού / αύξηση έντασης ήχου';
+    OptionsFormUseVolcmd := 'Χρησιμοποιήστε την επιλογή γραμμής εντολών έντασης';
+    OptionsFormAudioDecodeChannels := 'Μέγιστη. αριθμός. των καναλιών για αποκωδικοποίηση';
+    OptionsFormAc3Comp := 'Επίπεδο συμπίεσης AC3';
+    OptionsFormUseliba52 := 'Χρησιμοποιήστε τη βιβλιοθήκη liba52';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := 'Έξοδος προγράμματος οδήγησης βίντεο';
+    VideoOutUser := 'Αλλα:';
+    OptionsFormOverlay:= 'Χρώμα επικάλυψης';
+    ForceEvenWidth := 'Ισχύει ακόμη και το πλάτος';
+    DirectRender := 'Άμεση απόδοση';
+    DoubleBuffer := 'Διπλό buffer';
+    DrawSlices := 'Σχεδίαση χρησιμοποιώντας φέτες';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := 'Λογισμικό ισοσταθμιστή βίντεο';
     VideoeqOff  := 'Off';
-    VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    VideoScaler := 'Βελτιστοποιητής βίντεο λογισμικού';
+    TryScaler := 'Δοκιμάστε το scaler για σφάλμα';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='Επεξεργασία μετά';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='Αυτόματο';
+    PostprocMax:='Μέγιστη ποιότητα';
 
-    OptionsFormGeneral := 'General';
-    OptionsFormAudio := 'Audio';
-    OptionsFormVideo := 'Video';
+    OptionsFormGeneral := 'Γενικός';
+    OptionsFormAudio := 'Ήχος';
+    OptionsFormVideo := 'βίντεο';
     OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormOSDSub := 'OSD και υπότιτλους';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
-    MediaRamdisk := 'RAM disk';
+    MediaDefault := 'Προκαθορισμένο';
+    MediaFixed := 'Σταθερός δίσκος';
+    MediaRamdisk := 'RAM δίσκο';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
-    MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaRemovable := 'Αφαιρούμενη συσκευή';
+    mediaNetwork := 'Τοπικό δίκτυο';
+    MediaInternet := 'Διαδίκτυο';
+    MediaDvd := 'Αναπαραγωγή DVD';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,53 +270,53 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := 'Σάρωση γραμματοσειρών';
+    SubAss := 'Χρησιμοποιήστε SSA / ASS';
+    SubAutoLoad := 'Τοποθετήστε εξωτερικά αρχεία υποτίτλων';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := 'Χρώμα περιγράμματος κειμένου';
+    SubAssColor := 'Χρώμα κειμένου';
+    SubBgColor := 'Χρώμα φόντου κειμένου';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'Ενεργοποιήστε τα μενού του DVD ';
+    DeinterlaceDVD := 'Πάντοτε αποσυναρμολόγηση';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
-    PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
+    PlaylistFormCaption:='Λίστα αναπαραγωγής';
+    PlaylistFormPlay:='Παίζω';
+    PlaylistFormAdd:='Προσθέτω ...';
+    PlaylistFormMoveUp:='Μετακινήστε επάνω';
+    PlaylistFormMoveDown:='Μετακινηθείτε προς τα κάτω';
+    PlaylistFormDelete:='Αφαιρώ';
+    PlaylistFormShuffle:='Ανάμιξη';
+    PlaylistFormLoop:='Επαναλαμβάνω';
+    PlaylistFormSave:='αποθηκεύσετε ...';
     PlaylistFormClose:='κοντά';
 
-    InfoFormCaption:='File information';
+    InfoFormCaption:='Πληροφορίες αρχείου';
     InfoFormClose:='κοντά';
-    InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
-    InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
-    InfoDecoder:='Decoder';
-    InfoCodec:='Codec';
+    InfoFormCopy := 'αντιγράφω';
+    NoInfo:='Δεν υπάρχουν πληροφορίες αρχείου αυτήν τη στιγμή.';
+    InfoFileFormat:='Μορφή';
+    InfoPlaybackTime:='Διάρκεια';
+    InfoTags:='Μεταδεδομένα';
+    InfoVideo:='Βίντεο κομματιού';
+    InfoAudio:='Ηχογράφηση';
+    InfoDecoder:='Αποκρυπτογράφος';
+    InfoCodec:='Κωδικοποιητής';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
-    InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
-    InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
-    InfoInterlace:='Frame';
-    InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
-    InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
-    InfoFormCopyAll := 'Copy All';
+    InfoVideoSize:='Διαστάσεις';
+    InfoVideoFPS:='Ρυθμός καρέ';
+    InfoVideoAspect:='Αναλογία απεικόνισης';
+    InfoAudioRate:='Ρυθμός δειγματοληψίας';
+    InfoAudioChannels:='Κανάλια';
+    InfoInterlace:='Πλαίσιο';
+    InfoVideoInt := 'Ενδιάμεσα';
+    InfoVideoPro := 'Προοδευτικός';
+    InfoTrack := 'Πίστα';
+    InfoFilesize := 'Μέγεθος αρχείου';
+    InfoSub := 'Υπότιτλοι';
+    InfoFormCopyAll := 'Αντιγράψτε όλα';
   end
 end;
 

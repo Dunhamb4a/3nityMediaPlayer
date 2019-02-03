@@ -62,6 +62,7 @@ object frmPlayList: TfrmPlayList
     Anchors = [akTop, akRight]
     Caption = 'Play'
     TabOrder = 1
+    WordWrap = True
     OnClick = BPlayClick
   end
   object BAdd: TBitBtn
@@ -72,6 +73,7 @@ object frmPlayList: TfrmPlayList
     Anchors = [akTop, akRight]
     Caption = 'Add'
     TabOrder = 2
+    WordWrap = True
     OnClick = BAddClick
   end
   object BMoveUp: TBitBtn
@@ -83,6 +85,7 @@ object frmPlayList: TfrmPlayList
     Anchors = [akTop, akRight]
     Caption = 'Move up'
     TabOrder = 3
+    WordWrap = True
     OnClick = BMoveClick
   end
   object BMoveDown: TBitBtn
@@ -93,6 +96,7 @@ object frmPlayList: TfrmPlayList
     Anchors = [akTop, akRight]
     Caption = 'Move down'
     TabOrder = 4
+    WordWrap = True
     OnClick = BMoveClick
   end
   object BDelete: TBitBtn
@@ -103,16 +107,18 @@ object frmPlayList: TfrmPlayList
     Anchors = [akTop, akRight]
     Caption = 'Delete'
     TabOrder = 5
+    WordWrap = True
     OnClick = BDeleteClick
   end
   object CShuffle: TCheckBox
     Left = 311
     Top = 217
     Width = 87
-    Height = 17
+    Height = 15
     Anchors = [akTop, akRight]
     Caption = 'Shuffle'
     TabOrder = 6
+    WordWrap = True
     OnClick = CShuffleClick
   end
   object CLoop: TCheckBox
@@ -123,6 +129,7 @@ object frmPlayList: TfrmPlayList
     Anchors = [akTop, akRight]
     Caption = 'Repeat'
     TabOrder = 7
+    WordWrap = True
     OnClick = CLoopClick
   end
   object BSave: TBitBtn
@@ -133,6 +140,7 @@ object frmPlayList: TfrmPlayList
     Anchors = [akTop, akRight]
     Caption = 'Save'
     TabOrder = 8
+    WordWrap = True
     OnClick = BSaveClick
   end
   object btnClose: TBitBtn

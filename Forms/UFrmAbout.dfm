@@ -4544,9 +4544,10 @@ object frmAbout: TfrmAbout
       'GNU General Public License, Version 2.'
       ''
       ''
-      '(C) 2014 - 2019 Nicolas D. at 3nity Softwares    '
+      '(C) 2014 - 2019 Nicolas DEOUX at 3nity Softwares    '
       'www.3nitysoftwares.com'
       ''
+      'nicolas.deoux@gmail.com'
       ''
       'based on work by Visenri <http://mpui-ve.sourceforge.net>'
       
