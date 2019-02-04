@@ -8,95 +8,95 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='Nyílás ...';
+      Status_Closing:='Záró ...';
+      Status_Playing:='Játék';
+      Status_Paused:='Szünetel';
+      Status_Stopped:='megállt';
+      Status_Error:='Nem lehet lejátszani a médiát (további információért kattintson)';
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
-      InternetRadios:='Internet radios';
+    FullscreenControls:='Teljes képernyős vezérlők megjelenítése';
+    OSD:='OSD mód';
+      NoOSD:='Nincs OSD';
+      DefaultOSD:='Alapértelmezett OSD';
+      TimeOSD:='Idő megjelenítése';
+      FullOSD:='Teljes idő megjelenítése';
+    Escape:='A teljes képernyős módból való kilépéshez nyomja meg az Escape gombot.';
+    Filemenu:='&Fájl';
+      OpenFile:='Fájl lejátszása ...';
+      OpenURL:='URL lejátszása ...';
+        OpenURL_Caption:='URL lejátszása';
+        OpenURL_Prompt:='Melyik URL-t szeretné megnyitni?';
+      OpenDrive:='CD / DVD lejátszása';
+      InternetRadios:='Internet rádiók';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
+      Close:='Bezárás';
       Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
-      AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
-      Pause:='Pause';
-      Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
-      Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+    View:='&Kilátás';
+      SizeAny:='Egyedi méret';
+      Size50:='Feleakkora';
+      Size100:='Eredeti méret';
+      Size200:='Dupla méret';
+      VideoInside:='Ne vágjon videót';
+      Fullscreen:='Teljes képernyő';
+      AudioEqu:='Kiegyenlítő';
+      Compact:='Kompakt mód';
+      TogOSD:='Az OSD váltása';
+      OnTop:='Mindig a tetején';
+      Vis:='Megjelenítés';
+      VisEnable:='Megjelenítés megjelenítése';
+      VisDirectRender:='Közvetlen megjelenítés';
+    Seek:='&Játék';
+      Play:='Játék';
+      Pause:='Szünet';
+      Stop:='Állj meg';
+      Prev:='Korábbi cím'^I'Ctrl Left';
+      Next:='Következő cím'^I'Ctrl Right';
+      ShowPlaylist:='lejátszási lista ...';
+      Mute:='Néma';
+      SeekF10:='Tovább 10 másodperc'^I'Right';
+      SeekR10:='Fordítsa vissza 10 másodpercet'^I'Left';
+      SeekF60:='Előre 1 perc'^I'Up';
+      SeekR60:='Fordítsa vissza 1 percet'^I'Down';
+      SeekF600:='Tovább 10 perc'^I'PgUp';
+      SeekR600:='Fordítsa vissza 10 percet'^I'PgDn';
+    Navigation:='&Navigáció';
+      Menu := 'Menü';
+      Titles := 'Címek';
+      Chapters:= 'fejezetek';
+    Extra:='&Opciók';
+      Audio:='Hangsáv';
+      Subtitle:='Feliratok nyomon követése';
+        NoSubtitle := 'Nincs felirat';
+      AddSubtitle := 'Feliratok betöltése...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
+      Aspect:='Képarány';
+        AspectAuto:='Auto felismerés';
+        Aspect43:='Erő 4: 3';
+        Aspect169:='Erő 16: 9';
+        Aspect235:='Erő 2.35: 1';
+      DeinterlaceAlg:='Deinterlace algoritmus';
+        DeinterlaceBlend := 'Keverék';
+        DeinterlaceSimple := 'Egyszerű';
+        DeinterlaceAdaptative := 'Adaptív';
+        DeinterlaceDoubleRate := 'Dupla arány';
       Deinterlace:='Deinterlace';
 
       Off := 'Off';
       On:='On';
-      Auto:='Auto';
+      Auto:='kocsi';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
-    Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      Settings := 'A videó beállításai ...';
+      Options:='Beállítások ...';
+      Language:='Nyelv';
+      StreamInfo:='Fájlinformációk megjelenítése ...';
+      ShowOutput:='Az MPlayer kimenet megjelenítése ...';
+    Help:='&Segítség';
+      KeyHelp:='A billentyűzet segítségével ...';
+      About := 'Ról ről ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='A billentyűzet segítségével';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -155,94 +155,94 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='Bezárás';
 
     //log form
-    LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormCaption:='MPlayer kimenet';
+    LogFormClose:='Bezárás';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
-    AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutFormCaption := 'Ról ről ';
+    AboutFormClose := 'Bezárás';
+    AboutVersionMPUI := '3nity Media Player változat:';
+    AboutVersionMplayer := 'MPlayer változat:';
 
     //settings form
-    SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
-    Contrast := 'Contrast';
-    Hue := 'Hue';
-    Saturation := 'Saturation';
+    SettingsformCaption := 'A videó beállításai';
+    Brightness := 'Fényesség';
+    Contrast := 'Kontraszt';
+    Hue := 'Színárnyalat';
+    Saturation := 'Telítettség';
     Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
-    ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    SubScale := 'Feliratok mérete';
+    ResetSetting := 'Visszaállítás';
+    MResetSetting := 'Visszaállítás';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := 'Teljes képernyős monitor';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='Beállítások';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='Alkalmaz';
 
-    OptionsFormAssociate:='Associate';
-    OptionsFormSelectAll:='Select All';
-    OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
-    OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormAssociate:='Mentés';
+    OptionsFormSelectAll:='Mindet kiválaszt';
+    OptionsFormSelectNone:='Egyik sem';
+    OptionsFormSave:='Mentés';
+    OptionsFormClose:='Bezárás';
+    OptionsFormHelp:='Segítség';
+    OptionsFormParams:='További MPlayer paraméterek:';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='Szükség esetén újraindítsa a fájlindexet';
+    OptionsFormPriorityBoost:='Fuss nagyobb prioritással';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='Hangkimeneti meghajtó';
+    AudioOutNoDecode:='(ne dekódolja a hangot)';
+    AudioOutNoOut:='(ne játsszon hangot)';
+    OptionsFormAudioDev:='DirectSound kimeneti eszköz';
+    OptionsFormAudioFilterChannels := 'Csatorna szűrés és útválasztás';
+    OptionsFormSoftVol:='Szoftver hangerőszabályzó / hangerő növelése';
+    OptionsFormUseVolcmd := 'Használja a kötet parancssorát';
+    OptionsFormAudioDecodeChannels := 'Max. szám. csatornák dekódolásához';
+    OptionsFormAc3Comp := 'AC3 tömörítési szint';
+    OptionsFormUseliba52 := 'Használja a liba52 könyvtárat';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := 'Videó kimeneti illesztőprogram';
+    VideoOutUser := 'Más:';
+    OptionsFormOverlay:= 'Átfedés színe';
+    ForceEvenWidth := 'Erős szélesség';
+    DirectRender := 'Közvetlen megjelenítés';
+    DoubleBuffer := 'Dupla pufferelés';
+    DrawSlices := 'Rajzoljon szeleteket';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := 'Szoftver videó kiegyenlítő';
     VideoeqOff  := 'Off';
-    VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    VideoScaler := 'Szoftveres videó-skálázó';
+    TryScaler := 'Próbálkozzon hibaelhárítással';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='Post feldolgozás';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='Automatikus';
+    PostprocMax:='Maximális minőség';
 
-    OptionsFormGeneral := 'General';
-    OptionsFormAudio := 'Audio';
-    OptionsFormVideo := 'Video';
-    OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormGeneral := 'Tábornok';
+    OptionsFormAudio := 'Hang';
+    OptionsFormVideo := 'Videó';
+    OptionsFormCaching := 'gyorsítótárral';
+    OptionsFormOSDSub := 'OSD és feliratok';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
-    MediaRamdisk := 'RAM disk';
+    MediaDefault := 'Alapértelmezett';
+    MediaFixed := 'Rögzített lemez';
+    MediaRamdisk := 'RAM lemez';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
+    MediaRemovable := 'Eltávolítható eszköz';
+    mediaNetwork := 'Helyi hálózat';
     MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaDvd := 'DVD-lejátszás';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,56 +270,56 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := 'Betűtípus-vizsgálat';
+    SubAss := 'Használja az SSA / ASS-t';
+    SubAutoLoad := 'Töltsön fel külső feliratfájlokat';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := 'Szöveges szegély színe';
+    SubAssColor := 'Szöveg szín';
+    SubBgColor := 'Szöveg háttér színe';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'DVD menük engedélyezése ';
+    DeinterlaceDVD := 'Mindig hajtsa le';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
-    PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormCaption:='lejátszási lista';
+    PlaylistFormPlay:='Játék';
+    PlaylistFormAdd:='hozzáad ...';
+    PlaylistFormMoveUp:='Mozgassa fel';
+    PlaylistFormMoveDown:='Menj le';
+    PlaylistFormDelete:='eltávolít';
+    PlaylistFormShuffle:='Keverés';
+    PlaylistFormLoop:='Ismétlés';
+    PlaylistFormSave:='Mentés ...';
+    PlaylistFormClose:='Bezárás';
 
-    InfoFormCaption:='File information';
-    InfoFormClose:='Close';
-    InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
-    InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
+    InfoFormCaption:='Fájl információk';
+    InfoFormClose:='Bezárás';
+    InfoFormCopy := 'Másolat';
+    NoInfo:='Jelenleg nem áll rendelkezésre fájlinformáció.';
+    InfoFileFormat:='Formátum';
+    InfoPlaybackTime:='tartam';
+    InfoTags:='A metaadatok rögzítése';
+    InfoVideo:='Videó sáv';
+    InfoAudio:='Hangsáv';
     InfoDecoder:='Decoder';
     InfoCodec:='Codec';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
-    InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
-    InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
-    InfoInterlace:='Frame';
-    InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
-    InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
-    InfoFormCopyAll := 'Copy All';
+    InfoVideoSize:='Méretek';
+    InfoVideoFPS:='Filmkocka szám';
+    InfoVideoAspect:='Képarány';
+    InfoAudioRate:='Mintavételi ráta';
+    InfoAudioChannels:='Csatornák';
+    InfoInterlace:='Keret';
+    InfoVideoInt := 'Az átlapolt';
+    InfoVideoPro := 'Haladó';
+    InfoTrack := 'Vágány';
+    InfoFilesize := 'Fájl méret';
+    InfoSub := 'feliratok';
+    InfoFormCopyAll := 'Összes másolása';
   end
 end;
 
 begin
-   //RegisterLocale('Hungarian - Magyar',Activate,LANG_HUNGARIAN,EASTEUROPE_CHARSET);
+   RegisterLocale('Hungarian - Magyar',Activate,LANG_HUNGARIAN,EASTEUROPE_CHARSET);
 end.

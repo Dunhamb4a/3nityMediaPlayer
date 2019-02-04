@@ -1,4 +1,4 @@
-﻿unit mo_ukrainian;
+unit mo_ukrainian;
 
 interface
 implementation
@@ -8,95 +8,95 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='відкриття ...';
+      Status_Closing:='закриття ...';
+      Status_Playing:='відтворення';
+      Status_Paused:='припинена';
+      Status_Stopped:='зупинився';
+      Status_Error:='Неможливо відтворити медіа (натисніть, щоб отримати додаткову інформацію)';
 
-    FullscreenControls:='Show fullscreen controls';
+    FullscreenControls:='Показати повноекранні елементи керування';
     OSD:='OSD mode';
       NoOSD:='No OSD';
       DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
-      InternetRadios:='Internet radios';
+      TimeOSD:='Показувати час';
+      FullOSD:='Показати загальний час';
+    Escape:='Натисніть Escape, щоб вийти з повноекранного режиму.';
+    Filemenu:='&Файл';
+      OpenFile:='Відтворити файл ...';
+      OpenURL:='URL-адреса відтворення ...';
+        OpenURL_Caption:='URL-адреса відтворення';
+        OpenURL_Prompt:='Яку URL-адресу потрібно відтворити?';
+      OpenDrive:='Відтворення CD / DVD';
+      InternetRadios:='Інтернет-радіо';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
-      Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
-      AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
-      Pause:='Pause';
-      Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
-      Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+      Close:='близько';
+      Quit:='вихід';
+    View:='&Переглянути';
+      SizeAny:='Спеціальний розмір';
+      Size50:='Половина розміру';
+      Size100:='Оригінальний розмір';
+      Size200:='Подвійний розмір';
+      VideoInside:='Не обрізайте відео';
+      Fullscreen:='Повноекранний';
+      AudioEqu:='Еквалайзер';
+      Compact:='Компактний режим';
+      TogOSD:='Перемкнути екранне меню';
+      OnTop:='Завжди на висоті';
+      Vis:='Візуалізація';
+      VisEnable:='Показати візуалізацію';
+      VisDirectRender:='Прямий рендеринг';
+    Seek:='&Грати';
+      Play:='Грати';
+      Pause:='Пауза';
+      Stop:='Стій';
+      Prev:='Попередній заголовок'^I'Ctrl Left';
+      Next:='Наступний заголовок'^I'Ctrl Right';
+      ShowPlaylist:='Список відтворення ...';
+      Mute:='німий';
+      SeekF10:='Вперед 10 секунд'^I'Right';
+      SeekR10:='Перемотування назад 10 секунд'^I'Left';
+      SeekF60:='Вперед 1 хвилина'^I'Up';
+      SeekR60:='Перемотати 1 хвилину'^I'Down';
+      SeekF600:='Вперед 10 хвилин'^I'PgUp';
+      SeekR600:='Перемотати 10 хвилин'^I'PgDn';
+    Navigation:='&Навігація';
+      Menu := 'Меню';
+      Titles := 'Назви';
+      Chapters:= 'Розділи';
+    Extra:='&Опції';
+      Audio:='Аудіодоріжка';
+      Subtitle:='Пісня субтитрів';
+        NoSubtitle := 'Немає субтитрів';
+      AddSubtitle := 'Завантаження субтитрів...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
-      Deinterlace:='Deinterlace';
+      Aspect:='Співвідношення сторін';
+        AspectAuto:='Автовизначення';
+        Aspect43:='Сила 4:3';
+        Aspect169:='Сила 16:9';
+        Aspect235:='Сила 2.35:1';
+      DeinterlaceAlg:='Алгоритм деінтерляції';
+        DeinterlaceBlend := 'Суміш';
+        DeinterlaceSimple := 'Простий';
+        DeinterlaceAdaptative := 'Адаптивна';
+        DeinterlaceDoubleRate := 'Подвійний тариф';
+      Deinterlace:='Деінтерлейс';
 
       Off := 'Off';
       On:='On';
-      Auto:='Auto';
+      Auto:='Авто';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
-    Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      Settings := 'Налаштування відео ...';
+      Options:='Налаштування ...';
+      Language:='Мова';
+      StreamInfo:='Показати інформацію про файл ...';
+      ShowOutput:='Показати вихід MPlayer ...';
+    Help:='&Довідка';
+      KeyHelp:='Довідка з клавіатури ...';
+      About := 'Про ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='Довідка з клавіатури';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -155,94 +155,94 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='близько';
 
     //log form
-    LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormCaption:='Вихід MPlayer';
+    LogFormClose:='близько';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
+    AboutFormCaption := 'Версія 3nity Media Player';
+    AboutFormClose := 'близько';
     AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutVersionMplayer := 'Версія MPlayer:';
 
     //settings form
-    SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
-    Contrast := 'Contrast';
+    SettingsformCaption := 'Налаштування відео';
+    Brightness := 'Яскравість';
+    Contrast := 'Контраст';
     Hue := 'Hue';
-    Saturation := 'Saturation';
-    Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
-    ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    Saturation := 'Насиченість';
+    Gamma := 'Гамма';
+    SubScale := 'Розмір субтитрів';
+    ResetSetting := 'Скинути';
+    MResetSetting := 'Скинути';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := 'Повноекранний монітор';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='Налаштування';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='Застосувати';
 
-    OptionsFormAssociate:='Associate';
-    OptionsFormSelectAll:='Select All';
-    OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
-    OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormAssociate:='економити';
+    OptionsFormSelectAll:='Вибрати все';
+    OptionsFormSelectNone:='Немає';
+    OptionsFormSave:='економити';
+    OptionsFormClose:='близько';
+    OptionsFormHelp:='Довідка';
+    OptionsFormParams:='Додаткові параметри MPlayer:';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='Переробити індекс файлу, якщо необхідно';
+    OptionsFormPriorityBoost:='Запуск із вищим пріоритетом';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='Драйвер виведення звуку';
+    AudioOutNoDecode:='(не декодувати звук)';
+    AudioOutNoOut:='(не відтворюйте звук)';
+    OptionsFormAudioDev:='Вихідний пристрій DirectSound';
+    OptionsFormAudioFilterChannels := 'Фільтрація каналів і маршрутизація';
+    OptionsFormSoftVol:='Керування гучністю програмного забезпечення / підвищення гучності';
+    OptionsFormUseVolcmd := 'Використовуйте параметр командного рядка volume';
+    OptionsFormAudioDecodeChannels := 'Макс. номер. каналів для декодування';
+    OptionsFormAc3Comp := 'Рівень стиснення AC3';
+    OptionsFormUseliba52 := 'Рівень стиснення AC3';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := 'Драйвер виводу відео';
+    VideoOutUser := 'Інший:';
+    OptionsFormOverlay:= 'Накладання кольору';
+    ForceEvenWidth := 'Примусово рівна ширина';
+    DirectRender := 'Прямий рендеринг';
+    DoubleBuffer := 'Подвійна буферизація';
+    DrawSlices := 'Намалюйте фрагменти';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := 'Програмне забезпечення відео еквалайзера';
     VideoeqOff  := 'Off';
-    VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    VideoScaler := 'Програмне забезпечення відео скалера';
+    TryScaler := 'Спробуйте виконати скалер за помилкою';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='Подальша обробка';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='Автоматично';
+    PostprocMax:='Максимальна якість';
 
-    OptionsFormGeneral := 'General';
-    OptionsFormAudio := 'Audio';
-    OptionsFormVideo := 'Video';
-    OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormGeneral := 'Загальні';
+    OptionsFormAudio := 'Аудіо';
+    OptionsFormVideo := 'Відео';
+    OptionsFormCaching := 'Кешування';
+    OptionsFormOSDSub := 'OSD/субтитри';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
-    MediaRamdisk := 'RAM disk';
+    MediaDefault := 'За замовчуванням';
+    MediaFixed := 'Фіксований диск';
+    MediaRamdisk := 'RAM диск';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
-    MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaRemovable := 'Знімний пристрій';
+    mediaNetwork := 'Локальна мережа';
+    MediaInternet := 'Інтернет';
+    MediaDvd := 'Відтворення DVD';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,56 +270,56 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := 'Сканування шрифтів';
+    SubAss := 'Використовуйте SSA / ASS';
+    SubAutoLoad := 'Завантажте файли зовнішніх субтитрів';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := 'Колір рамки тексту';
+    SubAssColor := 'Колір тексту';
+    SubBgColor := 'Колір фону тексту';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'Увімкнення меню DVD ';
+    DeinterlaceDVD := 'Завжди деінтерлейс';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
-    PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormCaption:='Список відтворення';
+    PlaylistFormPlay:='Грати';
+    PlaylistFormAdd:='Додати ...';
+    PlaylistFormMoveUp:='Рухатися вгору';
+    PlaylistFormMoveDown:='Рухатися вниз';
+    PlaylistFormDelete:='Видалити';
+    PlaylistFormShuffle:='Перемішати';
+    PlaylistFormLoop:='Повторіть';
+    PlaylistFormSave:='економити ...';
+    PlaylistFormClose:='близько';
 
-    InfoFormCaption:='File information';
-    InfoFormClose:='Close';
-    InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
-    InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
+    InfoFormCaption:='Інформація про файл';
+    InfoFormClose:='близько';
+    InfoFormCopy := 'Копіювати';
+    NoInfo:='На даний момент інформація про файл не доступна.';
+    InfoFileFormat:='Формат';
+    InfoPlaybackTime:='Тривалість';
+    InfoTags:='Метадані кліпу';
+    InfoVideo:='Відеотрек';
+    InfoAudio:='Аудіодоріжка';
     InfoDecoder:='Decoder';
     InfoCodec:='Codec';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
-    InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
-    InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
-    InfoInterlace:='Frame';
-    InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
-    InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
-    InfoFormCopyAll := 'Copy All';
+    InfoVideoSize:='Розміри';
+    InfoVideoFPS:='Частота кадрів';
+    InfoVideoAspect:='Співвідношення сторін';
+    InfoAudioRate:='Частота вибірки';
+    InfoAudioChannels:='Канали';
+    InfoInterlace:='Кадр';
+    InfoVideoInt := 'Чересстрочная';
+    InfoVideoPro := 'Прогресивна';
+    InfoTrack := 'Трек';
+    InfoFilesize := 'Розмір файлу';
+    InfoSub := 'Субтитри';
+    InfoFormCopyAll := 'Копіювати все';
   end
 end;
 
 begin
-    //RegisterLocale('Ukrainian - Українська', Activate, LANG_UKRAINIAN, RUSSIAN_CHARSET);
+    RegisterLocale('Ukrainian - Українська', Activate, LANG_UKRAINIAN, RUSSIAN_CHARSET);
 end.

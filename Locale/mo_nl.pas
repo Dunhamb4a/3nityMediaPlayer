@@ -8,95 +8,95 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='Openen ...';
+      Status_Closing:='Sluiten ...';
+      Status_Playing:='Speelt';
+      Status_Paused:='Gepauseerd';
+      Status_Stopped:='Gestopt';
+      Status_Error:='Media niet afspeelbaar (Klik voor meer info)';
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
-      InternetRadios:='Internet radios';
+    FullscreenControls:='Volledig scherm';
+    OSD:='OSD (on-screen display) modus';
+      NoOSD:='Geen OSD';
+      DefaultOSD:='Standaard OSD';
+      TimeOSD:='Verstreken speeltijd';
+      FullOSD:='Totale speeltijd';
+    Escape:='Druk op Escape om de modus voor volledig scherm te sluiten.';
+    Filemenu:='&Bestand';
+      OpenFile:='Bestand laden ...';
+      OpenURL:='URL laden ...';
+        OpenURL_Caption:='URL laden';
+        OpenURL_Prompt:='Welke URL wenst u af te spelen?';
+      OpenDrive:='Laad (V)CD/DVD/BlueRay';
+      InternetRadios:='Internetradio''s';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
-      Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
+      Close:='Media sluiten';
+      Quit:='Afsluiten';
+    View:='&Beeld';
+      SizeAny:='Willekeurig formaat';
+      Size50:='Half formaat';
+      Size100:='Origineel formaat';
+      Size200:='Dubbel formaat';
+      VideoInside:='Geen video bijsnijden';
+      Fullscreen:='Beeldvullend';
       AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
+      Compact:='Compacte modus';
+      TogOSD:='OSD-modus wijzigen';
+      OnTop:='Venster altijd zichtbaar';
+      Vis:='visualisatie';
+      VisEnable:='Visualisatie weergeven';
+      VisDirectRender:='Directe weergave';
+    Seek:='&Afspelen';
+      Play:='Afspelen';
       Pause:='Pause';
-      Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
+      Stop:='Media sluiten';
+      Prev:='Vorig item in speellijst'^I'Ctrl Left';
+      Next:='Volgend item in speellijst'^I'Ctrl Right';
+      ShowPlaylist:='Speellijst ...';
+      Mute:='Geluid aan/uit';
+      SeekF10:='10 seconden doorspoelen'^I'Right';
+      SeekR10:='10 seconden terugspoelen'^I'Left';
+      SeekF60:='1 minuut doorspoelen'^I'Up';
+      SeekR60:='1 minuut terugspoelen'^I'Down';
+      SeekF600:='10 minuten doorspoelen'^I'PgUp';
+      SeekR600:='10 minuten terugspoelen'^I'PgDn';
+    Navigation:='&Navigatie';
       Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+      Titles := 'Titels';
+      Chapters:= 'hoofdstukken';
+    Extra:='&Extra';
+      Audio:='Audiospoor';
+      Subtitle:='Ondertitelspoor';
+        NoSubtitle := 'Geen ondertiteling';
+      AddSubtitle := 'Ondertitels laden...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
-      Deinterlace:='Deinterlace';
+      Aspect:='Verhouding';
+        AspectAuto:='Detecteren';
+        Aspect43:='4:3 forceren';
+        Aspect169:='16:9 forceren';
+        Aspect235:='2.35:1 forceren';
+      DeinterlaceAlg:='Deinterlacing-algoritme';
+        DeinterlaceBlend := 'Mengsel';
+        DeinterlaceSimple := 'Eenvoudig';
+        DeinterlaceAdaptative := 'Adaptief';
+        DeinterlaceDoubleRate := 'Dubbele prijs';
+      Deinterlace:='Deinterlacing';
 
       Off := 'Off';
       On:='On';
       Auto:='Auto';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
+      Settings := 'Video-aanpassingen ...';
+      Options:='instellingen ...';
+      Language:='Taal';
+      StreamInfo:='Toon media-informatie ...';
+      ShowOutput:='Toon MPlayer output ...';
     Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      KeyHelp:='Toetsenbord help ...';
+      About := 'Info ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='Toetsenbord help';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -155,94 +155,94 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='Sluiten';
 
     //log form
-    LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormCaption:='MPlayer-uitvoer';
+    LogFormClose:='Sluiten';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
-    AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutFormCaption := 'Info ';
+    AboutFormClose := 'Sluiten';
+    AboutVersionMPUI := '3nity Media Player versie:';
+    AboutVersionMplayer := 'MPlayer versie:';
 
     //settings form
     SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
+    Brightness := 'Helderheid';
     Contrast := 'Contrast';
-    Hue := 'Hue';
-    Saturation := 'Saturation';
+    Hue := 'Tint';
+    Saturation := 'Verzadiging';
     Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
+    SubScale := 'Ondertitels grootte';
     ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    MResetSetting := 'Reset';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := 'Volledig scherm';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='instellingen';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='Toepassen';
 
-    OptionsFormAssociate:='Associate';
-    OptionsFormSelectAll:='Select All';
-    OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
+    OptionsFormAssociate:='Opslaan';
+    OptionsFormSelectAll:='Selecteer alles';
+    OptionsFormSelectNone:='Geen';
+    OptionsFormSave:='Opslaan';
+    OptionsFormClose:='Sluiten';
     OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormParams:='Additionele MPlayer parameters:';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='Video-index hergenereren indien nodig';
+    OptionsFormPriorityBoost:='Afspelen met hogere prioriteit';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='Geluidsuitgangsdriver';
+    AudioOutNoDecode:='(decodeer het geluid niet)';
+    AudioOutNoOut:='(speel geen geluid)';
+    OptionsFormAudioDev:='DirectSound-uitvoerapparaat';
+    OptionsFormAudioFilterChannels := 'Kanaalfiltering en routing';
+    OptionsFormSoftVol:='Softwarematige volumeregeling / Volume boost';
+    OptionsFormUseVolcmd := 'Gebruik de opdrachtregeloptie volume';
+    OptionsFormAudioDecodeChannels := 'Max. aantal. van kanalen om te decoderen';
+    OptionsFormAc3Comp := 'AC3 compressieniveau';
+    OptionsFormUseliba52 := 'Gebruik de liba52-bibliotheek';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := 'Video-uitvoerstuurprogramma';
+    VideoOutUser := 'anders:';
+    OptionsFormOverlay:= 'Overlay kleur';
+    ForceEvenWidth := 'Forceer gelijkmatige breedte';
+    DirectRender := 'Directe weergave';
+    DoubleBuffer := 'Dubbele buffering';
+    DrawSlices := 'Teken met plakjes';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := 'Software video-equalizer';
     VideoeqOff  := 'Off';
     VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    TryScaler := 'Probeer scaler op fout';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='Nabewerking';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='automatisch';
+    PostprocMax:='MMaximale kwaliteit';
 
-    OptionsFormGeneral := 'General';
+    OptionsFormGeneral := 'Algemeen';
     OptionsFormAudio := 'Audio';
     OptionsFormVideo := 'Video';
     OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormOSDSub := 'OSD en ondertitels';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
-    MediaRamdisk := 'RAM disk';
+    MediaDefault := 'Standaard';
+    MediaFixed := 'Vaste schijf';
+    MediaRamdisk := 'RAM-schijf';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
+    MediaRemovable := 'Verwijderbaar apparaat';
+    mediaNetwork := 'Lokaal netwerk';
     MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaDvd := 'DVD afspelen';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,56 +270,56 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := 'Lettertype scannen';
+    SubAss := 'Gebruik SSA / ASS';
+    SubAutoLoad := 'Laad externe ondertitelingsbestanden';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := 'Tekst randkleur';
+    SubAssColor := 'Tekst kleur';
+    SubBgColor := 'Tekst achtergrondkleur';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'DVD-menu''s inschakelen ';
+    DeinterlaceDVD := 'Altijd deïnterliniëren';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
+    PlaylistFormCaption:='Speellijst';
+    PlaylistFormPlay:='Afspelen';
+    PlaylistFormAdd:='Toevoegen ...';
+    PlaylistFormMoveUp:='Naar boven';
+    PlaylistFormMoveDown:='Naar beneden';
+    PlaylistFormDelete:='Verwijderen';
     PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormLoop:='Herhalen';
+    PlaylistFormSave:='Opslaan ...';
+    PlaylistFormClose:='Sluiten';
 
-    InfoFormCaption:='File information';
-    InfoFormClose:='Close';
+    InfoFormCaption:='Media-informatie';
+    InfoFormClose:='Sluiten';
     InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
-    InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
+    NoInfo:='Momenteel geen media-informatie beschikbaar.';
+    InfoFileFormat:='Bestandsformaat';
+    InfoPlaybackTime:='Speelduur';
+    InfoTags:='Metadata';
+    InfoVideo:='Videospoor';
+    InfoAudio:='Audiospoor';
     InfoDecoder:='Decoder';
     InfoCodec:='Codec';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
-    InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
+    InfoVideoSize:='Afmetingen';
+    InfoVideoFPS:='Beelden per seconde';
+    InfoVideoAspect:='Verhoudingen';
     InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
+    InfoAudioChannels:='Kanalen';
     InfoInterlace:='Frame';
     InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
-    InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
+    InfoVideoPro := 'Progressief';
+    InfoTrack := 'Spoor';
+    InfoFilesize := 'Bestandsgrootte';
+    InfoSub := 'Ondertitels';
     InfoFormCopyAll := 'Copy All';
   end
 end;
 
 begin
-    //RegisterLocale('Netherlands - Nederlands ' ,Activate, LANG_DUTCH, ANSI_CHARSET);
+    RegisterLocale('Netherlands - Nederlands ' ,Activate, LANG_DUTCH, ANSI_CHARSET);
 end.

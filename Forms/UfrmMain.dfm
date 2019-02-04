@@ -13611,7 +13611,11 @@ object frmMain: TfrmMain
         Height = 105
         BevelOuter = bvNone
         Color = clFuchsia
+        Ctl3D = True
+        DoubleBuffered = True
         ParentBackground = False
+        ParentCtl3D = False
+        ParentDoubleBuffered = False
         PopupMenu = MPopup
         TabOrder = 0
         Visible = False
@@ -14698,7 +14702,7 @@ object frmMain: TfrmMain
   object Imagery: TImageList
     Top = 160
     Bitmap = {
-      494C010144000801C80110001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010144000801E40110001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000002001000001002000000000000020
       0100000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

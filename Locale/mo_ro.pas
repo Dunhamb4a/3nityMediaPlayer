@@ -1,4 +1,4 @@
-﻿unit mo_ro;
+unit mo_ro;
 
 interface
 implementation
@@ -8,95 +8,95 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='Se deschide ...';
+      Status_Closing:='Se inchide ...';
+      Status_Playing:='Redare';
+      Status_Paused:='Pauză';
+      Status_Stopped:='La oprire';
+      Status_Error:='Fișierul multimedia nu poate fi redat (Faceți clic pentru mai multe informații)';
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
-      InternetRadios:='Internet radios';
+    FullscreenControls:='Afișaje fullscreen';
+    OSD:='Mod OSD';
+      NoOSD:='Fără OSD';
+      DefaultOSD:='OSD-ul implicit';
+      TimeOSD:='Afișează durata';
+      FullOSD:='Afișează durata totală';
+    Escape:='Apăsați pe Escape pentru a ieși din modul ecran complet.';
+    Filemenu:='&Fişier';
+      OpenFile:='Redați fișierul ...';
+      OpenURL:='Redați URL-ul ...';
+        OpenURL_Caption:='Redați URL-ul';
+        OpenURL_Prompt:='Redați de pe site-ul Internet';
+      OpenDrive:='Redați (V)CD/DVD/BlueRay';
+      InternetRadios:='Radiouri pe internet';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
-      Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
-      AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
-      Pause:='Pause';
+      Close:='închide';
+      Quit:='Ieșire';
+    View:='&Vizualizare';
+      SizeAny:='Marime personalizata';
+      Size50:='Jumătate de măsură';
+      Size100:='Dimensiunea originală';
+      Size200:='Dimensiune dublă';
+      VideoInside:='Nu recoltați videoclipul';
+      Fullscreen:='Ecran complet';
+      AudioEqu:='Egalizator';
+      Compact:='Modul compact';
+      TogOSD:='Comutați pe OSD';
+      OnTop:='Întotdeauna vizibil';
+      Vis:='Vizualizare';
+      VisEnable:='Afișați vizualizarea';
+      VisDirectRender:='Redare directă';
+    Seek:='&Redare';
+      Play:='Redare';
+      Pause:='Pauză';
       Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
-      Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+      Prev:='Titlul anterior'^I'Ctrl Left';
+      Next:='Titlul următor'^I'Ctrl Right';
+      ShowPlaylist:='Listă de redare ...';
+      Mute:='Mut';
+      SeekF10:='Redirecționați 10 secunde'^I'Right';
+      SeekR10:='Derulați înapoi 10 secunde'^I'Left';
+      SeekF60:='Redirecționați 1 minut'^I'Up';
+      SeekR60:='Derulați 1 minut'^I'Down';
+      SeekF600:='Redirecționați 10 minute'^I'PgUp';
+      SeekR600:='derulați 10 minute'^I'PgDn';
+    Navigation:='&Navigare';
+      Menu := 'Meniul';
+      Titles := 'titlurile';
+      Chapters:= 'capitolele';
+    Extra:='&Opțiuni';
+      Audio:='Canal audio';
+      Subtitle:='Canal Subtitrări';
+        NoSubtitle := 'dezactivați subtitrările';
+      AddSubtitle := 'Încărcați subtitrările...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
+      Aspect:='Raportul aspectului';
+        AspectAuto:='Auto detectare';
+        Aspect43:='Forța 4:3';
+        Aspect169:='Forța 16:9';
+        Aspect235:='Forța 2.35:1';
+      DeinterlaceAlg:='Deinterlaționarea algoritmului';
+        DeinterlaceBlend := 'Amestec';
+        DeinterlaceSimple := 'Simplu';
         DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
-      Deinterlace:='Deinterlace';
+        DeinterlaceDoubleRate := 'Rata dublă';
+      Deinterlace:='Deîntrețesere';
 
       Off := 'Off';
       On:='On';
       Auto:='Auto';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
-    Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      Settings := 'Ajustări video ...';
+      Options:='Setări ...';
+      Language:='Limba';
+      StreamInfo:='Afișați informații despre fișiere ...';
+      ShowOutput:='Afișați ieșirea MPlayer ...';
+    Help:='&Ajutor';
+      KeyHelp:='Ajutor pentru tastatură ...';
+      About := 'Despre ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='Ajutor pentru tastatură';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -155,94 +155,94 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='închide';
 
     //log form
-    LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormCaption:='Ieșire MPlayer';
+    LogFormClose:='închide';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
-    AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutFormCaption := 'Despre ';
+    AboutFormClose := 'închide';
+    AboutVersionMPUI := 'Versiunea 3nity Media Player:';
+    AboutVersionMplayer := 'Versiunea MPlayer:';
 
     //settings form
-    SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
+    SettingsformCaption := 'Ajustări video';
+    Brightness := 'strălucire';
     Contrast := 'Contrast';
-    Hue := 'Hue';
-    Saturation := 'Saturation';
+    Hue := 'Nuanţă';
+    Saturation := 'Saturare';
     Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
-    ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    SubScale := 'Dimensiunea subtitraților';
+    ResetSetting := 'Restabili';
+    MResetSetting := 'Restabili';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := 'Monitor pe tot ecranul';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='Setări';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='Aplica';
 
-    OptionsFormAssociate:='Associate';
-    OptionsFormSelectAll:='Select All';
-    OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
-    OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormAssociate:='Salva';
+    OptionsFormSelectAll:='Selectează tot';
+    OptionsFormSelectNone:='Nici unul';
+    OptionsFormSave:='Salva';
+    OptionsFormClose:='închide';
+    OptionsFormHelp:='Ajutor';
+    OptionsFormParams:='Parametri suplimentari MPlayer:';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='Refaceți indexul de fișiere, dacă este necesar';
+    OptionsFormPriorityBoost:='Rulați cu prioritate mai mare';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='Sursă de sunet';
+    AudioOutNoDecode:='(nu decodificați sunetul)';
+    AudioOutNoOut:='(nu redați sunetul)';
+    OptionsFormAudioDev:='Dispozitiv de ieșire DirectSound';
+    OptionsFormAudioFilterChannels := 'Filtrarea și rutarea canalelor';
+    OptionsFormSoftVol:='Controlul volumului software / creșterea volumului';
+    OptionsFormUseVolcmd := 'Utilizați opțiunea pentru linia de comandă volum';
+    OptionsFormAudioDecodeChannels := 'Max. număr. de canale pentru a decoda';
+    OptionsFormAc3Comp := 'Nivelul de comprimare AC3';
+    OptionsFormUseliba52 := 'Folosiți biblioteca liba52';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := 'Video driver de ieșire';
+    VideoOutUser := 'Alte:';
+    OptionsFormOverlay:= 'Culoarea suprapusă';
+    ForceEvenWidth := 'Forțați chiar și lățimea';
+    DirectRender := 'Redare directă';
+    DoubleBuffer := 'Tamponare dublă';
+    DrawSlices := 'Desenați folosind felii';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := 'Ecuator de video de software';
     VideoeqOff  := 'Off';
-    VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    VideoScaler := 'Software de scalare video';
+    TryScaler := 'Încearcă scalar la eroare';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='Post procesare';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='Automat';
+    PostprocMax:='Calitate maximă';
 
     OptionsFormGeneral := 'General';
     OptionsFormAudio := 'Audio';
     OptionsFormVideo := 'Video';
     OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormOSDSub := 'OSD și subtitrări';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
-    MediaRamdisk := 'RAM disk';
+    MediaDefault := 'Mod implicit';
+    MediaFixed := 'Disc fixat';
+    MediaRamdisk := 'Disc RAM';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
+    MediaRemovable := 'Dispozitiv detașabil';
+    mediaNetwork := 'Retea locala';
     MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaDvd := 'Redare DVD';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,57 +270,57 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := 'Scanarea fonturilor';
+    SubAss := 'Utilizați SSA / ASS';
+    SubAutoLoad := 'Încărcați fișiere de subtitrare externe';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := 'Culoarea frontierei textului';
+    SubAssColor := 'Culoarea textului';
+    SubBgColor := 'Culoarea fundalului textului';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'Activați meniurile DVD ';
+    DeinterlaceDVD := 'Întotdeauna dezinterlația';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
-    PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormCaption:='Listă de redare';
+    PlaylistFormPlay:='Redare';
+    PlaylistFormAdd:='Adăuga ...';
+    PlaylistFormMoveUp:='Ridică-te';
+    PlaylistFormMoveDown:='Du-te în jos';
+    PlaylistFormDelete:='Elimina';
+    PlaylistFormShuffle:='Amesteca';
+    PlaylistFormLoop:='Repeta';
+    PlaylistFormSave:='Salva ...';
+    PlaylistFormClose:='închide';
 
-    InfoFormCaption:='File information';
-    InfoFormClose:='Close';
-    InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
+    InfoFormCaption:='Informații despre fișier';
+    InfoFormClose:='închide';
+    InfoFormCopy := 'Copiați';
+    NoInfo:='Momentan nu există informații despre fișier.';
     InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
-    InfoDecoder:='Decoder';
+    InfoPlaybackTime:='Durată';
+    InfoTags:='Clip metadate';
+    InfoVideo:='Canalul video';
+    InfoAudio:='Canalul audio';
+    InfoDecoder:='Decodor';
     InfoCodec:='Codec';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
+    InfoVideoSize:='Dimensiuni';
     InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
-    InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
+    InfoVideoAspect:='Aspect';
+    InfoAudioRate:='Rata sample-urilor';
+    InfoAudioChannels:='canale';
     InfoInterlace:='Frame';
-    InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
+    InfoVideoInt := 'întrețesut';
+    InfoVideoPro := 'Progresiv';
     InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
-    InfoFormCopyAll := 'Copy All';
+    InfoFilesize := 'Mărime fișier';
+    InfoSub := 'Subtitrare';
+    InfoFormCopyAll := 'Copiați toate';
   end
 end;
 
 begin
-    //RegisterLocale('Romanian - Română', Activate, LANG_ENGLISH, EASTEUROPE_CHARSET);
+    RegisterLocale('Romanian - Română', Activate, LANG_ENGLISH, EASTEUROPE_CHARSET);
 
 end.

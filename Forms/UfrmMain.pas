@@ -626,6 +626,7 @@ begin
   mpo.OnLoadNextFile := mpoLoadNextFile;
   mpo.OnFileLoaded := mpoFileLoaded;
 
+
   Init_MOpenDrive;
   Init_MOptions;
   Init_MLanguage;
@@ -1052,6 +1053,7 @@ begin
     if not InsideControls then begin //outside, hide
       if (DisableFullscreenControlsCount=0) then
         SetFullscreenControls(False)
+        //sleep(1)
       else
         if (DisableFullscreenControlsCount>0) then
             dec(DisableFullscreenControlsCount)
@@ -3420,8 +3422,10 @@ procedure TfrmMain.InnerPanelMouseMove(Sender: TObject; Shift: TShiftState; X,
 begin
   outerpanelmousemove(sender,shift,x + innerpanel.Left, y +innerpanel.Top); // visenri mod
   if mpo.Running then
+  begin
     mpo.DVDMenuPostition((x* mpo.Renderinfo.Width)div innerpanel.Width,
                          (y*mpo.Renderinfo.Height) div innerpanel.Height);
+  end;
 end;
 procedure TfrmMain.InnerPanelMouseUp(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
@@ -3432,12 +3436,14 @@ end;
 procedure TfrmMain.OuterPanelMouseMove(Sender: TObject;
   Shift: TShiftState; X, Y: Integer);
 begin
+  //SetFullscreenControls(true);exit; //asupp
   if Fullscreen  then
     if not(FullscreenControls) then
      if (LastX > 0) and (LastY > 0) then begin
       if (abs(X-LastX) + abs(Y-LastY)) > MOVEPOS_SHOW_FS_CONTROLS then begin
         if EnableFullscreenControlsCount < TIME_SHOW_FS_CRONTROLS then
             inc(EnableFullscreenControlsCount)
+
         else
             SetFullscreenControls(True)
       end
@@ -3472,6 +3478,7 @@ end;
 procedure TfrmMain.SetFullscreenControls(Mode:boolean);
 begin
   if (not Fullscreen) or (fullscreencontrols = mode) then exit;
+  //if (not Fullscreen)  then exit;
 
   if Mode then begin
     SetMouseVisible(True);
