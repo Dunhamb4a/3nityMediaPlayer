@@ -1,4 +1,4 @@
-unit mo_tu;
+﻿unit mo_tu;
 
 interface
 implementation
@@ -321,5 +321,5 @@ begin
 end;
 
 begin
-    //RegisterLocale('Turkish - T�rk',Activate,LANG_TURKISH,TURKISH_CHARSET);
+    //RegisterLocale('Turkish - Türk',Activate,LANG_TURKISH,TURKISH_CHARSET);
 end.

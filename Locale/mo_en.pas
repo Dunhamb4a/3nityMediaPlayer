@@ -1,4 +1,4 @@
-{
+﻿{
 
 	3nity Media Player, an MPlayer frontend for Windows
 

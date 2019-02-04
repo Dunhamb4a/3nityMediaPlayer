@@ -1,4 +1,4 @@
-{
+ï»¿{
 
 	3nity Media Player, an MPlayer frontend for Windows
 
@@ -42,16 +42,16 @@ begin
       Status_Closing:='Fermeture ...';
       Status_Playing:='Joue';
       Status_Paused:='Suspendu';
-      Status_Stopped:='Arrêté';
-      Status_Error:='Incapable de jouer le média (Cliquer pour plus d''information)';
+      Status_Stopped:='ArrÃªtÃ©';
+      Status_Error:='Incapable de jouer le mÃ©dia (Cliquer pour plus d''information)';
 
-    FullscreenControls:='Controls plein écran';
+    FullscreenControls:='Controls plein Ã©cran';
     OSD:='Choisir le mode OSD';
       NoOSD:='Aucun OSD';
-      DefaultOSD:='OSD par défaut';
+      DefaultOSD:='OSD par dÃ©faut';
       TimeOSD:='Afficher le temps';
       FullOSD:='Afficher le temps total';
-    Escape:='Appuyez sur Echap pour quitter le mode plein écran.';
+    Escape:='Appuyez sur Echap pour quitter le mode plein Ã©cran.';
     Filemenu:='&Fichier';
       OpenFile:='Jouer un fichier ...';
       OpenURL:='Jouer un URL ...';
@@ -68,7 +68,7 @@ begin
       Size100:='Taille originale';
       Size200:='Double taille';
       VideoInside:='Ne couper pas le video';
-      Fullscreen:='Plein écran';
+      Fullscreen:='Plein Ã©cran';
       AudioEqu:='Egaliseur audio';
       Compact:=   'Mode compact';
       TogOSD:=    'Cycler les modes OSD';
@@ -80,9 +80,9 @@ begin
       Play:='Jouer';
       Pause:='Suspendre';
       Stop:='Stop';
-      Prev:='Titre précédent'^I'Ctrl Gauche';
+      Prev:='Titre prÃ©cÃ©dent'^I'Ctrl Gauche';
       Next:='Titre suivant'^I'Ctrl Droite';
-      ShowPlaylist:='Liste d''écoute ...';
+      ShowPlaylist:='Liste d''Ã©coute ...';
       Mute:='Muet';
       SeekF10:='Avancer 10 secondes'^I'Droite';
       SeekR10:='Reculer 10 secondes'^I'Gauche';
@@ -94,36 +94,36 @@ begin
       Menu := 'Menu';
       Titles := 'Titres';
       Chapters:= 'Chapitres';
-    Extra:='&Préférences';
+    Extra:='&PrÃ©fÃ©rences';
       Audio:='Audio';
       Subtitle:='Sous-titres';
         NoSubtitle := 'Pas de sous-titres';
       AddSubtitle := 'Ajouter sous-titres...';
 
       Aspect:='Rapport largeur/hauteur';
-        AspectAuto:='Auto-détection';
+        AspectAuto:='Auto-dÃ©tection';
         Aspect43:='Forcer 4:3';
         Aspect169:='Forcer 16:9';
         Aspect235:='Forcer 2.35:1';
-      DeinterlaceAlg:='Algorithme désentrelacement';
+      DeinterlaceAlg:='Algorithme dÃ©sentrelacement';
         DeinterlaceBlend := 'Inter-trame';
         DeinterlaceSimple := 'Simple';
         DeinterlaceAdaptative := 'Adaptatif';
-        DeinterlaceDoubleRate := 'Double fréquence';
-      Deinterlace:='Dé-entrelacer';
+        DeinterlaceDoubleRate := 'Double frÃ©quence';
+      Deinterlace:='DÃ©-entrelacer';
 
-      Off := 'Débranché';
-      On:='Déclenché';
+      Off := 'DÃ©branchÃ©';
+      On:='DÃ©clenchÃ©';
       Auto:='Automatique';
 
-      Settings := 'Réglages ...';
-      Options:='Préférences ...';
+      Settings := 'RÃ©glages ...';
+      Options:='PrÃ©fÃ©rences ...';
       Language:='Langue';
       StreamInfo:='Information sur fichier ...';
       ShowOutput:='Afficher la sortie de MPlayer';
     Help:='A&ide';
       KeyHelp:='Aide du clavier ...';
-      About:='À propos ...';
+      About:='Ã€ propos ...';
       
       
   HelpFormCaption:='Aide du clavier';
@@ -139,11 +139,11 @@ begin
 ^M+^J+
 'Autre clefs:'^M^J+
 'O'^I'Cycler les modes OSD'^M^J+
-'F'^I'Basculer en plein écran'^M^J+
+'F'^I'Basculer en plein Ã©cran'^M^J+
 'Q'^I'Quitter immediatement'^M^J+
 '9/0'^I'Ajuster le volume'^M^J+
 '-/+'^I'Ajuster la sync audio/video'^M^J+
-'1/2'^I'Ajuster la luminosité'^M^J+
+'1/2'^I'Ajuster la luminositÃ©'^M^J+
 '3/4'^I'Ajuster le contraste'^M^J+
 '5/6'^I'Ajuster la hue'^M^J+
 '7/8'^I'Ajuster la saturation'^M^J+
@@ -163,7 +163,7 @@ begin
 'NUMPAD6'^I'Aspet +'^M^J+
 'NUMPAD8'^I'Reset Aspet'^M^J+
 'NUMPAD4'^I'Aspet -'^M^J+
-'NUMPAD7'^I'Ne pas couper la vidéo'^M^J+
+'NUMPAD7'^I'Ne pas couper la vidÃ©o'^M^J+
 'V'^I^I'Sous-titres'^M^J+
 'CTRL+0'^I^I'Reset Speed'^M^J+
 'CTRL+/'^I^I'Speed -'^M^J+
@@ -171,7 +171,7 @@ begin
 'CTRL+O'^I^I'Ouvrir un Fichier'^M^J+
 'CTRL+L'^I^I'Ouvrir une URL'^M^J+
 'CTRL+W'^I^I'Fermer'^M^J+
-'CTRL+LEFT'^I'Jouer la piste précédente'^M^J+
+'CTRL+LEFT'^I'Jouer la piste prÃ©cÃ©dente'^M^J+
 'CTRL+RIGHT'^I'Jouer la piste suivante'^M^J+
 'Alt+0'^I^I'Dimension sur mesure'^M^J+
 'Alt+1'^I^I'Demi Taille'^M^J+
@@ -179,10 +179,10 @@ begin
 'Alt+3'^I^I'Taille double'^M^J+
 'Alt+F4'^I^I'Fermer le programme'^M^J+
 'Alt+Return'^I'Plein Ecran'^M^J+
-'CTRL+LEFT'^I'Jouer la piste précédente'^M^J+
+'CTRL+LEFT'^I'Jouer la piste prÃ©cÃ©dente'^M^J+
 'CTRL+RIGHT'^I'Jouer la piste suivante'^M^J+
 'MEDIA_STOP'^I^I'Stop '^M^J+
-'MEDIA_PREV_TRACK'^I'Jouer la piste précédente'^M^J+
+'MEDIA_PREV_TRACK'^I'Jouer la piste prÃ©cÃ©dente'^M^J+
 'MEDIA_NEXT_TRACK'^I'Jouer la piste suivante'
   ;
   HelpFormClose:='Fermer';
@@ -192,14 +192,14 @@ begin
   LogFormClose:='Fermer';
 
   //about form
-  AboutFormCaption:='À propos de 3nity Media Player';
+  AboutFormCaption:='Ã€ propos de 3nity Media Player';
   AboutFormClose:='Fermer';
   AboutVersionMPUI:='3nity Media Player version:';
   AboutVersionMplayer:='MPlayer version:';
 
   //settings form
-  SettingsformCaption := 'Réglages';
-    Brightness := 'Luminosité';
+  SettingsformCaption := 'RÃ©glages';
+    Brightness := 'LuminositÃ©';
     Contrast := 'Contraste';
     Hue := 'Teinte';
     Saturation := 'Saturation';
@@ -209,10 +209,10 @@ begin
     MResetSetting := 'Restaurer tout';
 
   //options form
-    FullScreenMonitor := 'Moniteur plein écran';
-    AutoLocale:='(Auto-sélection)';
+    FullScreenMonitor := 'Moniteur plein Ã©cran';
+    AutoLocale:='(Auto-sÃ©lection)';
 
-    OptionsFormCaption:='Préférences';
+    OptionsFormCaption:='PrÃ©fÃ©rences';
     OptionsFormOK:='OK';
     OptionsFormApply:='Appliquer';
 
@@ -224,22 +224,22 @@ begin
     OptionsFormSave:='Sauver';
     OptionsFormClose:='Fermer';
     OptionsFormHelp:='Aide';
-    OptionsFormParams:='Paramètres MPlayer additionnels:';
+    OptionsFormParams:='ParamÃ¨tres MPlayer additionnels:';
 
     OptionsFormIndex:='Reconstruire l''index du fichier au besoin';
-    OptionsFormPriorityBoost:='Exécuter avec priorité plus élevée';
+    OptionsFormPriorityBoost:='ExÃ©cuter avec prioritÃ© plus Ã©levÃ©e';
 
     Autosync := 'Facteur auto-synchronisation';
     AVsyncperframe := 'Synchronisation A-V par photogramme(us.)';
 
     OptionsFormAudioOut:='Pilote de sortie audio';
-      AudioOutNoDecode:='(ne pas décoder le son)';
+      AudioOutNoDecode:='(ne pas dÃ©coder le son)';
       AudioOutNoOut:='(ne pas jouer le son)';
-    OptionsFormAudioDev:='Unité de sortie DirectSound';
+    OptionsFormAudioDev:='UnitÃ© de sortie DirectSound';
     OptionsFormAudioFilterChannels := 'Filtrage et redirection des canaux';
     OptionsFormSoftVol:='Reglage du volume par logiciel / Amplification du volume';
     OptionsFormUseVolcmd := 'Employer option volume sur ligne de commande';
-    OptionsFormAudioDecodeChannels := 'Máx de canaux a décoder';
+    OptionsFormAudioDecodeChannels := 'MÃ¡x de canaux a dÃ©coder';
     OptionsFormAc3Comp := 'Compression dynamique AC3';
     OptionsFormUseliba52 := 'Employer la librairie liba52';
 
@@ -248,43 +248,43 @@ begin
     OptionsFormOverlay:= 'Couleur pour la superposition';
     ForceEvenWidth := 'Forcer largeur pair';
     DirectRender := 'Renderization directe';
-    DoubleBuffer := 'Double mémoire tampon';
+    DoubleBuffer := 'Double mÃ©moire tampon';
     DrawSlices := 'Dessin en morceaux';
 
-    OptionsFormVideoeq  := 'Équaliseur video';
-      VideoeqOff  := 'Débranché';
+    OptionsFormVideoeq  := 'Ã‰qualiseur video';
+      VideoeqOff  := 'DÃ©branchÃ©';
     VideoScaler := 'Changer taille par logiciel';
     TryScaler := 'Essayer taille en erreur';
 
     OptionsFormPostproc:='Post-traitement';
       PostprocOff:='Aucun';
       PostprocAuto:='Automatique';
-      PostprocMax:='Qualité maximum';
+      PostprocMax:='QualitÃ© maximum';
 
-    OptionsFormGeneral := 'Général';
+    OptionsFormGeneral := 'GÃ©nÃ©ral';
     OptionsFormAudio := 'Audio';
-    OptionsFormVideo := 'Vidéo';
+    OptionsFormVideo := 'VidÃ©o';
     OptionsFormCaching := 'Cache';
     OptionsFormOSDSub := 'OSD et sous-titres';
 
-    MediaDefault := 'Défaut';
+    MediaDefault := 'DÃ©faut';
     MediaFixed := 'Disque dur';
     MediaRamdisk := 'Disque RAM';
     MediaCdrom := 'CD-ROM / DVD-ROM';
     MediaRemovable := 'Support amovible';
-    mediaNetwork := 'Réseau local';
+    mediaNetwork := 'RÃ©seau local';
     MediaInternet := 'Internet';
     MediaDvd := 'Format DVD';
 
-    FontPath := 'Fonte de caractères';
-    FontEncoding := 'Codage des caractères';
-    FontEncodings[0] := 'Défaut';
+    FontPath := 'Fonte de caractÃ¨res';
+    FontEncoding := 'Codage des caractÃ¨res';
+    FontEncodings[0] := 'DÃ©faut';
     FontEncodings[1] := 'Unicode';
-    FontEncodings[2] := 'Langues Européennes Occidentales (ISO-8859-1)';
-    FontEncodings[3] := 'Langues Européeenes Occidentales avec Euro (ISO-8859-15)';
-    FontEncodings[4] := 'Langues Européeenes Slaves/Centrales (ISO-8859-2)';
+    FontEncodings[2] := 'Langues EuropÃ©ennes Occidentales (ISO-8859-1)';
+    FontEncodings[3] := 'Langues EuropÃ©eenes Occidentales avec Euro (ISO-8859-15)';
+    FontEncodings[4] := 'Langues EuropÃ©eenes Slaves/Centrales (ISO-8859-2)';
     FontEncodings[5] := 'Esperanto, Galicien, Maltais, Turc (ISO-8859-3)';
-    FontEncodings[6] := 'Caractères Old Baltic (ISO-8859-4)';
+    FontEncodings[6] := 'CaractÃ¨res Old Baltic (ISO-8859-4)';
     FontEncodings[7] := 'Cyrillique (ISO-8859-5)';
     FontEncodings[8] := 'Arabe (ISO-8859-6)';
     FontEncodings[9] := 'Grec Moderne (ISO-8859-7)';
@@ -293,16 +293,16 @@ begin
     FontEncodings[12] := 'Celte (ISO-8859-14)';
     FontEncodings[13] := 'Hebreu (ISO-8859-8)';
     FontEncodings[14] := 'Russe (KOI8-R)';
-    FontEncodings[15] := 'Ukrainien, Biélorusse (KOI8-U/RU)';
-    FontEncodings[16] := 'Chinois Simplifié (CP936)';
+    FontEncodings[15] := 'Ukrainien, BiÃ©lorusse (KOI8-U/RU)';
+    FontEncodings[16] := 'Chinois SimplifiÃ© (CP936)';
     FontEncodings[17] := 'Chinois Traditionnel (BIG5)';
     FontEncodings[18] := 'Japonais (SHIFT-JIS)';
-    FontEncodings[19] := 'Coréen (CP949)';
-    FontEncodings[20] := 'Thaïlandais (CP874)';
+    FontEncodings[19] := 'CorÃ©en (CP949)';
+    FontEncodings[20] := 'ThaÃ¯landais (CP874)';
     FontEncodings[21] := 'Cyrillique Windows (CP1251)';
     FontEncodings[22] := 'Slave/Europe Centrale Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (scruter polices de caractères)';
+    FontConfig := 'Fontconfig (scruter polices de caractÃ¨res)';
     SubAss := 'Employer SSA/ASS';
     SubAutoLoad := 'Ajouter sous-titres externes';
 
@@ -311,17 +311,17 @@ begin
     SubBgColor := 'Couleur de fond du text';
 
     UseDvdNav := 'DVD menus ';
-    DeinterlaceDVD := 'Dé-entrelacer toujours';
+    DeinterlaceDVD := 'DÃ©-entrelacer toujours';
 
   //playlist form
-  PlaylistFormCaption:='Liste d''écoute';
+  PlaylistFormCaption:='Liste d''Ã©coute';
   PlaylistFormPlay:='Jouer';
   PlaylistFormAdd:='Ajouter ...';
   PlaylistFormMoveUp:='Monter';
   PlaylistFormMoveDown:='Descendre';
   PlaylistFormDelete:='Enlever';
-  PlaylistFormShuffle:='Mode aléatoire';
-  PlaylistFormLoop:='Répéter';
+  PlaylistFormShuffle:='Mode alÃ©atoire';
+  PlaylistFormLoop:='RÃ©pÃ©ter';
   PlaylistFormSave:='Sauver ...';
   PlaylistFormClose:='Fermer';
 
@@ -331,19 +331,19 @@ begin
   NoInfo:='Aucune information disponible.';
   InfoFileFormat:='Format';
   InfoPlaybackTime:='Duration';
-  InfoTags:='Métadonnée';
+  InfoTags:='MÃ©tadonnÃ©e';
   InfoVideo:='Video';
   InfoAudio:='Audio';
   InfoDecoder:='Decodeur';
   InfoCodec:='Codec';
-  InfoBitrate:='Débit binaire';
+  InfoBitrate:='DÃ©bit binaire';
   InfoVideoSize:='Dimensions';
   InfoVideoFPS:='Images par seconde';
   InfoVideoAspect:='Rapp. larg./haut.';
-  InfoAudioRate:='Fréquence';
+  InfoAudioRate:='FrÃ©quence';
   InfoAudioChannels:='Canaux';
   InfoInterlace:='Photogramme';
-  InfoVideoInt := 'Entrelacé';
+  InfoVideoInt := 'EntrelacÃ©';
   InfoVideoPro := 'progressif';
   InfoTrack := 'Piste';
   InfoFilesize := 'Taille';
@@ -352,5 +352,5 @@ begin
 end;
 
 begin
-  RegisterLocale('French - Français',Activate,LANG_FRENCH,DEFAULT_CHARSET);
+  RegisterLocale('French - FranÃ§ais',Activate,LANG_FRENCH,DEFAULT_CHARSET);
 end.

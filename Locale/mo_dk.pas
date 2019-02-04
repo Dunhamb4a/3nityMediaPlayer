@@ -1,4 +1,4 @@
-unit mo_dk;
+ï»¿unit mo_dk;
 
 interface
 implementation
@@ -8,20 +8,20 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Åbner ...';
+      Status_Opening:='Ã…bner ...';
       Status_Closing:='Lukker ...';
       Status_Playing:='Spiller';
       Status_Paused:='Pauset';
       Status_Stopped:='Stoppet';
       Status_Error:='Kan ikke afspille media  (klik for mere info)';
 
-    FullscreenControls:='Vis fuldskærmskontrol';
+    FullscreenControls:='Vis fuldskÃ¦rmskontrol';
     OSD:='OSD mode';
       NoOSD:='Ingen OSD';
       DefaultOSD:='Normal OSD';
       TimeOSD:='Vis tid';
       FullOSD:='Vis sammenlagt tid';
-    Escape:='Tryk på Escape for at forlade fuldskærmstilstand.';
+    Escape:='Tryk pÃ¥ Escape for at forlade fuldskÃ¦rmstilstand.';
     Filemenu:='&Filer';
       OpenFile:='Afspil fil ...';
       OpenURL:='Afspil Internetadresse ...';
@@ -33,16 +33,16 @@ begin
       Close:='Luk';
       Quit:='Afslut';
     View:='&Vis';
-      SizeAny:='Normal størrelse';
-      Size50:='Halv størrelse';
-      Size100:='Original størrelse';
-      Size200:='Dobbelt størrelse';
-      VideoInside:='Skær ikke video';
-      Fullscreen:='Skift fuldskærms mode';
+      SizeAny:='Normal stÃ¸rrelse';
+      Size50:='Halv stÃ¸rrelse';
+      Size100:='Original stÃ¸rrelse';
+      Size200:='Dobbelt stÃ¸rrelse';
+      VideoInside:='SkÃ¦r ikke video';
+      Fullscreen:='Skift fuldskÃ¦rms mode';
       AudioEqu:='Equalizer';
       Compact:='Kompakt mode til/fra';
       TogOSD:='Skift OSD';
-      OnTop:='Altid på toppen';
+      OnTop:='Altid pÃ¥ toppen';
       Vis:='Visualisering';
       VisEnable:='Vis visualisering';
       VisDirectRender:='Direkte gengivelse';
@@ -51,9 +51,9 @@ begin
       Pause:='Pause';
       Stop:='Hold op';
       Prev:='Forrige titel'^I'Ctrl Left';
-      Next:='Næste titel'^I'Ctrl Right';
+      Next:='NÃ¦ste titel'^I'Ctrl Right';
       ShowPlaylist:='Afspilningsliste ...';
-      Mute:='Lydløs';
+      Mute:='LydlÃ¸s';
       SeekF10:='Spol 10 sekunder fremad'^I'Right';
       SeekR10:='Spol 10 Sekunder tilbage'^I'Left';
       SeekF60:='Spol 1 minut fremad'^I'Up';
@@ -64,11 +64,11 @@ begin
       Menu := 'Menu';
       Titles := 'Titler';
       Chapters:= 'kapitler';
-    Extra:='&Værktøjer';
+    Extra:='&VÃ¦rktÃ¸jer';
       Audio:='Lydspor';
       Subtitle:='Undertextspor';
         NoSubtitle := 'Ingen undertekster';
-      AddSubtitle := 'Indlæs undertekster...';
+      AddSubtitle := 'IndlÃ¦s undertekster...';
 
       Aspect:='Aspekt Forhold';
         AspectAuto:='Opfang Automatisk';
@@ -90,13 +90,13 @@ begin
       Options:='Funktioner ...';
       Language:='Sprog';
       StreamInfo:='Vis Klip information ...';
-      ShowOutput:='Vis MPlayer udlæsning ...';
-    Help:='&Hjælp';
-      KeyHelp:='Tastaturhjælp ...';
+      ShowOutput:='Vis MPlayer udlÃ¦sning ...';
+    Help:='&HjÃ¦lp';
+      KeyHelp:='TastaturhjÃ¦lp ...';
       About := 'Om ...';
 
 
-    HelpFormCaption:='Tastaturhjælp';
+    HelpFormCaption:='TastaturhjÃ¦lp';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -172,30 +172,30 @@ begin
     Brightness := 'lysstyrke';
     Contrast := 'Kontrast';
     Hue := 'Hue';
-    Saturation := 'Mætning';
+    Saturation := 'MÃ¦tning';
     Gamma := 'Gamma';
-    SubScale := 'Undertekststørrelse';
+    SubScale := 'UndertekststÃ¸rrelse';
     ResetSetting := 'Nulstil';
     MResetSetting := 'Nulstil';
 
     //options form
-    FullScreenMonitor := 'Fuldskærmskærm';
+    FullScreenMonitor := 'FuldskÃ¦rmskÃ¦rm';
     AutoLocale:='(Auto-select)';
 
     OptionsFormCaption:='Funktioner';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Tilføj';
+    OptionsFormApply:='TilfÃ¸j';
 
     OptionsFormAssociate:='Gem';
-    OptionsFormSelectAll:='Vælg alle';
-    OptionsFormSelectNone:='Vælg Ingen';
+    OptionsFormSelectAll:='VÃ¦lg alle';
+    OptionsFormSelectNone:='VÃ¦lg Ingen';
     OptionsFormSave:='Gem';
     OptionsFormClose:='Luk';
-    OptionsFormHelp:='Hjælp';
+    OptionsFormHelp:='HjÃ¦lp';
     OptionsFormParams:='Flere MPlayer parametre:';
 
-    OptionsFormIndex:='Genopbyg filindekset hvis det er nødvendigt';
-    OptionsFormPriorityBoost:='Kør med højere prioritet';
+    OptionsFormIndex:='Genopbyg filindekset hvis det er nÃ¸dvendigt';
+    OptionsFormPriorityBoost:='KÃ¸r med hÃ¸jere prioritet';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
@@ -222,7 +222,7 @@ begin
     OptionsFormVideoeq  := 'Software video equalizer';
     VideoeqOff  := 'Off';
     VideoScaler := 'Software video scaler';
-    TryScaler := 'Prøv at scalere ved fejl';
+    TryScaler := 'PrÃ¸v at scalere ved fejl';
 
     OptionsFormPostproc:='Efterbehandling';
     PostprocOff:='Off';
@@ -240,7 +240,7 @@ begin
     MediaRamdisk := 'RAM disk';
     MediaCdrom := 'CD-ROM / DVD-ROM';
     MediaRemovable := 'Aftagelig enhed';
-    mediaNetwork := 'Lokalt netværk';
+    mediaNetwork := 'Lokalt netvÃ¦rk';
     MediaInternet := 'Internet';
     MediaDvd := 'DVD afspilning';
 
@@ -272,19 +272,19 @@ begin
 
     FontConfig := 'Font scanning';
     SubAss := 'SSA/ASS';
-    SubAutoLoad := 'Indlæs eksterne undertekstfiler';
+    SubAutoLoad := 'IndlÃ¦s eksterne undertekstfiler';
 
-    SubAssBorderColor := 'Tekst grænsen farve';
+    SubAssBorderColor := 'Tekst grÃ¦nsen farve';
     SubAssColor := 'Tekstfarve';
     SubBgColor := 'Tekst baggrundsfarve';
 
-    UseDvdNav := 'Aktivér DVD-menuer ';
+    UseDvdNav := 'AktivÃ©r DVD-menuer ';
     DeinterlaceDVD := 'Altid deinterlace';
 
     //playlist form
     PlaylistFormCaption:='Spilleliste';
     PlaylistFormPlay:='Afspil';
-    PlaylistFormAdd:='Tilføj ...';
+    PlaylistFormAdd:='TilfÃ¸j ...';
     PlaylistFormMoveUp:='Flyt op';
     PlaylistFormMoveDown:='Flyt ned';
     PlaylistFormDelete:='Fjern';
@@ -308,13 +308,13 @@ begin
     InfoVideoSize:='Dimensioner';
     InfoVideoFPS:='Formhastighed';
     InfoVideoAspect:='Aspekt Forhold';
-    InfoAudioRate:='Prøvehastighed';
+    InfoAudioRate:='PrÃ¸vehastighed';
     InfoAudioChannels:='Kanaler';
     InfoInterlace:='Ramme';
     InfoVideoInt := 'Interlaced';
     InfoVideoPro := 'Progressiv';
     InfoTrack := 'Spore';
-    InfoFilesize := 'Filstørrelse';
+    InfoFilesize := 'FilstÃ¸rrelse';
     InfoSub := 'Undertekster';
     InfoFormCopyAll := 'kopi alle';
   end

@@ -1,4 +1,4 @@
-unit mo_de;
+Ôªøunit mo_de;
 
 interface
 implementation
@@ -8,12 +8,12 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='÷ffnung ...';
-      Status_Closing:='Schlieﬂen ...';
+      Status_Opening:='√ñffnung ...';
+      Status_Closing:='Schlie√üen ...';
       Status_Playing:='Wiedergabe';
       Status_Paused:='Pause';
       Status_Stopped:='Abgebrochen';
-      Status_Error:='Abspielen fehlgeschlagen (Klicken f¸r weitere Informationen)';
+      Status_Error:='Abspielen fehlgeschlagen (Klicken f√ºr weitere Informationen)';
 
     FullscreenControls:='Vollbild-Steuerelemente anzeigen';
     OSD:='OSD-Modus';
@@ -21,22 +21,22 @@ begin
       DefaultOSD:='Standard-OSD';
       TimeOSD:='Zeitanzeige';
       FullOSD:='Gesamtzeitanzeige';
-    Escape:='Dr¸cken Sie die Escape-Taste, um den Vollbildmodus zu verlassen.';
+    Escape:='Dr√ºcken Sie die Escape-Taste, um den Vollbildmodus zu verlassen.';
     Filemenu:='&Datei';
       OpenFile:='Datei abspielen ...';
       OpenURL:='URL abspielen ...';
         OpenURL_Caption:='URL abspielen';
         OpenURL_Prompt:='Welche URL soll abgespielt werden?';
       OpenDrive:='CD/DVD/BlueRay abspielen';
-      OpenTV := 'TV / Capture-Karte ˆffnen';
+      OpenTV := 'TV / Capture-Karte √∂ffnen';
       InternetRadios:='Internet radios';
-      Close:='Schlieﬂen';
+      Close:='Schlie√üen';
       Quit:='Beenden';
     View:='&Ansicht';
-      SizeAny:='Beliebige Grˆﬂe';
-      Size50:='Halbe Grˆﬂe';
-      Size100:='Originalgrˆﬂe';
-      Size200:='Doppelte Grˆﬂe';
+      SizeAny:='Beliebige Gr√∂√üe';
+      Size50:='Halbe Gr√∂√üe';
+      Size100:='Originalgr√∂√üe';
+      Size200:='Doppelte Gr√∂√üe';
       VideoInside:='Video nicht zuschneiden';
       Fullscreen:='Vollbildmodus';
       AudioEqu:='Equalizer';
@@ -51,17 +51,17 @@ begin
       Pause:='Pause';
       Stop:='halt';
       Prev:='Voriger Titel'^I'Ctrl Left';
-      Next:='N‰chster Titel'^I'Ctrl Right';
+      Next:='N√§chster Titel'^I'Ctrl Right';
       ShowPlaylist:='Wiedergabeliste ...';
       Mute:='Stumm';
-      SeekF10:='10 Sekunden vorw‰rts'^I'Right';
-      SeekR10:='10 Sekunden zur¸ck'^I'Left';
-      SeekF60:='1 Minute vorw‰rts'^I'Up';
-      SeekR60:='1 Minute zur¸ck'^I'Down';
-      SeekF600:='10 Minuten vorw‰rts'^I'PgUp';
-      SeekR600:='10 Minuten zur¸ck'^I'PgDn';
+      SeekF10:='10 Sekunden vorw√§rts'^I'Right';
+      SeekR10:='10 Sekunden zur√ºck'^I'Left';
+      SeekF60:='1 Minute vorw√§rts'^I'Up';
+      SeekR60:='1 Minute zur√ºck'^I'Down';
+      SeekF600:='10 Minuten vorw√§rts'^I'PgUp';
+      SeekR600:='10 Minuten zur√ºck'^I'PgDn';
     Navigation:='&Navigation';
-      Menu := 'DVD-Men¸';
+      Menu := 'DVD-Men√º';
       Titles := 'DVD-Titel';
       Chapters:= 'DVD-Kapitel';
     Extra:='&Extras';
@@ -70,7 +70,7 @@ begin
         NoSubtitle := 'Keine Untertitel';
       AddSubtitle := 'Untertitel laden...';
 
-      Aspect:='Seitenverh‰ltnis';
+      Aspect:='Seitenverh√§ltnis';
         AspectAuto:='Automatisch';
         Aspect43:='Immer 4:3';
         Aspect169:='Immer 16:9';
@@ -78,7 +78,7 @@ begin
       DeinterlaceAlg:='Deinterlace algorithm';
         DeinterlaceBlend := 'Mischung';
         DeinterlaceSimple := 'Einfach';
-        DeinterlaceAdaptative := 'Anpassungsf‰hig';
+        DeinterlaceAdaptative := 'Anpassungsf√§hig';
         DeinterlaceDoubleRate := 'Doppelte Rate';
       Deinterlace:='Deinterlacing';
 
@@ -93,7 +93,7 @@ begin
       ShowOutput:='MPlayer-Ausgabe anzeigen ...';
     Help:='&Hilfe';
       KeyHelp:='Tastaturhilfe ...';
-      About := '‹ber ...';
+      About := '√úber ...';
 
 
     HelpFormCaption:='Tastaturhilfe';
@@ -157,15 +157,15 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Schlieﬂen';
+    HelpFormClose:='Schlie√üen';
 
     //log form
     LogFormCaption:='MPlayer-Ausgabe';
-    LogFormClose:='Schlieﬂen';
+    LogFormClose:='Schlie√üen';
 
     //about form
-    AboutFormCaption := '‹ber 3nity Media Player';
-    AboutFormClose := 'Schlieﬂen';
+    AboutFormCaption := '√úber 3nity Media Player';
+    AboutFormClose := 'Schlie√üen';
     AboutVersionMPUI := '3nity Media Player version:';
     AboutVersionMplayer := 'MPlayer version:';
 
@@ -174,11 +174,11 @@ begin
     Brightness := 'Helligkeit';
     Contrast := 'Kontrast';
     Hue := 'Farbton';
-    Saturation := 'S‰ttigung';
+    Saturation := 'S√§ttigung';
     Gamma := 'Gamma';
-    SubScale := 'Grˆﬂe der Untertitel';
-    ResetSetting := 'Zur¸cksetzen';
-    MResetSetting := 'Zur¸cksetzen';
+    SubScale := 'Gr√∂√üe der Untertitel';
+    ResetSetting := 'Zur√ºcksetzen';
+    MResetSetting := 'Zur√ºcksetzen';
 
     //options form
     FullScreenMonitor := 'Vollbild-Monitor';
@@ -189,15 +189,15 @@ begin
     OptionsFormApply:='Sich bewerben';
 
     OptionsFormAssociate:='Dateien zuordnen';
-    OptionsFormSelectAll:='W‰hlen Sie Alle';
+    OptionsFormSelectAll:='W√§hlen Sie Alle';
     OptionsFormSelectNone:='Keiner';
     OptionsFormSave:='sparen';
-    OptionsFormClose:='Schlieﬂen';
+    OptionsFormClose:='Schlie√üen';
     OptionsFormHelp:='Hilfe';
-    OptionsFormParams:='Zus‰tzliche MPlayer-Parameter:';
+    OptionsFormParams:='Zus√§tzliche MPlayer-Parameter:';
 
     OptionsFormIndex:='Erstellen Sie ggf. den Dateiindex neu';
-    OptionsFormPriorityBoost:='F¸hren Sie eine hˆhere Priorit‰t aus';
+    OptionsFormPriorityBoost:='F√ºhren Sie eine h√∂here Priorit√§t aus';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
@@ -205,18 +205,18 @@ begin
     OptionsFormAudioOut:='Soundausgabetreiber';
     AudioOutNoDecode:='dekodieren Sie keinen Ton';
     AudioOutNoOut:='keinen Ton abspielen';
-    OptionsFormAudioDev:='DirectSound-Ausgabeger‰t';
+    OptionsFormAudioDev:='DirectSound-Ausgabeger√§t';
     OptionsFormAudioFilterChannels := 'Kanalfilterung und Routing';
-    OptionsFormSoftVol:='Software-Lautst‰rkeregler / Lautst‰rke erhˆhen';
+    OptionsFormSoftVol:='Software-Lautst√§rkeregler / Lautst√§rke erh√∂hen';
     OptionsFormUseVolcmd := 'Verwenden Sie die Volume-Befehlszeilenoption';
-    OptionsFormAudioDecodeChannels := 'Max. Anzahl der zu decodierenden Kan‰le';
+    OptionsFormAudioDecodeChannels := 'Max. Anzahl der zu decodierenden Kan√§le';
     OptionsFormAc3Comp := 'AC3-Komprimierungsstufe';
     OptionsFormUseliba52 := 'Verwenden Sie die liba52-Bibliothek';
 
     OptionsFormVideoOut := 'Videoausgabetreiber';
     VideoOutUser := 'Andere:';
-    OptionsFormOverlay:= '‹berlagerungsfarbe';
-    ForceEvenWidth := 'Gleichm‰ﬂige Breite erzwingen';
+    OptionsFormOverlay:= '√úberlagerungsfarbe';
+    ForceEvenWidth := 'Gleichm√§√üige Breite erzwingen';
     DirectRender := 'Direktes Rendern';
     DoubleBuffer := 'Doppelte Pufferung';
     DrawSlices := 'Zeichne mit Scheiben';
@@ -229,7 +229,7 @@ begin
     OptionsFormPostproc:='Nachbearbeitung';
     PostprocOff:='Off';
     PostprocAuto:='Automatik';
-    PostprocMax:='Hˆchste Qualit‰t';
+    PostprocMax:='H√∂chste Qualit√§t';
 
     OptionsFormGeneral := 'Allgemeines';
     OptionsFormAudio := 'Audio';
@@ -241,7 +241,7 @@ begin
     MediaFixed := 'Festplatte';
     MediaRamdisk := 'RAM-Disk';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Wechselbares Ger‰t';
+    MediaRemovable := 'Wechselbares Ger√§t';
     mediaNetwork := 'Lokales Netzwerk';
     MediaInternet := 'Internet';
     MediaDvd := 'DVD-Wiedergabe';
@@ -280,25 +280,25 @@ begin
     SubAssColor := 'Textfarbe';
     SubBgColor := 'Texthintergrundfarbe';
 
-    UseDvdNav := 'DVD-Men¸s aktivieren';
+    UseDvdNav := 'DVD-Men√ºs aktivieren';
     DeinterlaceDVD := 'Deinterlace immer';
 
     //playlist form
     PlaylistFormCaption:='Wiedergabeliste';
     PlaylistFormPlay:='Abspielen';
-    PlaylistFormAdd:='Hinzuf¸gen ...';
+    PlaylistFormAdd:='Hinzuf√ºgen ...';
     PlaylistFormMoveUp:='Nach oben';
     PlaylistFormMoveDown:='Nach unten';
     PlaylistFormDelete:='Entfernen';
     PlaylistFormShuffle:='Zufall';
     PlaylistFormLoop:='Wiederholen';
     PlaylistFormSave:='Speichern ...';
-    PlaylistFormClose:='Schlieﬂen';
+    PlaylistFormClose:='Schlie√üen';
 
     InfoFormCaption:='Clip-Informationen';
-    InfoFormClose:='Schlieﬂen';
+    InfoFormClose:='Schlie√üen';
     InfoFormCopy := 'Kopieren';
-    NoInfo:='Zur Zeit sind keine Informationen verf¸gbar.';
+    NoInfo:='Zur Zeit sind keine Informationen verf√ºgbar.';
     InfoFileFormat:='Format';
     InfoPlaybackTime:='Abspieldauer';
     InfoTags:='Metadaten';
@@ -307,16 +307,16 @@ begin
     InfoDecoder:='Decoder';
     InfoCodec:='Codec';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Bildgrˆﬂe';
+    InfoVideoSize:='Bildgr√∂√üe';
     InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Seitenverh‰ltnis';
+    InfoVideoAspect:='Seitenverh√§ltnis';
     InfoAudioRate:='Samplerate';
-    InfoAudioChannels:='Kan‰le';
+    InfoAudioChannels:='Kan√§le';
     InfoInterlace:='Rahmen';
     InfoVideoInt := 'Interlaced';
     InfoVideoPro := 'Progressiv';
     InfoTrack := 'Spur';
-    InfoFilesize := 'Dateigrˆﬂe';
+    InfoFilesize := 'Dateigr√∂√üe';
     InfoSub := 'Untertitel';
     InfoFormCopyAll := 'Kopiere alles';
   end
