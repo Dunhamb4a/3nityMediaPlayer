@@ -1,4 +1,4 @@
-﻿unit mo_tu;
+unit mo_tu;
 
 interface
 implementation
@@ -8,95 +8,95 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='açılış ...';					
+      Status_Closing:='Kapanış ...';
+      Status_Playing:='oynama';
+      Status_Paused:='Duraklat';
+      Status_Stopped:='Durduruldu';
+      Status_Error:='Medya yürütülemiyor (Daha fazla bilgi için tıklayın)';
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
-      InternetRadios:='Internet radios';
+    FullscreenControls:='Tam ekran kontrolleri';
+    OSD:='OSD modu';
+      NoOSD:='OSD yok';
+      DefaultOSD:='Varsayılan OSD';
+      TimeOSD:='Gösteri zamanı';
+      FullOSD:='Toplam süreyi göster';
+    Escape:='Tam ekran modundan çıkmak için Escape düğmesine basın.';
+    Filemenu:='&Dosya';
+      OpenFile:='Dosyayı oynat ...';
+      OpenURL:='URL''yi oynat ...';
+        OpenURL_Caption:='URL''yi oynat';
+        OpenURL_Prompt:='Hangi URL''yi oynamak istersiniz?';
+      OpenDrive:='CD / DVD Oynat';
+      InternetRadios:='internet radyosu';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
-      Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
-      AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
-      Pause:='Pause';
-      Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
-      Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+      Close:='Kapat';
+      Quit:='çıkmak';
+    View:='&Görünüm';
+      SizeAny:='Özel boyut';
+      Size50:='Yarım boy';
+      Size100:='Orijinal boyut';
+      Size200:='İki katı';
+      VideoInside:='Videoyu kırpma';
+      Fullscreen:='Tam ekran';
+      AudioEqu:='Ekolayzer';
+      Compact:='Kompakt mod';
+      TogOSD:='OSD''yi değiştir';
+      OnTop:='Her zaman yukarıda';
+      Vis:='görüntüleme';
+      VisEnable:='Görselleştirmeyi göster';
+      VisDirectRender:='Doğrudan işleme';
+    Seek:='&Oyun';
+      Play:='Oyun';
+      Pause:='Duraklat';
+      Stop:='durdurmak';
+      Prev:='Önceki başlık'^I'Ctrl Left';
+      Next:='Sonraki başlık'^I'Ctrl Right';
+      ShowPlaylist:='Oynatma Listesi ...';
+      Mute:='Sessiz';
+      SeekF10:='10 saniye ileri'^I'Right';
+      SeekR10:='10 saniye geri sar'^I'Left';
+      SeekF60:='1 dakika ileri'^I'Up';
+      SeekR60:='1 dakika geri sar'^I'Down';
+      SeekF600:='10 dakika ileri'^I'PgUp';
+      SeekR600:='10 dakika geri sar'^I'PgDn';
+    Navigation:='&navigasyon';
+      Menu := 'Menü';
+      Titles := 'Başlıklar';
+      Chapters:= 'Bölümler';
+    Extra:='&Seçenekler';
+      Audio:='Müzik parçası';
+      Subtitle:='Altyazı parça';
+        NoSubtitle := 'Altyazı yok';
+      AddSubtitle := 'Altyazıları yükle...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
-      Deinterlace:='Deinterlace';
+      Aspect:='Boy oranı';
+        AspectAuto:='Otomatik tespit';
+        Aspect43:='Kuvvet 4:3';
+        Aspect169:='Kuvvet 16:9';
+        Aspect235:='Kuvvet 2.35:1';
+      DeinterlaceAlg:='Deinterlace algoritması';
+        DeinterlaceBlend := 'Harman';
+        DeinterlaceSimple := 'Basit';
+        DeinterlaceAdaptative := 'Adaptif';
+        DeinterlaceDoubleRate := 'Çift oranı';
+      Deinterlace:='Çözücü';
 
       Off := 'Off';
       On:='On';
-      Auto:='Auto';
+      Auto:='Otomatik';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
-    Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      Settings := 'Video ayarları ...';
+      Options:='Ayarlar ...';
+      Language:='Dil';
+      StreamInfo:='Dosya bilgilerini göster ...';
+      ShowOutput:='MPlayer çıktısını göster ...';
+    Help:='&yardım et';
+      KeyHelp:='Klavye yardımı ...';
+      About := 'hakkında ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='Klavye yardımı';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -155,94 +155,94 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='Kapat';
 
     //log form
-    LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormCaption:='MPlayer çıkışı';
+    LogFormClose:='Kapat';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
-    AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutFormCaption := 'hakkında ';
+    AboutFormClose := 'Kapat';
+    AboutVersionMPUI := '3nity Media Player versiyon:';
+    AboutVersionMplayer := 'MPlayer versiyon:';
 
     //settings form
-    SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
-    Contrast := 'Contrast';
-    Hue := 'Hue';
-    Saturation := 'Saturation';
-    Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
-    ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    SettingsformCaption := 'Video ayarları';
+    Brightness := 'Parlaklık';
+    Contrast := 'Kontrast';
+    Hue := 'renk';
+    Saturation := 'Doyma';
+    Gamma := 'Gama';
+    SubScale := 'Altyazı boyutu';
+    ResetSetting := 'Sıfıra sıfırla';
+    MResetSetting := 'Sıfıra sıfırla';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := 'Tam ekran monitör';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='Ayarlar';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='Uygulamak';
 
-    OptionsFormAssociate:='Associate';
-    OptionsFormSelectAll:='Select All';
-    OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
-    OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormAssociate:='Kayıt etmek';
+    OptionsFormSelectAll:='Hepsini seç';
+    OptionsFormSelectNone:='Yok';
+    OptionsFormSave:='Kayıt etmek';
+    OptionsFormClose:='Kapat';
+    OptionsFormHelp:='yardım et';
+    OptionsFormParams:='Ek MPlayer parametreleri:';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='Gerekirse dosya dizinini yeniden oluştur';
+    OptionsFormPriorityBoost:='Daha yüksek önceliğe sahip koş';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='Ses çıkışı sürücüsü';
+    AudioOutNoDecode:='(sesin kodunu çözme)';
+    AudioOutNoOut:='(ses çalma)';
+    OptionsFormAudioDev:='DirectSound çıkış cihazı';
+    OptionsFormAudioFilterChannels := 'Kanal filtreleme ve yönlendirme';
+    OptionsFormSoftVol:='Yazılım ses kontrolü / Ses seviyesi yükseltme';
+    OptionsFormUseVolcmd := 'Birim komut satırı seçeneğini kullan';
+    OptionsFormAudioDecodeChannels := 'Maks. numara. çözülecek kanal sayısı';
+    OptionsFormAc3Comp := 'AC3 sıkıştırma seviyesi';
+    OptionsFormUseliba52 := 'Liba52 kütüphanesini kullan';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := 'Video çıkış sürücüsü';
+    VideoOutUser := 'Diğer:';
+    OptionsFormOverlay:= 'Bindirme rengi';
+    ForceEvenWidth := 'Genişliği eşitle';
+    DirectRender := 'Doğrudan işleme';
+    DoubleBuffer := 'Çift tamponlama';
+    DrawSlices := 'Dilimleri kullanarak çizin';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := 'Yazılım video ekolayzer';
     VideoeqOff  := 'Off';
-    VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    VideoScaler := 'Yazılım video ölçekleyici';
+    TryScaler := 'Hatalı ölçekleyici deneyin';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='Rötuş';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='Otomatik';
+    PostprocMax:='Maksimum kalite';
 
-    OptionsFormGeneral := 'General';
-    OptionsFormAudio := 'Audio';
+    OptionsFormGeneral := 'Genel';
+    OptionsFormAudio := 'Ses';
     OptionsFormVideo := 'Video';
     OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormOSDSub := 'OSD ve altyazılar';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
+    MediaDefault := 'Varsayılan';
+    MediaFixed := 'Sabit disk';
     MediaRamdisk := 'RAM disk';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
+    MediaRemovable := 'Çıkarılabilir Aygıt';
+    mediaNetwork := 'Yerel ağ';
     MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaDvd := 'DVD oynatma';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,56 +270,56 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := 'Yazı tipi taraması';
+    SubAss := 'SSA / ASS kullan';
+    SubAutoLoad := 'Harici altyazı dosyalarını yükle';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := 'Metin kenarlığı rengi';
+    SubAssColor := 'Metin rengi';
+    SubBgColor := 'Metin arka plan rengi';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'DVD menülerini etkinleştir ';
+    DeinterlaceDVD := 'Her zaman deinterlace';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
-    PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormCaption:='Oynatma Listesi';
+    PlaylistFormPlay:='Oyun';
+    PlaylistFormAdd:='Eklemek ...';
+    PlaylistFormMoveUp:='Yukarı taşı';
+    PlaylistFormMoveDown:='Aşağı inmek';
+    PlaylistFormDelete:='Kaldır';
+    PlaylistFormShuffle:='Karıştır';
+    PlaylistFormLoop:='Tekrar et';
+    PlaylistFormSave:='Kayıt etmek ...';
+    PlaylistFormClose:='Kapat';
 
-    InfoFormCaption:='File information';
-    InfoFormClose:='Close';
-    InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
-    InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
-    InfoDecoder:='Decoder';
+    InfoFormCaption:='Dosya bilgisi';
+    InfoFormClose:='Kapat';
+    InfoFormCopy := 'kopya';
+    NoInfo:='Şu anda hiçbir dosya bilgisi mevcut değil.';
+    InfoFileFormat:='Biçim';
+    InfoPlaybackTime:='süre';
+    InfoTags:='Meta';
+    InfoVideo:='Video ';
+    InfoAudio:='Ses ';
+    InfoDecoder:='şifre çözücü';
     InfoCodec:='Codec';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
-    InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
-    InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
-    InfoInterlace:='Frame';
+    InfoVideoSize:='boyutlar';
+    InfoVideoFPS:='Kare hızı';
+    InfoVideoAspect:='Boy oranı';
+    InfoAudioRate:='Aynı oran';
+    InfoAudioChannels:='Kanallar';
+    InfoInterlace:='çerçeve';
     InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
+    InfoVideoPro := 'ilerici';
     InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
-    InfoFormCopyAll := 'Copy All';
+    InfoFilesize := 'Dosya boyutu';
+    InfoSub := 'Altyazı';
+    InfoFormCopyAll := 'Hepsini kopyala';
   end
 end;
 
 begin
-    //RegisterLocale('Turkish - Türk',Activate,LANG_TURKISH,TURKISH_CHARSET);
+    RegisterLocale('Turkish - Türk',Activate,LANG_TURKISH,TURKISH_CHARSET);
 end.

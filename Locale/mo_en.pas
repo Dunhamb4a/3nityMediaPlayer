@@ -1,29 +1,22 @@
-﻿{
-
+{
 	3nity Media Player, an MPlayer frontend for Windows
-
 	Copyright (C) 2010-2019 Nicolas DEOUX  < nicolas.deoux@gmail.com >
 									<http://3nitysoftwares.com>
-
     Original source code 2008-2010 Visenri  <http://sourceforge.net/projects/mpui-ve/>
     Original source code (2005) by Martin J. Fiedler <martin.fiedler@gmx.net>>
-
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; either version 2 of the License, or
     (at your option) any later version.
-
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 }
 {   to compile:
-
     This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio( here using XE7  )
     You will need to install Alphaskin and OmniThreadLibrary components.
     For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
@@ -38,26 +31,26 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='Opening ...';						// 'Opening ...';
+      Status_Closing:='Closing ...';						// 'Closing ...';
+      Status_Playing:='Playing';						// 'Playing';
+      Status_Paused:='Paused';							// 'Paused';
+      Status_Stopped:='Stopped';						// 'Stopped';
+      Status_Error:='Unable to play media (Click for more info)';		// 'Unable to play media (Click for more info)';	
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
+    FullscreenControls:='Show fullscreen controls';				// 'Show fullscreen controls';
+    OSD:='OSD mode';								// 'OSD mode';
+      NoOSD:='No OSD';								// 'No OSD';
+      DefaultOSD:='Default OSD';						// 'Default OSD';	
+      TimeOSD:='Show time';							// 'Show time';
+      FullOSD:='Show total time';						// 'Show total time';
+    Escape:='Press Escape to exit fullscreen mode.';				// 'Press Escape to exit fullscreen mode.';
+    Filemenu:='&File';								// '&File';
+      OpenFile:='Play file ...';						// 'Play file ...';
+      OpenURL:='Play URL ...';							// 'Play URL ...';
+        OpenURL_Caption:='Play URL';						// 'Play URL';
+        OpenURL_Prompt:='Which URL do you want to play?';			// 'Which URL do you want to play?';
+      OpenDrive:='Play CD/DVD';							// 'Play CD/DVD';
       InternetRadios:='Internet radios';
       OpenTV := 'Open TV/capture card';
       Close:='Close';

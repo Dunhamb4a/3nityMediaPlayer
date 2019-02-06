@@ -1,4 +1,4 @@
-﻿unit mo_kr;
+unit mo_kr;
 
 interface
 implementation
@@ -8,95 +8,95 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='열리는 ...';
+      Status_Closing:='폐쇄 ...';
+      Status_Playing:='연주 중';
+      Status_Paused:='일시 중지됨';
+      Status_Stopped:='중지됨';
+      Status_Error:='미디어를 재생할 수 없습니다 (자세한 정보를 보려면 클릭하십시오).';
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
-      InternetRadios:='Internet radios';
+    FullscreenControls:='전체 화면 컨트롤';
+    OSD:='OSD 모드';
+      NoOSD:='OSD 없음';
+      DefaultOSD:='기본 OSD';
+      TimeOSD:='시간 표시';
+      FullOSD:='총 시간 표시';
+    Escape:='전체 화면 모드를 종료하려면 Esc 키를 누릅니다.';
+    Filemenu:='&파일';
+      OpenFile:='파일 재생 ...';
+      OpenURL:='재생 URL ...';
+        OpenURL_Caption:='재생 URL';
+        OpenURL_Prompt:='어떤 URL을 열시겠습니까?';
+      OpenDrive:='CD / DVD 재생';
+      InternetRadios:='인터넷 라디오';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
-      Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
-      AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
-      Pause:='Pause';
-      Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
-      Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+      Close:='닫기';
+      Quit:='떠나다';
+    View:='&전망';
+      SizeAny:='사용자 정의 크기';
+      Size50:='절반 크기';
+      Size100:='원래 크기';
+      Size200:='더블 사이즈';
+      VideoInside:='비디오를 자르지 마라.';
+      Fullscreen:='전체 화면';
+      AudioEqu:='평형 장치';
+      Compact:='압축 모드';
+      TogOSD:='OSD 토글';
+      OnTop:='항상 위에';
+      Vis:='심상';
+      VisEnable:='시각화 표시';
+      VisDirectRender:='직접 렌더링';
+    Seek:='&놀이';
+      Play:='놀이';
+      Pause:='중지';
+      Stop:='중지';
+      Prev:='이전 제목'^I'Ctrl Left';
+      Next:='다음 제목'^I'Ctrl Right';
+      ShowPlaylist:='재생 목록 ...';
+      Mute:='묵자';
+      SeekF10:='앞으로 10 초'^I'Right';
+      SeekR10:='되감기 10 초'^I'Left';
+      SeekF60:='1 분 앞으로'^I'Up';
+      SeekR60:='되감기 1 분'^I'Down';
+      SeekF600:='앞으로 10 분'^I'PgUp';
+      SeekR600:='되감기 10 분'^I'PgDn';
+    Navigation:='&항해';
+      Menu := '메뉴';
+      Titles := '제목';
+      Chapters:= '챕터';
+    Extra:='&옵션';
+      Audio:='오디오 트랙';
+      Subtitle:='자막 트랙';
+        NoSubtitle := '부제 없음';
+      AddSubtitle := '자막로드...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
-      Deinterlace:='Deinterlace';
+      Aspect:='종횡비';
+        AspectAuto:='자동 감지';
+        Aspect43:='포스 4:3';
+        Aspect169:='포스 16:9';
+        Aspect235:='포스 2.35:1';
+      DeinterlaceAlg:='디인터레이스 알고리즘';
+        DeinterlaceBlend := '혼합';
+        DeinterlaceSimple := '단순한';
+        DeinterlaceAdaptative := '적응 형';
+        DeinterlaceDoubleRate := '더블 레이트';
+      Deinterlace:='디인터레이스';
 
       Off := 'Off';
       On:='On';
-      Auto:='Auto';
+      Auto:='오토매틱';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
-    Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      Settings := '비디오 조정 ...';
+      Options:='설정 ...';
+      Language:='언어';
+      StreamInfo:='파일 정보 표시 ...';
+      ShowOutput:='MPlayer 출력보기 ...';
+    Help:='&도움';
+      KeyHelp:='키보드 도움말 ...';
+      About := '약 ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='키보드 도움말';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -155,94 +155,94 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='닫기';
 
     //log form
-    LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormCaption:='MPlayer 출력';
+    LogFormClose:='닫기';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
-    AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutFormCaption := '약 ';
+    AboutFormClose := '닫기';
+    AboutVersionMPUI := '3nity Media Player 번역:';
+    AboutVersionMplayer := 'MPlayer 번역:';
 
     //settings form
-    SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
-    Contrast := 'Contrast';
-    Hue := 'Hue';
-    Saturation := 'Saturation';
-    Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
-    ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    SettingsformCaption := '비디오 조정';
+    Brightness := '명도';
+    Contrast := '대조';
+    Hue := '색조';
+    Saturation := '포화';
+    Gamma := '감마';
+    SubScale := '자막 크기';
+    ResetSetting := '다시 놓기';
+    MResetSetting := '다시 놓기';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := '전체 화면 모니터';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='설정';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='대다';
 
-    OptionsFormAssociate:='Associate';
-    OptionsFormSelectAll:='Select All';
-    OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
-    OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormAssociate:='구하다';
+    OptionsFormSelectAll:='모두 선택';
+    OptionsFormSelectNone:='없음';
+    OptionsFormSave:='구하다';
+    OptionsFormClose:='닫기';
+    OptionsFormHelp:='도움';
+    OptionsFormParams:='추가 MPlayer 매개 변수 :';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='필요한 경우 파일 색인 다시 작성';
+    OptionsFormPriorityBoost:='높은 우선 순위로 실행';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='사운드 출력 드라이버';
+    AudioOutNoDecode:='(소리를 디코딩하지 마라.)';
+    AudioOutNoOut:='(소리를 내지 마라.)';
+    OptionsFormAudioDev:='DirectSound 출력 장치';
+    OptionsFormAudioFilterChannels := '채널 필터링 및 라우팅';
+    OptionsFormSoftVol:='소프트웨어 볼륨 컨트롤 / 볼륨 부스트';
+    OptionsFormUseVolcmd := '볼륨 명령 행 옵션 사용';
+    OptionsFormAudioDecodeChannels := '맥스. 번호. 디코딩 할 채널 수';
+    OptionsFormAc3Comp := 'AC3 압축 수준';
+    OptionsFormUseliba52 := 'liba52 라이브러리 사용';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := '비디오 출력 드라이버';
+    VideoOutUser := '다른:';
+    OptionsFormOverlay:= '오버레이 색상';
+    ForceEvenWidth := '강제 너비';
+    DirectRender := '직접 렌더링';
+    DoubleBuffer := '더블 버퍼링';
+    DrawSlices := '분할 영역을 사용하여 그리기';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := '소프트웨어 비디오 이퀄라이저';
     VideoeqOff  := 'Off';
-    VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    VideoScaler := '소프트웨어 비디오 스케일러';
+    TryScaler := '오류 발생시 스케일러 사용';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='후 처리';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='오토매틱';
+    PostprocMax:='최대 품질';
 
-    OptionsFormGeneral := 'General';
-    OptionsFormAudio := 'Audio';
-    OptionsFormVideo := 'Video';
-    OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormGeneral := '일반';
+    OptionsFormAudio := '오디오';
+    OptionsFormVideo := '비디오';
+    OptionsFormCaching := '캐싱';
+    OptionsFormOSDSub := 'OSD 및 자막';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
-    MediaRamdisk := 'RAM disk';
+    MediaDefault := '태만';
+    MediaFixed := '고정 디스크';
+    MediaRamdisk := 'RAM 디스크';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
-    MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaRemovable := '이동식 장치';
+    mediaNetwork := '지역 네트워크';
+    MediaInternet := '인터넷';
+    MediaDvd := 'DVD 재생';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,56 +270,56 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := '글꼴 스캐닝';
+    SubAss := 'SSA / ASS 사용';
+    SubAutoLoad := '외부 자막 파일로드';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := '텍스트 테두리 색';
+    SubAssColor := '텍스트 색상';
+    SubBgColor := '텍스트 배경색';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'DVD 메뉴 사용 ';
+    DeinterlaceDVD := '항상 인터레이스 해제';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
-    PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormCaption:='재생 목록';
+    PlaylistFormPlay:='놀이';
+    PlaylistFormAdd:='더하다 ...';
+    PlaylistFormMoveUp:='이동';
+    PlaylistFormMoveDown:='아래로 이동';
+    PlaylistFormDelete:='풀다';
+    PlaylistFormShuffle:='혼합';
+    PlaylistFormLoop:='반복';
+    PlaylistFormSave:='구하다 ...';
+    PlaylistFormClose:='닫기';
 
-    InfoFormCaption:='File information';
-    InfoFormClose:='Close';
-    InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
-    InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
-    InfoDecoder:='Decoder';
+    InfoFormCaption:='파일 정보';
+    InfoFormClose:='닫기';
+    InfoFormCopy := '부';
+    NoInfo:='현재 사용할 수있는 파일 정보가 없습니다.';
+    InfoFileFormat:='체재';
+    InfoPlaybackTime:='지속';
+    InfoTags:='메타 데이터';
+    InfoVideo:='비디오 트랙';
+    InfoAudio:='오디오 트랙';
+    InfoDecoder:='디코더';
     InfoCodec:='Codec';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
-    InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
-    InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
+    InfoVideoSize:='치수';
+    InfoVideoFPS:='프레임 속도';
+    InfoVideoAspect:='종횡비';
+    InfoAudioRate:='샘플 속도';
+    InfoAudioChannels:='채널';
     InfoInterlace:='Frame';
-    InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
-    InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
-    InfoFormCopyAll := 'Copy All';
+    InfoVideoInt := '인터레이스 된';
+    InfoVideoPro := '프로그레시브';
+    InfoTrack := '선로';
+    InfoFilesize := '파일 크기';
+    InfoSub := '자막';
+    InfoFormCopyAll := '모두 복사';
   end
 end;
 
 begin
-   //RegisterLocale('Korean',Activate,LANG_KOREAN,HANGEUL_CHARSET);
+   RegisterLocale('Korean',Activate,LANG_KOREAN,HANGEUL_CHARSET);
 end.

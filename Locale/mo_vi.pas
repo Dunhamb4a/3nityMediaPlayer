@@ -1,4 +1,4 @@
-﻿unit mo_vi;
+unit mo_vi;
 
 interface
 implementation
@@ -8,95 +8,95 @@ procedure Activate;
 begin
   with LOCstr do begin
     Title:='3nity Media Player';
-      Status_Opening:='Opening ...';
-      Status_Closing:='Closing ...';
-      Status_Playing:='Playing';
-      Status_Paused:='Paused';
-      Status_Stopped:='Stopped';
-      Status_Error:='Unable to play media (Click for more info)';
+      Status_Opening:='Khai mạc ...';
+      Status_Closing:='Đóng cửa ...';
+      Status_Playing:='Đang chơi';
+      Status_Paused:='Tạm dừng';
+      Status_Stopped:='Ngừng';
+      Status_Error:='Không thể phát phương tiện (Bấm để biết thêm)';
 
-    FullscreenControls:='Show fullscreen controls';
-    OSD:='OSD mode';
-      NoOSD:='No OSD';
-      DefaultOSD:='Default OSD';
-      TimeOSD:='Show time';
-      FullOSD:='Show total time';
-    Escape:='Press Escape to exit fullscreen mode.';
-    Filemenu:='&File';
-      OpenFile:='Play file ...';
-      OpenURL:='Play URL ...';
-        OpenURL_Caption:='Play URL';
-        OpenURL_Prompt:='Which URL do you want to play?';
-      OpenDrive:='Play CD/DVD';
+    FullscreenControls:='Điều khiển toàn màn hình';
+    OSD:='Chế độ OSD';
+      NoOSD:='Không có OSD';
+      DefaultOSD:='OSD mặc định';
+      TimeOSD:='Hiển thị thời gian';
+      FullOSD:='Hiển thị tổng thời gian';
+    Escape:='Nhấn Escape để thoát chế độ toàn màn hình.';
+    Filemenu:='&Tập tin';
+      OpenFile:='Chơi tập tin ...';
+      OpenURL:='Chơi URL ...';
+        OpenURL_Caption:='Chơi URL';
+        OpenURL_Prompt:='URL nào bạn muốn mở?';
+      OpenDrive:='Chơi CD / DVD';
       InternetRadios:='Internet radios';
       OpenTV := 'Open TV/capture card';
-      Close:='Close';
-      Quit:='Quit';
-    View:='&View';
-      SizeAny:='Custom size';
-      Size50:='Half size';
-      Size100:='Original size';
-      Size200:='Double size';
-      VideoInside:='Don''t crop video';
-      Fullscreen:='Fullscreen';
-      AudioEqu:='Equalizer';
-      Compact:='Compact mode';
-      TogOSD:='Toggle OSD';
-      OnTop:='Always on top';
-      Vis:='Visualization';
-      VisEnable:='Show visualization';
-      VisDirectRender:='Direct rendering';
-    Seek:='&Play';
-      Play:='Play';
-      Pause:='Pause';
-      Stop:='Stop';
-      Prev:='Previous title'^I'Ctrl Left';
-      Next:='Next title'^I'Ctrl Right';
-      ShowPlaylist:='Playlist ...';
-      Mute:='Mute';
-      SeekF10:='Forward 10 seconds'^I'Right';
-      SeekR10:='Rewind 10 seconds'^I'Left';
-      SeekF60:='Forward 1 minute'^I'Up';
-      SeekR60:='Rewind 1 minute'^I'Down';
-      SeekF600:='Forward 10 minutes'^I'PgUp';
-      SeekR600:='Rewind 10 minutes'^I'PgDn';
-    Navigation:='&Navigation';
-      Menu := 'Menu';
-      Titles := 'Titles';
-      Chapters:= 'Chapters';
-    Extra:='&Options';
-      Audio:='Audio track';
-      Subtitle:='Subtitles track';
-        NoSubtitle := 'No subtitles';
-      AddSubtitle := 'Load subtitles...';
+      Close:='Gần';
+      Quit:='Lối thoát hiểm';
+    View:='&Lượt xem';
+      SizeAny:='Kích thước tùy chỉnh';
+      Size50:='Nửa cỡ';
+      Size100:='Kích thước nguyên mẫu';
+      Size200:='Kích thước gấp đôi';
+      VideoInside:='Không cắt video';
+      Fullscreen:='Toàn màn hình';
+      AudioEqu:='Bộ cân bằng';
+      Compact:='Chế độ nhỏ gọn';
+      TogOSD:='Chuyển đổi OSD';
+      OnTop:='Luôn luôn ở trên';
+      Vis:='Hình dung';
+      VisEnable:='Hiển thị trực quan';
+      VisDirectRender:='Kết xuất trực tiếp';
+    Seek:='&Chơi';
+      Play:='Chơi';
+      Pause:='Tạm ngừng';
+      Stop:='Dừng lại';
+      Prev:='Tiêu đề trước'^I'Ctrl Left';
+      Next:='Tiêu đề tiếp theo'^I'Ctrl Right';
+      ShowPlaylist:='Danh sách phát ...';
+      Mute:='người câm';
+      SeekF10:='Chuyển tiếp 10 giây'^I'Right';
+      SeekR10:='Tua lại 10 giây'^I'Left';
+      SeekF60:='Chuyển tiếp 1 phút'^I'Up';
+      SeekR60:='Tua lại 1 phút'^I'Down';
+      SeekF600:='Chuyển tiếp 10 phút'^I'PgUp';
+      SeekR600:='Tua lại 10 phút'^I'PgDn';
+    Navigation:='&dẫn đường';
+      Menu := 'Thực đơn';
+      Titles := 'Tiêu đề';
+      Chapters:= 'Chương';
+    Extra:='&Tùy chọn';
+      Audio:='Âm thanh';
+      Subtitle:='Phụ đề';
+        NoSubtitle := 'Không có phụ đề';
+      AddSubtitle := 'Tải phụ đề ...';
 
-      Aspect:='Aspect ratio';
-        AspectAuto:='Autodetect';
-        Aspect43:='Force 4:3';
-        Aspect169:='Force 16:9';
-        Aspect235:='Force 2.35:1';
-      DeinterlaceAlg:='Deinterlace algorithm';
-        DeinterlaceBlend := 'Blend';
-        DeinterlaceSimple := 'Simple';
-        DeinterlaceAdaptative := 'Adaptive';
-        DeinterlaceDoubleRate := 'Double rate';
-      Deinterlace:='Deinterlace';
+      Aspect:='Tỷ lệ khung hình';
+        AspectAuto:='Tự động phát hiện';
+        Aspect43:='Lực lượng 4:3';
+        Aspect169:='Lực lượng  16:9';
+        Aspect235:='Lực lượng  2.35:1';
+      DeinterlaceAlg:='Thuật toán khử xen kẽ';
+        DeinterlaceBlend := 'trộn';
+        DeinterlaceSimple := 'Đơn giản';
+        DeinterlaceAdaptative := 'Thích nghi';
+        DeinterlaceDoubleRate := 'Tỷ lệ gấp đôi';
+      Deinterlace:='Khử nhiễu';
 
       Off := 'Off';
       On:='On';
-      Auto:='Auto';
+      Auto:='Tự động';
 
-      Settings := 'Video adjustments ...';
-      Options:='Settings ...';
-      Language:='Language';
-      StreamInfo:='Show file information ...';
-      ShowOutput:='Show MPlayer output ...';
-    Help:='&Help';
-      KeyHelp:='Keyboard help ...';
-      About := 'About ...';
+      Settings := 'Điều chỉnh video ...';
+      Options:='Cài đặt ...';
+      Language:='Ngôn ngữ';
+      StreamInfo:='Hiển thị thông tin tập tin ...';
+      ShowOutput:='Hiển thị đầu ra MPlayer ...';
+    Help:='&Cứu giúp';
+      KeyHelp:='Bàn phím trợ giúp ...';
+      About := 'Trong khoảng ...';
 
 
-    HelpFormCaption:='Keyboard help';
+    HelpFormCaption:='Bàn phím trợ giúp';
     HelpFormHelpText:=
 'Navigation keys:'^M^J+
 'Space'^I'Play/Pause'^M^J+
@@ -155,94 +155,94 @@ begin
 'MEDIA_PREV_TRACK'^I'Play previous track'^M^J+
 'MEDIA_NEXT_TRACK'^I'Play next track'
   ;
-    HelpFormClose:='Close';
+    HelpFormClose:='Gần';
 
     //log form
-    LogFormCaption:='MPlayer output';
-    LogFormClose:='Close';
+    LogFormCaption:='Đầu ra MPlayer';
+    LogFormClose:='Gần';
 
     //about form
-    AboutFormCaption := 'About 3nity Media Player';
-    AboutFormClose := 'Close';
-    AboutVersionMPUI := '3nity Media Player version:';
-    AboutVersionMplayer := 'MPlayer version:';
+    AboutFormCaption := 'Trong khoảng ';
+    AboutFormClose := 'Gần';
+    AboutVersionMPUI := '3nity Media Player phiên bản:';
+    AboutVersionMplayer := 'MPlayer phiên bản:';
 
     //settings form
-    SettingsformCaption := 'Video adjustments';
-    Brightness := 'Brightness';
-    Contrast := 'Contrast';
-    Hue := 'Hue';
-    Saturation := 'Saturation';
+    SettingsformCaption := 'Điều chỉnh video ';
+    Brightness := 'độ sáng';
+    Contrast := 'Tương phản';
+    Hue := 'Huế';
+    Saturation := 'Độ bão hòa';
     Gamma := 'Gamma';
-    SubScale := 'Subtitles size';
-    ResetSetting := 'Reset';
-    MResetSetting := 'Master reset';
+    SubScale := 'Kích thước phụ đề';
+    ResetSetting := 'Cài lại';
+    MResetSetting := 'Cài lại';
 
     //options form
-    FullScreenMonitor := 'Fullscreen monitor';
+    FullScreenMonitor := 'Màn hình toàn màn hình';
     AutoLocale:='(Auto-select)';
 
-    OptionsFormCaption:='Settings';
+    OptionsFormCaption:='Cài đặt';
     OptionsFormOK:='OK';
-    OptionsFormApply:='Apply';
+    OptionsFormApply:='Ứng dụng';
 
-    OptionsFormAssociate:='Associate';
-    OptionsFormSelectAll:='Select All';
-    OptionsFormSelectNone:='None';
-    OptionsFormSave:='Save';
-    OptionsFormClose:='Close';
-    OptionsFormHelp:='Help';
-    OptionsFormParams:='Additional MPlayer parameters:';
+    OptionsFormAssociate:='Tiết kiệm';
+    OptionsFormSelectAll:='Chọn tất cả';
+    OptionsFormSelectNone:='không ai';
+    OptionsFormSave:='Tiết kiệm';
+    OptionsFormClose:='Gần';
+    OptionsFormHelp:='Cứu giúp';
+    OptionsFormParams:='Các thông số MPlayer bổ sung:';
 
-    OptionsFormIndex:='Rebuild file index if necessary';
-    OptionsFormPriorityBoost:='Run with higher priority';
+    OptionsFormIndex:='Xây dựng lại chỉ mục tập tin nếu cần thiết';
+    OptionsFormPriorityBoost:='Chạy với mức độ ưu tiên cao hơn';
 
     Autosync := 'Autosync factor';
     AVsyncperframe := 'A-V sync per frame (us.)';
 
-    OptionsFormAudioOut:='Sound output driver';
-    AudioOutNoDecode:='(don''t decode sound)';
-    AudioOutNoOut:='(don''t play sound)';
-    OptionsFormAudioDev:='DirectSound output device';
-    OptionsFormAudioFilterChannels := 'Channel filtering and routing';
-    OptionsFormSoftVol:='Software volume control / Volume boost';
-    OptionsFormUseVolcmd := 'Use volume command line option';
-    OptionsFormAudioDecodeChannels := 'Max. num. of channels to decode';
-    OptionsFormAc3Comp := 'AC3 compression level';
-    OptionsFormUseliba52 := 'Use liba52 library';
+    OptionsFormAudioOut:='Trình điều khiển đầu ra âm thanh';
+    AudioOutNoDecode:='(không giải mã âm thanh)';
+    AudioOutNoOut:='(không chơi âm thanh)';
+    OptionsFormAudioDev:='Thiết bị đầu ra DirectSound';
+    OptionsFormAudioFilterChannels := 'Lọc và định tuyến kênh';
+    OptionsFormSoftVol:='Điều khiển âm lượng phần mềm / Tăng âm lượng';
+    OptionsFormUseVolcmd := 'Sử dụng tùy chọn dòng lệnh âm lượng';
+    OptionsFormAudioDecodeChannels := 'Tối đa con số. của các kênh để giải mã';
+    OptionsFormAc3Comp := 'Mức nén AC3';
+    OptionsFormUseliba52 := 'Sử dụng thư viện liba52';
 
-    OptionsFormVideoOut := 'Video output driver';
-    VideoOutUser := 'Other:';
-    OptionsFormOverlay:= 'Overlay color';
-    ForceEvenWidth := 'Force even width';
-    DirectRender := 'Direct rendering';
-    DoubleBuffer := 'Double buffering';
-    DrawSlices := 'Draw using slices';
+    OptionsFormVideoOut := 'Trình điều khiển đầu ra video';
+    VideoOutUser := 'Khác:';
+    OptionsFormOverlay:= 'Lớp phủ màu';
+    ForceEvenWidth := 'Buộc chiều rộng';
+    DirectRender := 'Kết xuất trực tiếp';
+    DoubleBuffer := 'Bộ đệm đôi';
+    DrawSlices := 'Vẽ bằng lát';
 
-    OptionsFormVideoeq  := 'Software video equalizer';
+    OptionsFormVideoeq  := 'Bộ cân bằng video phần mềm';
     VideoeqOff  := 'Off';
-    VideoScaler := 'Software video scaler';
-    TryScaler := 'Try scaler on error';
+    VideoScaler := 'Phần mềm mở rộng video';
+    TryScaler := 'Thử lỗi scaler';
 
-    OptionsFormPostproc:='Postprocessing';
+    OptionsFormPostproc:='Hậu xử lý';
     PostprocOff:='Off';
-    PostprocAuto:='Automatic';
-    PostprocMax:='Maximum quality';
+    PostprocAuto:='Tự động';
+    PostprocMax:='Chất lượng tối đa';
 
-    OptionsFormGeneral := 'General';
-    OptionsFormAudio := 'Audio';
+    OptionsFormGeneral := 'Chung';
+    OptionsFormAudio := 'Âm thanh';
     OptionsFormVideo := 'Video';
-    OptionsFormCaching := 'Caching';
-    OptionsFormOSDSub := 'OSD and subs';
+    OptionsFormCaching := 'Bộ nhớ đệm';
+    OptionsFormOSDSub := 'OSD và phụ đề';
 
-    MediaDefault := 'Default';
-    MediaFixed := 'Fixed disk';
-    MediaRamdisk := 'RAM disk';
+    MediaDefault := 'Mặc định';
+    MediaFixed := 'Đĩa cố định';
+    MediaRamdisk := 'Đĩa RAM';
     MediaCdrom := 'CD-ROM / DVD-ROM';
-    MediaRemovable := 'Removable device';
-    mediaNetwork := 'Local network';
+    MediaRemovable := 'Thiết bị tháo rời';
+    mediaNetwork := 'Mạng nội bộ';
     MediaInternet := 'Internet';
-    MediaDvd := 'DVD playback';
+    MediaDvd := 'Phát lại DVD';
 
     FontPath := 'Font';
     FontEncoding := 'Character encoding';
@@ -270,56 +270,56 @@ begin
     FontEncodings[21] := 'Cyrillic Windows (CP1251)';
     FontEncodings[22] := 'Slavic/Central European Windows (CP1250)';
 
-    FontConfig := 'Fontconfig (font scanning)';
-    SubAss := 'Use SSA/ASS';
-    SubAutoLoad := 'Load external subtitle files';
+    FontConfig := 'Quét phông chữ';
+    SubAss := 'Sử dụng SSA / ASS';
+    SubAutoLoad := 'Tải tập tin phụ đề bên ngoài';
 
-    SubAssBorderColor := 'Text border color';
-    SubAssColor := 'Text color';
-    SubBgColor := 'Text background color';
+    SubAssBorderColor := 'Màu viền văn bản';
+    SubAssColor := 'Văn bản màu';
+    SubBgColor := 'Màu nền văn bản';
 
-    UseDvdNav := 'Enable DVD menus ';
-    DeinterlaceDVD := 'Always deinterlace';
+    UseDvdNav := 'Bật menu DVD ';
+    DeinterlaceDVD := 'Luôn luôn xen kẽ';
 
     //playlist form
-    PlaylistFormCaption:='Playlist';
-    PlaylistFormPlay:='Play';
-    PlaylistFormAdd:='Add ...';
-    PlaylistFormMoveUp:='Move up';
-    PlaylistFormMoveDown:='Move down';
-    PlaylistFormDelete:='Remove';
-    PlaylistFormShuffle:='Shuffle';
-    PlaylistFormLoop:='Repeat';
-    PlaylistFormSave:='Save ...';
-    PlaylistFormClose:='Close';
+    PlaylistFormCaption:='Danh sách phát';
+    PlaylistFormPlay:='Chơi';
+    PlaylistFormAdd:='Thêm vào ...';
+    PlaylistFormMoveUp:='Đi lên';
+    PlaylistFormMoveDown:='Đi xuống';
+    PlaylistFormDelete:='Tẩy';
+    PlaylistFormShuffle:='Xáo trộn';
+    PlaylistFormLoop:='Nói lại';
+    PlaylistFormSave:='Tiết kiệm ...';
+    PlaylistFormClose:='Gần';
 
-    InfoFormCaption:='File information';
-    InfoFormClose:='Close';
-    InfoFormCopy := 'Copy';
-    NoInfo:='No file information is available at the moment.';
-    InfoFileFormat:='Format';
-    InfoPlaybackTime:='Duration';
-    InfoTags:='Clip metadata';
-    InfoVideo:='Video track';
-    InfoAudio:='Audio track';
-    InfoDecoder:='Decoder';
+    InfoFormCaption:='Thông tin tập tin';
+    InfoFormClose:='Gần';
+    InfoFormCopy := 'Sao chép';
+    NoInfo:='Không có thông tin tập tin có sẵn tại thời điểm này.';
+    InfoFileFormat:='định dạng';
+    InfoPlaybackTime:='Thời lượng';
+    InfoTags:='Clip siêu dữ liệu';
+    InfoVideo:='Video';
+    InfoAudio:='Âm thanh';
+    InfoDecoder:='Bộ giải mã';
     InfoCodec:='Codec';
     InfoBitrate:='Bitrate';
-    InfoVideoSize:='Dimensions';
-    InfoVideoFPS:='Frame rate';
-    InfoVideoAspect:='Aspect ratio';
-    InfoAudioRate:='Sample rate';
-    InfoAudioChannels:='Channels';
-    InfoInterlace:='Frame';
-    InfoVideoInt := 'Interlaced';
-    InfoVideoPro := 'Progressive';
+    InfoVideoSize:='Kích thước';
+    InfoVideoFPS:='Tỷ lệ khung hình';
+    InfoVideoAspect:='Tỷ lệ khung hình';
+    InfoAudioRate:='Tỷ lệ mẫu';
+    InfoAudioChannels:='Kênh truyền hình';
+    InfoInterlace:='Khung';
+    InfoVideoInt := 'Xen kẽ';
+    InfoVideoPro := 'Cấp tiến';
     InfoTrack := 'Track';
-    InfoFilesize := 'Filesize';
-    InfoSub := 'Subtitles';
-    InfoFormCopyAll := 'Copy All';
+    InfoFilesize := 'Kích thước tập tin';
+    InfoSub := 'Phụ đề';
+    InfoFormCopyAll := 'Sao chép tất cả';
   end
 end;
 
 begin
-   //RegisterLocale('Vietnamese - Tiếng Việt',Activate,LANG_VIETNAMESE,VIETNAMESE_CHARSET);
+   RegisterLocale('Vietnamese - Tiếng Việt',Activate,LANG_VIETNAMESE,VIETNAMESE_CHARSET);
 end.
