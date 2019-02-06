@@ -84,14 +84,14 @@
         <DCC_Optimize>false</DCC_Optimize>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <VerInfo_Build>73</VerInfo_Build>
-        <VerInfo_Release>8</VerInfo_Release>
+        <VerInfo_Build>76</VerInfo_Build>
+        <VerInfo_Release>9</VerInfo_Release>
         <VerInfo_AutoGenVersion>false</VerInfo_AutoGenVersion>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
         <DCC_ExeOutput>Binaries\</DCC_ExeOutput>
         <Icon_MainIcon>_3nity_Icon1.ico</Icon_MainIcon>
         <VerInfo_MajorVer>5</VerInfo_MajorVer>
-        <VerInfo_Keys>CompanyName=3nity Media Player;FileDescription=;FileVersion=5.0.8.73;InternalName=;LegalCopyright=3nity Softwares ( www.3nitysoftwares.com );LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=5.0.7.71;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=3nity Media Player;FileDescription=;FileVersion=5.0.9.76;InternalName=;LegalCopyright=3nity Softwares ( www.3nitysoftwares.com );LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=5.0.9.74;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -117,9 +117,6 @@
             <Form>frmOptions</Form>
         </DCCReference>
         <DCCReference Include="Config.pas"/>
-        <DCCReference Include="Locale\mo_en.pas"/>
-        <DCCReference Include="Locale\mo_es.pas"/>
-        <DCCReference Include="Locale\mo_fr.pas"/>
         <DCCReference Include="Forms\UfrmPlaylist.pas">
             <Form>frmPlayList</Form>
         </DCCReference>
@@ -192,15 +189,18 @@
         <DCCReference Include="zlibex\ZLibExGZ.pas"/>
         <DCCReference Include="zlibex\ZLibEx.pas"/>
         <DCCReference Include="zlibex\ZLibExApi.pas"/>
-        <DCCReference Include="Locale\mo_cn.pas"/>
-        <DCCReference Include="Locale\mo_ru.pas"/>
-        <DCCReference Include="Locale\mo_ukrainian.pas"/>
         <DCCReference Include="Locale\mo_ar.pas"/>
-        <DCCReference Include="Locale\mo_bu.pas"/>
         <DCCReference Include="Locale\mo_bela.pas"/>
+        <DCCReference Include="Locale\mo_bu.pas"/>
+        <DCCReference Include="Locale\mo_cn.pas"/>
         <DCCReference Include="Locale\mo_cz.pas"/>
         <DCCReference Include="Locale\mo_de.pas"/>
         <DCCReference Include="Locale\mo_dk.pas"/>
+        <DCCReference Include="Locale\mo_en.pas"/>
+        <DCCReference Include="Locale\mo_es.pas"/>
+        <DCCReference Include="Locale\mo_fr.pas"/>
+        <DCCReference Include="Locale\mo_gr.pas"/>
+        <DCCReference Include="Locale\mo_he.pas"/>
         <DCCReference Include="Locale\mo_hu.pas"/>
         <DCCReference Include="Locale\mo_it.pas"/>
         <DCCReference Include="Locale\mo_jp.pas"/>
@@ -209,10 +209,9 @@
         <DCCReference Include="Locale\mo_pl.pas"/>
         <DCCReference Include="Locale\mo_pt.pas"/>
         <DCCReference Include="Locale\mo_ro.pas"/>
-        <DCCReference Include="Locale\mo_sk.pas"/>
-        <DCCReference Include="Locale\mo_gr.pas"/>
-        <DCCReference Include="Locale\mo_he.pas"/>
+        <DCCReference Include="Locale\mo_ru.pas"/>
         <DCCReference Include="Locale\mo_tu.pas"/>
+        <DCCReference Include="Locale\mo_ukrainian.pas"/>
         <DCCReference Include="Locale\mo_vi.pas"/>
         <None Include="README.md"/>
         <BuildConfiguration Include="Debug">
@@ -236,9 +235,10 @@
                     <Source Name="MainSource">_3nity.dpr</Source>
                 </Source>
                 <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k210.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp210.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k210.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp210.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\XLSSpreadSheet3_DXE7.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\XLSSpreadSheet3_DXE7.bpl not found</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
