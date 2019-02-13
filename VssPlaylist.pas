@@ -127,7 +127,7 @@ begin
   iniFile.Free;
 end;
 
-
+{
 function TVssPlayListFile.LoadM3U(const fileName: string): Boolean;
 var
   slTxtFile: TStringList;
@@ -173,6 +173,58 @@ begin
   end;
   stream.Free;  
 end;
+}
 
 
+function TVssPlayListFile.LoadM3U(const fileName: string): Boolean;
+var
+  slTxtFile: TStringList;
+  i : Integer;
+begin
+  slTxtFile := TStringList.Create;
+  try
+    //slTxtFile.LoadFromFile(fileName);
+    slTxtFile.LoadFromFile(fileName,TEncoding.UTF8 );//mod
+    for i := 0 to slTxtFile.Count-1 do begin
+      if slTxtFile[i][1]<> '#' then begin
+        Ffiles.Add(string(slTxtFile[i]))
+      end;
+    end;
+    Result := True;
+  except
+    Result := Ffiles.Count <= 0;
+  end;
+  slTxtFile.Free;
+end;
+
+function TVssPlayListFile.SaveToFile(
+                      const FileName: string; RelativePath : boolean): Boolean;
+var
+  stream : TStreamWriter;//TStream;
+  i: Integer;
+  sLine : string;
+  aLine:TBytes;
+begin
+  Result := True;
+  FbasePath := ExtractFilePathWithSlash(FileName);
+  stream := nil;
+  try
+    Stream := TStreamWriter.Create(FileName, true,TEncoding.UTF8 );//TFileStream.Create(FileName, fmCreate);
+
+    for i := 0 to Ffiles.Count-1 do begin
+      sLine := (Ffiles[i]) + #13#10;
+      //sLine := (Ffiles[i]) ;
+      if Pos(FbasePath,sLine) = 1 then begin
+        //sLine := RightStr(sLine, Length(sLine) - Length(FbasePath) );  //mod
+        sLine := RightStr(sLine, Length(sLine)  - Length(FbasePath) );
+      end;
+      //Stream.WriteBuffer(Pointer(sLine)^, Length(sLine) );   //mod
+      //Stream.WriteBuffer(Pointer(UTF8String(sLine))^, Length(sLine)* SizeOf(Char) );
+      Stream.Write(sline);
+    end;
+  except
+    Result := False;
+  end;
+  stream.Free;
+end;
 end.
