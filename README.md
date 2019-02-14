@@ -9,7 +9,7 @@ A Highly portable multimedia player capable of reading most audio and video form
 
 [![Api client browser](http://3nitysoftwares.com/application/files/thumbnails/small/7615/4953/2993/51437141_10210500715273045_1420538786516828160_o.jpg)](http://3nitysoftwares.com/application/files/thumbnails/small/7615/4953/2993/51437141_10210500715273045_1420538786516828160_o.jpg)
 
-{
+
 FEATURES
 It can play any audio/video file that mplayer supports, that's about 99% of all media files you can find.
 
@@ -39,7 +39,7 @@ And adds this ones:
 * Dvd menus
 * 24 languages 
 * Lot of improovements ...
-}
+
 
 {
 
