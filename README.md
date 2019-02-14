@@ -5,7 +5,7 @@ Copyright (C) 2010-2019 Nicolas DEOUX  < nicolas.deoux@gmail.com > < http://www.
 
 **A Highly portable multimedia player capable of reading most audio and video formats (MPEG-2, MPEG-4, H.264, DivX, MPEG-1, mp3, ogg, aac ...) as well as DVDs, Blu-Ray, Audio CDs VCDs, and network streams.**
 
-[![Api client browser](http://3nitysoftwares.com/application/files/thumbnails/small/7615/4953/2993/51437141_10210500715273045_1420538786516828160_o.jpg)](http://3nitysoftwares.com/application/files/thumbnails/small/7615/4953/2993/51437141_10210500715273045_1420538786516828160_o.jpg)
+[![Api client browser](http://3nitysoftwares.com/application/files/thumbnails/small/7615/4953/2993/51437141_10210500715273045_1420538786516828160_o.jpg)](http://3nitysoftwares.com/index.php/en/portfolio/3nity-media-player)
 
 
 ## FEATURES
@@ -67,7 +67,7 @@ And adds this ones:
    
 }
 
-[![Api client browser](http://3nitysoftwares.com/application/files/thumbnails/large/8615/4809/3899/3mp.jpg)](http://3nitysoftwares.com/application/files/thumbnails/large/8615/4809/3899/3mp.jpg)
+[![Api client browser](http://3nitysoftwares.com/application/files/thumbnails/large/8615/4809/3899/3mp.jpg)](http://3nitysoftwares.com/index.php/en/portfolio/3nity-media-player)
 
 
 
