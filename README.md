@@ -1,4 +1,4 @@
-## 3nity Media Player version 5.0.9, an MPlayer frontend for Windows
+## 3nity Media Player version 5.1.0, an MPlayer frontend for Windows
 
 Copyright (C) 2010-2019 Nicolas DEOUX  < nicolas.deoux@gmail.com > < http://www.3nitysoftwares.com >
                   
