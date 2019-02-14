@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "3nity Media Player"
-#define MyAppVersion "5.0.9 "
+#define MyAppVersion "5.1.0 "
 #define MyAppPublisher "3nity Softwares"
 #define MyAppURL "http://www.3nitysoftwares.com/"
 #define MyAppExeName "3nity.exe"
