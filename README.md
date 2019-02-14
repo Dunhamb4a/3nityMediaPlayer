@@ -46,9 +46,6 @@ And adds this ones:
 	Copyright (C) 2010-2019 Nicolas DEOUX  < nicolas.deoux@gmail.com >
 									<http://3nitysoftwares.com>
 
-    Original source code 2008-2010 Visenri  <http://sourceforge.net/projects/mpui-ve/>
-    Original source code (2005) by Martin J. Fiedler <martin.fiedler@gmx.net>>
-
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; either version 2 of the License, or
@@ -65,11 +62,11 @@ And adds this ones:
 }
 
 {   to compile:
-    ==========
+    
 	
     This code can be compiled using Embarcadero Delphi XE2 -> to Delphi 10.3 Rio
     You will need to install Alphaskin and OmniThreadLibrary components.
-    For special questions or if you want to hire a delphi developer you can contact me:  nicolas.deoux@gmail.com
+   
 }
 
 [![Api client browser](http://3nitysoftwares.com/application/files/thumbnails/large/8615/4809/3899/3mp.jpg)](http://3nitysoftwares.com/application/files/thumbnails/large/8615/4809/3899/3mp.jpg)
