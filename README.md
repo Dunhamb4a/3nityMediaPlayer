@@ -1,6 +1,6 @@
 # 3nityMediaPlayer version 5.0.9:
 
-3nity Media Player version 5.0.9, an MPlayer frontend for Windows
+## 3nity Media Player version 5.0.9, an MPlayer frontend for Windows
 
 Copyright (C) 2010-2019 Nicolas DEOUX  < nicolas.deoux@gmail.com > < http://www.3nitysoftwares.com >
                   
@@ -10,10 +10,8 @@ A Highly portable multimedia player capable of reading most audio and video form
 [![Api client browser](http://3nitysoftwares.com/application/files/thumbnails/small/7615/4953/2993/51437141_10210500715273045_1420538786516828160_o.jpg)](http://3nitysoftwares.com/application/files/thumbnails/small/7615/4953/2993/51437141_10210500715273045_1420538786516828160_o.jpg)
 
 
-FEATURES
-It can play any audio/video file that mplayer supports, that's about 99% of all media files you can find.
+## FEATURES
 
-features:
 
 * Plays hundreds of different video and audio formats, including MPEG-1, -2 and -4 (DivX), H.264,265,x264,mkv containers, MP3, Ogg Vorbis and AAC (More than 192 Video- und 85 Audiocodecs supported natively). For most media files, no additional codecs are needed (Binary Codec Package is already include).
 * The most important MPlayer options (aspect ratio, deinterlacing, and postprocessing) can be configured without typing in cryptic command-line options. (But if you want or need some non-standard options, you can still add them by hand).
