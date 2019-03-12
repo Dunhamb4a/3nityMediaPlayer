@@ -36,7 +36,7 @@ unit UfrmMain;
 interface
 
 uses
-  Windows,sThirdParty, Messages, SysUtils, Classes, Graphics, Controls, Forms,
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
   Dialogs, Buttons, ExtCtrls, Menus, ShellAPI, StdCtrls,
   Math, UfrmPlaylist, ImgList, Clipbrd, mplayer, visEffects, VssScrollbar,
   VssDockForm, sSkinProvider, sPanel,sSkinProps, ComCtrls,
@@ -46,7 +46,7 @@ uses
   OtlTask,
   OtlTaskControl,
   OtlEventMonitor,
-  ZLibExGZ, sBitBtn, dxGDIPlusClasses ; // you can remove dxGDIPlusClasses ;
+  ZLibExGZ, sBitBtn, {dxGDIPlusClasses,} System.ImageList ; // you can remove dxGDIPlusClasses ;
 
 function SetThreadExecutionState(esFlags:Cardinal):Cardinal; stdcall; external 'kernel32.dll';
 function TAGCoverMP3(value: widestring): Boolean; stdcall;external 'aart.dll';
