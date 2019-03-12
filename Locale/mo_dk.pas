@@ -321,5 +321,5 @@ begin
 end;
 
 begin
-   RegisterLocale('Danish - Dansk', Activate, LANG_ENGLISH, ANSI_CHARSET);
+   RegisterLocale('Danish - Dansk', Activate, LANG_DANISH, ANSI_CHARSET);
 end.
